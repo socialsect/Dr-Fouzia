@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Fouzia Al Ali — Coming Soon</title>
+
+<!-- Fonts matching her Instagram carousels -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================
+     COLOR SYSTEM — pulled from her IG carousels
+     ============================================ */
+  :root {
+    --bg-top:        #dbe9f6;   /* soft powder blue (top of gradient) */
+    --bg-mid:        #eaf3fb;   /* pale sky blue */
+    --bg-bottom:     #f6fafd;   /* near-white haze */
+    --card-bg:       rgba(255, 255, 255, 0.72);
+    --card-border:   rgba(255, 255, 255, 0.9);
+    --card-shadow:   0 20px 60px rgba(86, 130, 178, 0.15);
+
+    --navy:          #1b3a5c;   /* headline navy */
+    --navy-soft:     #2c5478;   /* sub-headline */
+    --slate:         #5a7a99;   /* body text */
+    --slate-light:   #8aa5bd;   /* muted text */
+    --accent:        #4a90c2;   /* CTA / link blue */
+    --accent-hover:  #3a7aab;
+
+    --divider:       rgba(90, 122, 153, 0.18);
+  }
+
+  /* ============ RESET ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body { height: 100%; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--slate);
+    background:
+      radial-gradient(ellipse at 20% 0%,  #e8f2fb 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 100%, #dbe9f6 0%, transparent 55%),
+      linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 45%, var(--bg-bottom) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Soft floating orbs — echoes the light "bokeh" feel of her carousels */
+  body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+  }
+  body::before {
+    width: 420px; height: 420px;
+    background: #b8d8f0;
+    top: -120px; left: -120px;
+  }
+  body::after {
+    width: 380px; height: 380px;
+    background: #cfe5f7;
+    bottom: -140px; right: -100px;
+  }
+
+  /* ============ CARD ============ */
+  .card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 560px;
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--card-border);
+    border-radius: 28px;
+    box-shadow: var(--card-shadow);
+    padding: 56px 44px 48px;
+    text-align: center;
+    animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ============ MONOGRAM / LOGO ============ */
+  .monogram {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ffffff 0%, #e8f2fb 100%);
+    border: 1px solid rgba(255,255,255,0.9);
+    box-shadow: 0 10px 24px rgba(86,130,178,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: 0.5px;
+  }
+
+  /* ============ EYEBROW ============ */
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--slate-light);
+    margin-bottom: 20px;
+  }
+
+  /* ============ NAME ============ */
+  .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 6vw, 46px);
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+
+  .name-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy-soft);
+    direction: rtl;
+    margin-bottom: 26px;
+  }
+
+  /* ============ DIVIDER ============ */
+  .divider {
+    width: 56px;
+    height: 1px;
+    background: var(--divider);
+    margin: 0 auto 26px;
+  }
+
+  /* ============ TAGLINE ============ */
+  .tagline {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--slate);
+    font-weight: 300;
+    max-width: 400px;
+    margin: 0 auto 8px;
+  }
+
+  .tagline-ar {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--slate);
+    direction: rtl;
+    max-width: 400px;
+    margin: 0 auto 32px;
+  }
+
+  /* ============ PILLARS ============ */
+  .pillars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+
+  .pillar {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--navy-soft);
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.65);
+    border: 1px solid rgba(255,255,255,0.9);
+    font-weight: 500;
+  }
+
+  /* ============ CTA ============ */
+  .cta {
+    display: inline-block;
+    padding: 14px 34px;
+    border-radius: 999px;
+    background: var(--navy);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 24px rgba(27, 58, 92, 0.22);
+  }
+  .cta:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(27, 58, 92, 0.3);
+  }
+
+  /* ============ FOOTER ============ */
+  .footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--divider);
+    font-size: 12px;
+    color: var(--slate-light);
+    letter-spacing: 0.05em;
+  }
+
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .footer a:hover { color: var(--accent-hover); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 480px) {
+    .card { padding: 44px 26px 38px; border-radius: 24px; }
+    .monogram { width: 62px; height: 62px; font-size: 24px; }
+  }
+
+  /* ============ REDUCED MOTION ============ */
+  @media (prefers-reduced-motion: reduce) {
+    .card { animation: none; }
+    .cta  { transition: none; }
+  }
+</style>
+</head>
+
+<body>
+  <main class="card">
+    <!-- Monogram -->
+    <div class="monogram">FA</div>
+
+    <!-- Eyebrow -->
+    <p class="eyebrow">Coming Soon</p>
+
+    <!-- Name -->
+    <h1 class="name">Dr. Fouzia Al Ali</h1>
+    <p class="name-ar">د. فوزية العلوي</p>
+
+    <div class="divider"></div>
+
+    <!-- Tagline -->
+    <p class="tagline">
+      A new home for women's health, wellness, and balance is on its way.
+    </p>
+    <p class="tagline-ar">
+      بيت جديد لصحة المرأة والعافية والتوازن قادم قريباً
+    </p>
+
+    <!-- Pillars -->
+    <div class="pillars">
+      <span class="pillar">CBT</span>
+      <span class="pillar">Mind</span>
+      <span class="pillar">Body</span>
+      <span class="pillar">Beauty</span>
+      <span class="pillar">Balance</span>
+    </div>
+
+    <!-- CTA -->
+    <a class="cta" href="https://www.instagram.com/dr.fouziaalali" target="_blank" rel="noopener">
+      Follow on Instagram
+    </a>
+
+    <!-- Footer -->
+    <div class="footer">
+      Bookings: <a href="tel:++971 55 7570393">+971 55 7570393</a>
+    </div>
+  </main>
+</body>
+</html>
