@@ -1,293 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dr. Fouzia Al Ali — Coming Soon</title>
-
-<!-- Fonts matching her Instagram carousels -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Fouzia Al Ali — Concept Selector</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* ============================================
-     COLOR SYSTEM — pulled from her IG carousels
-     ============================================ */
-  :root {
-    --bg-top:        #dbe9f6;   /* soft powder blue (top of gradient) */
-    --bg-mid:        #eaf3fb;   /* pale sky blue */
-    --bg-bottom:     #f6fafd;   /* near-white haze */
-    --card-bg:       rgba(255, 255, 255, 0.72);
-    --card-border:   rgba(255, 255, 255, 0.9);
-    --card-shadow:   0 20px 60px rgba(86, 130, 178, 0.15);
+:root {
+  --blue: #2F91BC;
+  --blue-deep: #1F6E94;
+  --sky: #E1F2FD;
+  --sky-light: #F0F8FE;
+  --ink: #0E2A3A;
+  --ink-soft: #3A5A6E;
+  --muted: #7A9AAC;
+  --white: #FFFFFF;
+  --glass-bg: rgba(255, 255, 255, .12);
+  --glass-border: rgba(255, 255, 255, .25);
+  --glass-shadow: 0 8px 32px rgba(15, 42, 58, .12);
+}
 
-    --navy:          #1b3a5c;   /* headline navy */
-    --navy-soft:     #2c5478;   /* sub-headline */
-    --slate:         #5a7a99;   /* body text */
-    --slate-light:   #8aa5bd;   /* muted text */
-    --accent:        #4a90c2;   /* CTA / link blue */
-    --accent-hover:  #3a7aab;
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
 
-    --divider:       rgba(90, 122, 153, 0.18);
-  }
+html { scroll-behavior: smooth; }
 
-  /* ============ RESET ============ */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(160deg, var(--sky) 0%, var(--sky-light) 40%, var(--white) 100%);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
 
-  html, body { height: 100%; }
+/* Floating orbs */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: .35;
+  pointer-events: none;
+  z-index: 0;
+}
 
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: var(--slate);
-    background:
-      radial-gradient(ellipse at 20% 0%,  #e8f2fb 0%, transparent 55%),
-      radial-gradient(ellipse at 80% 100%, #dbe9f6 0%, transparent 55%),
-      linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 45%, var(--bg-bottom) 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    overflow-x: hidden;
-    position: relative;
-  }
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: var(--blue);
+  top: -150px;
+  right: -100px;
+  animation: float-1 18s ease-in-out infinite;
+}
 
-  /* Soft floating orbs — echoes the light "bokeh" feel of her carousels */
-  body::before,
-  body::after {
-    content: "";
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: 0;
-  }
-  body::before {
-    width: 420px; height: 420px;
-    background: #b8d8f0;
-    top: -120px; left: -120px;
-  }
-  body::after {
-    width: 380px; height: 380px;
-    background: #cfe5f7;
-    bottom: -140px; right: -100px;
-  }
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: #A8D8EB;
+  bottom: -100px;
+  left: -80px;
+  animation: float-2 22s ease-in-out infinite;
+}
 
-  /* ============ CARD ============ */
-  .card {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: 560px;
-    background: var(--card-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--card-border);
-    border-radius: 28px;
-    box-shadow: var(--card-shadow);
-    padding: 56px 44px 48px;
-    text-align: center;
-    animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
-  }
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: var(--sky);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float-3 15s ease-in-out infinite;
+}
 
-  @keyframes rise {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
+@keyframes float-1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-40px, 30px); }
+}
 
-  /* ============ MONOGRAM / LOGO ============ */
-  .monogram {
-    width: 72px;
-    height: 72px;
-    margin: 0 auto 24px;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #ffffff 0%, #e8f2fb 100%);
-    border: 1px solid rgba(255,255,255,0.9);
-    box-shadow: 0 10px 24px rgba(86,130,178,0.18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--navy);
-    letter-spacing: 0.5px;
-  }
+@keyframes float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, -40px); }
+}
 
-  /* ============ EYEBROW ============ */
-  .eyebrow {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--slate-light);
-    margin-bottom: 20px;
-  }
+@keyframes float-3 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.1); }
+}
 
-  /* ============ NAME ============ */
-  .name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(34px, 6vw, 46px);
-    font-weight: 600;
-    color: var(--navy);
-    line-height: 1.15;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
-  }
+/* Main container */
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
 
-  .name-ar {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--navy-soft);
-    direction: rtl;
-    margin-bottom: 26px;
-  }
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 70px;
+}
 
-  /* ============ DIVIDER ============ */
-  .divider {
-    width: 56px;
-    height: 1px;
-    background: var(--divider);
-    margin: 0 auto 26px;
-  }
+.header-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(47, 145, 188, .3);
+}
 
-  /* ============ TAGLINE ============ */
-  .tagline {
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--slate);
-    font-weight: 300;
-    max-width: 400px;
-    margin: 0 auto 8px;
-  }
+.header h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 300;
+  letter-spacing: -.04em;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
 
-  .tagline-ar {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 14px;
-    line-height: 1.8;
-    color: var(--slate);
-    direction: rtl;
-    max-width: 400px;
-    margin: 0 auto 32px;
-  }
+.header h1 strong {
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--blue), #5DBBA8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-  /* ============ PILLARS ============ */
-  .pillars {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 36px;
-  }
+.header p {
+  font-size: 17px;
+  color: var(--muted);
+  font-weight: 400;
+  max-width: 460px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
-  .pillar {
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--navy-soft);
-    padding: 7px 14px;
-    border-radius: 999px;
-    background: rgba(255,255,255,0.65);
-    border: 1px solid rgba(255,255,255,0.9);
-    font-weight: 500;
-  }
+/* Cards grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
 
-  /* ============ CTA ============ */
-  .cta {
-    display: inline-block;
-    padding: 14px 34px;
-    border-radius: 999px;
-    background: var(--navy);
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 24px rgba(27, 58, 92, 0.22);
-  }
-  .cta:hover {
-    background: var(--accent-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(27, 58, 92, 0.3);
-  }
+/* Glass card */
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform .4s cubic-bezier(.23,1,.32,1), box-shadow .4s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
-  /* ============ FOOTER ============ */
-  .footer {
-    margin-top: 40px;
-    padding-top: 24px;
-    border-top: 1px solid var(--divider);
-    font-size: 12px;
-    color: var(--slate-light);
-    letter-spacing: 0.05em;
-  }
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(47, 145, 188, .18);
+  border-color: rgba(47, 145, 188, .3);
+}
 
-  .footer a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  .footer a:hover { color: var(--accent-hover); }
+/* Preview area */
+.card-preview {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
 
-  /* ============ RESPONSIVE ============ */
-  @media (max-width: 480px) {
-    .card { padding: 44px 26px 38px; border-radius: 24px; }
-    .monogram { width: 62px; height: 62px; font-size: 24px; }
-  }
+.card-preview-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  transform: scale(.85);
+  transform-origin: top center;
+}
 
-  /* ============ REDUCED MOTION ============ */
-  @media (prefers-reduced-motion: reduce) {
-    .card { animation: none; }
-    .cta  { transition: none; }
-  }
+/* Version 1 preview - Ekya/Editorial style */
+.preview-v1 {
+  background: linear-gradient(160deg, #FBF7F1, #F4ECE0);
+}
+
+.preview-v1 .preview-eyebrow {
+  font-size: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: #8A847C;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.preview-v1 .preview-eyebrow::before {
+  content: '';
+  width: 14px;
+  height: 1px;
+  background: #1A1A1A;
+}
+
+.preview-v1 .preview-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  color: #1A1A1A;
+  margin-bottom: 6px;
+}
+
+.preview-v1 .preview-title em {
+  font-style: italic;
+  background: linear-gradient(135deg, #2F91BC, #5DBBA8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.preview-v1 .preview-desc {
+  font-size: 7px;
+  color: #8A847C;
+  line-height: 1.5;
+}
+
+.preview-v1 .preview-card {
+  position: absolute;
+  right: 16px;
+  top: 30px;
+  width: 80px;
+  background: white;
+  border: 1px solid #E8DFD2;
+  border-radius: 10px;
+  padding: 10px;
+  transform: rotate(3deg);
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+
+.preview-v1 .preview-card-title {
+  font-size: 7px;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 6px;
+}
+
+.preview-v1 .preview-card-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 5.5px;
+  color: #3D3A36;
+  padding: 2px 0;
+  border-bottom: 1px solid #E8DFD2;
+}
+
+.preview-v1 .preview-card-item:last-child { border-bottom: 0; }
+
+.preview-v1 .preview-card-num {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: #F4ECE0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5px;
+  font-weight: 700;
+  color: #1A1A1A;
+  flex-shrink: 0;
+}
+
+/* Version 2 preview - Wellth/Warm style */
+.preview-v2 {
+  background: linear-gradient(160deg, #F5F0EA, #EDE8E1);
+}
+
+.preview-v2 .preview-eyebrow {
+  font-size: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #2F91BC;
+  margin-bottom: 8px;
+}
+
+.preview-v2 .preview-title {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  color: #3A3633;
+  margin-bottom: 6px;
+}
+
+.preview-v2 .preview-title em {
+  font-style: italic;
+  color: #2F91BC;
+  font-weight: 400;
+}
+
+.preview-v2 .preview-desc {
+  font-size: 7px;
+  color: #8A8279;
+  line-height: 1.5;
+}
+
+.preview-v2 .preview-cards {
+  position: absolute;
+  right: 12px;
+  top: 28px;
+  display: flex;
+  gap: 6px;
+}
+
+.preview-v2 .preview-mini-card {
+  width: 42px;
+  height: 56px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.preview-v2 .preview-mini-card:nth-child(1) { background: linear-gradient(135deg, #C1E3F0, #7CC0D8); }
+.preview-v2 .preview-mini-card:nth-child(2) { background: linear-gradient(135deg, #B8E0D8, #7CC8B8); }
+.preview-v2 .preview-mini-card:nth-child(3) { background: linear-gradient(135deg, #BDD8EE, #8AB8D8); }
+
+.preview-v2 .preview-mini-num {
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+  opacity: .7;
+}
+
+/* Version 3 preview - Orbit/Light style */
+.preview-v3 {
+  background: linear-gradient(160deg, #E1F2FD, #D5ECF9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-v3 .preview-orbit {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.preview-v3 .preview-orbit-ring {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(47, 145, 188, .2);
+  border-radius: 50%;
+}
+
+.preview-v3 .preview-orbit-ring::after {
+  content: '';
+  position: absolute;
+  inset: 15px;
+  border: 1px dashed rgba(47, 145, 188, .15);
+  border-radius: 50%;
+}
+
+.preview-v3 .preview-orbit-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: var(--blue);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 7px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+  box-shadow: 0 4px 16px rgba(47, 145, 188, .3);
+}
+
+.preview-v3 .preview-orbit-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid rgba(47, 145, 188, .3);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 4px;
+  color: var(--ink-soft);
+  text-align: center;
+  line-height: 1.1;
+  box-shadow: 0 2px 8px rgba(47, 145, 188, .1);
+}
+
+.preview-v3 .preview-orbit-dot:nth-child(2) { top: -6px; left: 50%; transform: translateX(-50%); }
+.preview-v3 .preview-orbit-dot:nth-child(3) { right: -6px; top: 50%; transform: translateY(-50%); }
+.preview-v3 .preview-orbit-dot:nth-child(4) { bottom: -6px; left: 50%; transform: translateX(-50%); }
+.preview-v3 .preview-orbit-dot:nth-child(5) { left: -6px; top: 50%; transform: translateY(-50%); }
+
+/* Card body */
+.card-body {
+  padding: 24px 28px 28px;
+}
+
+.card-version {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+}
+
+.card-version-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: .5;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  transition: gap .3s;
+}
+
+.card:hover .card-cta { gap: 12px; }
+
+.card-cta-arrow {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--sky);
+  display: grid;
+  place-items: center;
+  transition: background .3s;
+}
+
+.card:hover .card-cta-arrow { background: var(--blue); color: white; }
+
+.card-cta-arrow svg {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(47, 145, 188, .1);
+}
+
+.footer p {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cards { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .container { padding: 40px 20px 60px; }
+  .header { margin-bottom: 48px; }
+}
+
+@media (max-width: 480px) {
+  .card-preview { height: 180px; }
+}
 </style>
 </head>
-
 <body>
-  <main class="card">
-    <!-- Monogram -->
-    <div class="monogram">FA</div>
 
-    <!-- Eyebrow -->
-    <p class="eyebrow">Coming Soon</p>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
 
-    <!-- Name -->
-    <h1 class="name">Dr. Fouzia Al Ali</h1>
-    <p class="name-ar">د. فوزية العلوي</p>
+<div class="container">
 
-    <div class="divider"></div>
+  <div class="header">
+    <div class="header-icon">FA</div>
+    <h1>Three concepts.<br><strong>One vision.</strong></h1>
+    <p>Choose a version to preview. Each concept explores a different visual direction for Dr. Fouzia's homepage.</p>
+  </div>
 
-    <!-- Tagline -->
-    <p class="tagline">
-      A new home for women's health, wellness, and balance is on its way.
-    </p>
-    <p class="tagline-ar">
-      بيت جديد لصحة المرأة والعافية والتوازن قادم قريباً
-    </p>
+  <div class="cards">
 
-    <!-- Pillars -->
-    <div class="pillars">
-      <span class="pillar">CBT</span>
-      <span class="pillar">Mind</span>
-      <span class="pillar">Body</span>
-      <span class="pillar">Beauty</span>
-      <span class="pillar">Balance</span>
-    </div>
-
-    <!-- CTA -->
-    <a class="cta" href="https://www.instagram.com/dr.fouziaalali" target="_blank" rel="noopener">
-      Follow on Instagram
+    <!-- Version 1 -->
+    <a href="version-1-editorial.html" class="card">
+      <div class="card-preview preview-v1">
+        <div class="preview-card">
+          <div class="preview-card-title">Four services</div>
+          <div class="preview-card-item"><span class="preview-card-num">1</span> Hormones</div>
+          <div class="preview-card-item"><span class="preview-card-num">2</span> Gut-brain</div>
+          <div class="preview-card-item"><span class="preview-card-num">3</span> Metabolic</div>
+        </div>
+        <div class="preview-v1" style="background:none;padding:0;width:100%;height:100%">
+          <div class="preview-eyebrow">Functional medicine</div>
+          <div class="preview-title">Symptoms don't exist<br>in <em>isolation.</em></div>
+          <div class="preview-desc">Your history, lifestyle, nutrition,<br>sleep, stress and hormones.</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-version"><span class="card-version-dot"></span> Version 01</div>
+        <div class="card-name">Editorial</div>
+        <div class="card-desc">Warm cream palette, serif typography, two-column hero with info card. Rooted and trustworthy.</div>
+        <div class="card-cta">
+          View concept
+          <span class="card-cta-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </div>
     </a>
 
-    <!-- Footer -->
-    <div class="footer">
-      Bookings: <a href="tel:++971 55 7570393">+971 55 7570393</a>
-    </div>
-  </main>
+    <!-- Version 2 -->
+    <a href="version-2-editorial.html" class="card">
+      <div class="card-preview preview-v2">
+        <div class="preview-cards">
+          <div class="preview-mini-card"><span class="preview-mini-num">01</span></div>
+          <div class="preview-mini-card"><span class="preview-mini-num">02</span></div>
+          <div class="preview-mini-card"><span class="preview-mini-num">03</span></div>
+        </div>
+        <div style="padding:0;width:100%">
+          <div class="preview-eyebrow">Functional medicine</div>
+          <div class="preview-title">Your health has a<br><em>story.</em></div>
+          <div class="preview-desc">Let's explore it together.</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-version"><span class="card-version-dot"></span> Version 02</div>
+        <div class="card-name">Discovery</div>
+        <div class="card-desc">Warm tones, rounded cards, image carousel. Friendly and inviting with a personal touch.</div>
+        <div class="card-cta">
+          View concept
+          <span class="card-cta-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Version 3 -->
+    <a href="version-3-editorial.html" class="card">
+      <div class="card-preview preview-v3">
+        <div class="preview-orbit">
+          <div class="preview-orbit-ring"></div>
+          <div class="preview-orbit-center">Your<br>health<br>story</div>
+          <div class="preview-orbit-dot">Medical</div>
+          <div class="preview-orbit-dot">Nutrition</div>
+          <div class="preview-orbit-dot">Sleep</div>
+          <div class="preview-orbit-dot">Hormones</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-version"><span class="card-version-dot"></span> Version 03</div>
+        <div class="card-name">Connected Orbit</div>
+        <div class="card-desc">Sky-blue palette, interactive orbit diagram, horizontal scroll. Modern and exploratory.</div>
+        <div class="card-cta">
+          View concept
+          <span class="card-cta-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    <p>Dr. Fouzia Al Ali &mdash; Concept selector</p>
+  </div>
+
+</div>
+
 </body>
 </html>

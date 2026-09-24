@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dr. Fouzia Al Ali, Homepage concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── Concept 2: Wellth-inspired ── */
+:root {
+  --blue: #2F91BC;
+  --ink: #3A3633;
+  --paper: #F5F0EA;
+  --cream: #FAF8F5;
+  --warm: #EDE8E1;
+  --white: #fff;
+  --muted: #8A8279;
+  --line: #DDD7CE;
+  --accent: #2F91BC;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+
+html { scroll-behavior: smooth; overflow-x: clip; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font: 16px/1.7 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+
+/* ── Header ── */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 6%;
+  position: sticky;
+  top: 0;
+  background: rgba(250,248,245,.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 9;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-weight: 600;
+  letter-spacing: .06em;
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.brand i {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: white;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+nav a:not(.navcta):not(.lang) {
+  color: var(--ink);
+  opacity: .55;
+  transition: opacity .25s;
+  letter-spacing: .02em;
+}
+nav a:not(.navcta):not(.lang):hover { opacity: 1; }
+
+.navcta {
+  background: var(--ink);
+  color: white;
+  padding: 11px 22px;
+  border-radius: 100px;
+  border: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .03em;
+  transition: opacity .25s;
+}
+.navcta:hover { opacity: .85; }
+
+.lang {
+  border: 1.5px solid var(--line);
+  padding: 7px 14px;
+  border-radius: 100px;
+  background: transparent;
+  font-size: 11px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ── Utilities ── */
+.wrap { width: min(1200px, 88%); margin: auto; }
+
+.section { padding: 100px 0; }
+
+.section-title {
+  font-size: clamp(38px, 5.5vw, 64px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: var(--ink);
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--blue);
+}
+
+.lead {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--muted);
+  font-weight: 400;
+  max-width: 600px;
+}
+
+.lead-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 11px;
+  color: var(--blue);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 100px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  transition: all .3s;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: white;
+}
+.btn-primary:hover { background: #247A9E; }
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+}
+.btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+
+.btn-dark {
+  background: var(--ink);
+  color: white;
+}
+.btn-dark:hover { opacity: .85; }
+
+.arrow-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform .3s;
+}
+
+.arrow-circle svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.btn:hover .arrow-circle { transform: translateX(3px); }
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+/* ── Hero ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  right: -10%;
+  top: 10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(47,145,188,.06), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 6vw;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5.8vw, 72px);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  margin: 16px 0 24px;
+  color: var(--ink);
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--blue);
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  width: 340px;
+  height: 420px;
+  border-radius: 200px 200px 24px 24px;
+  background: linear-gradient(165deg, #D6EBF3, #B8DCE9 50%, #A4D1E0);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  position: relative;
+}
+
+.hero-card strong {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 1;
+  display: block;
+}
+
+.hero-card p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+  opacity: .9;
+  letter-spacing: .04em;
+}
+
+.hero-float {
+  position: absolute;
+  background: white;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.06);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-float:nth-child(2) { bottom: 40px; left: -20px; }
+.hero-float:nth-child(3) { top: 60px; right: -10px; }
+
+.hero-float-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+
+/* ── Services carousel ── */
+.services-section { background: var(--cream); }
+
+.services-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.services-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.services-nav button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  background: white;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: border-color .25s, background .25s;
+  flex-shrink: 0;
+}
+
+.services-nav button:hover {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: white;
+}
+
+.services-nav button svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.services-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 10px 4px 30px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  margin-top: 40px;
+  /* extra right padding so last card isn't clipped */
+  padding-right: 60px;
+}
+
+.services-scroll::-webkit-scrollbar { height: 3px; }
+.services-scroll::-webkit-scrollbar-track { background: transparent; }
+.services-scroll::-webkit-scrollbar-thumb { background: var(--line); border-radius: 2px; }
+
+.service-card {
+  flex-shrink: 0;
+  width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  scroll-snap-align: start;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.service-card:hover { transform: translateY(-4px); }
+
+.service-card-bg {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.service-card-bg .card-num {
+  font-size: 120px;
+  font-weight: 300;
+  opacity: .08;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  line-height: 1;
+}
+
+.service-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px;
+  background: linear-gradient(transparent, rgba(0,0,0,.55));
+  color: white;
+}
+
+.service-card-content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  margin-bottom: 6px;
+}
+
+.service-card-content p {
+  font-size: 13px;
+  opacity: .8;
+  line-height: 1.5;
+}
+
+.service-card-content .card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  opacity: .7;
+  transition: opacity .2s;
+}
+
+.service-card:hover .card-link { opacity: 1; }
+
+/* card color variants */
+.card-blue { background: linear-gradient(165deg, #C1E3F0, #7CC0D8); }
+.card-teal { background: linear-gradient(165deg, #B8E0D8, #7CC8B8); }
+.card-sky { background: linear-gradient(165deg, #BDD8EE, #8AB8D8); }
+.card-mint { background: linear-gradient(165deg, #C5E8DE, #8AD0C0); }
+.card-lavender { background: linear-gradient(165deg, #C8D8EE, #94B8D8); }
+.card-warm { background: linear-gradient(165deg, #E8DDD0, #C8B8A4); }
+.card-rose { background: linear-gradient(165deg, #EAD0D8, #D0A4B4); }
+.card-sage { background: linear-gradient(165deg, #D0E0D4, #A0C0A8); }
+
+/* ── Philosophy section ── */
+.philosophy { background: var(--paper); }
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.philosophy-card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: box-shadow .3s;
+}
+
+.philosophy-card:hover {
+  box-shadow: 0 12px 36px rgba(0,0,0,.05);
+}
+
+.philosophy-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--paper);
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  color: var(--blue);
+  font-size: 22px;
+}
+
+.philosophy-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -.01em;
+}
+
+.philosophy-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ── Doctor ── */
+.doctor-section { background: var(--cream); }
+
+.doctor-inner {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 6vw;
+  align-items: center;
+}
+
+.doctor-portrait {
+  border-radius: 200px;
+  background: linear-gradient(165deg, #D6EBF3, #B0D4E4);
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--blue);
+  padding: 40px;
+}
+
+.doctor-portrait strong {
+  font-size: 90px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.doctor-portrait p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* ── Journey ── */
+.journey-section { background: var(--paper); }
+
+.journey-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 50px;
+  border-top: 1.5px solid var(--line);
+  border-bottom: 1.5px solid var(--line);
+}
+
+.journey-step {
+  padding: 36px 28px;
+  border-right: 1.5px solid var(--line);
+  text-align: center;
+}
+
+.journey-step:last-child { border-right: 0; }
+
+.journey-step .step-num {
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.journey-step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -.01em;
+}
+
+.journey-step p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ── Quote ── */
+.quote-section {
+  background: var(--ink);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.quote-section .section-title { color: white; }
+.quote-section .section-title em { color: rgba(255,255,255,.5); }
+
+.quote-section .lead {
+  color: rgba(255,255,255,.55);
+  font-size: 18px;
+}
+
+/* ── Instagram ── */
+.instagram-section { background: var(--cream); }
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.socials img {
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform .3s;
+}
+
+.socials img:hover { transform: scale(1.04); }
+
+/* ── Contact ── */
+.contact-section { background: var(--paper); }
+
+.contactbox {
+  background: white;
+  border-radius: 24px;
+  max-width: 720px;
+  margin: auto;
+  text-align: center;
+  padding: clamp(40px, 7vw, 80px);
+}
+
+/* ── Strip ── */
+.strip {
+  background: var(--blue);
+  padding: 16px 0;
+  overflow: hidden;
+}
+
+.strip-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-strip 45s linear infinite;
+}
+
+.strip-track:hover { animation-play-state: paused; }
+
+.strip-item {
+  flex-shrink: 0;
+  padding: 0 30px;
+  font-size: clamp(17px, 2vw, 24px);
+  font-weight: 400;
+  letter-spacing: -.005em;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  white-space: nowrap;
+}
+
+.strip-item em {
+  font-style: italic;
+  color: rgba(255,255,255,.45);
+}
+
+.strip-item::after {
+  content: '\2726';
+  font-size: 14px;
+  color: rgba(255,255,255,.3);
+  flex-shrink: 0;
+}
+
+@keyframes scroll-strip {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,.5);
+  padding: 40px 6%;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+footer b {
+  color: white;
+  font-weight: 600;
+  letter-spacing: .06em;
+  font-size: 11px;
+}
+
+/* ── Dialog ── */
+dialog {
+  border: 0;
+  border-radius: 24px;
+  max-width: 500px;
+  padding: 36px;
+  color: var(--ink);
+  background: white;
+  box-shadow: 0 24px 60px rgba(0,0,0,.1);
+}
+dialog::backdrop { background: rgba(0,0,0,.15); }
+
+.close {
+  float: right;
+  border: 0;
+  background: var(--paper);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+}
+
+/* ── Language note ── */
+.lang-note {
+  background: #FFF8E1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  margin: 10px 6%;
+  border: 1px solid #F0DFA0;
+}
+
+.note {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 14px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  header { gap: 12px; flex-wrap: wrap; }
+  nav { gap: 14px; flex-wrap: wrap; }
+  nav a:not(.navcta) { display: none; }
+  .wrap { width: 90%; }
+  .section { padding: 70px 0; }
+  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .hero-visual { order: -1; }
+  .hero-card { width: 260px; height: 320px; border-radius: 140px 140px 20px 20px; }
+  .hero-card strong { font-size: 60px; }
+  .hero-float { display: none; }
+  .actions { justify-content: center; }
+  .lead { margin: 0 auto; }
+  .philosophy-grid { grid-template-columns: 1fr; }
+  .doctor-inner { grid-template-columns: 1fr; text-align: center; }
+  .doctor-portrait { border-radius: 200px; min-height: 320px; }
+  .journey-steps { grid-template-columns: 1fr; }
+  .journey-step { border-right: 0; border-bottom: 1.5px solid var(--line); }
+  .journey-step:last-child { border-bottom: 0; }
+  .socials img { width: 80px; height: 95px; }
+  .service-card { width: 260px; height: 340px; }
+  .services-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .services-scroll { padding-right: 30px; }
+}
+
+@media (max-width: 430px) {
+  .navcta { padding: 9px 14px; }
+  .service-card { width: 240px; height: 300px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#top"><i>FA</i> DR. FOUZIA AL ALI</a>
+  <nav>
+    <a href="#approach">Approach</a>
+    <a href="#services">Services</a>
+    <a href="#doctor">Meet Dr. Fouzia</a>
+    <a href="#journey">Your journey</a>
+    <a class="navcta" href="#contact">Book a consultation</a>
+    <button class="lang" type="button" onclick="toggleLang()">عربي</button>
+  </nav>
+</header>
+
+<div id="lang-note" class="lang-note" hidden>Arabic layout and reviewed Arabic copy are to be completed after client approval.</div>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow" style="text-align:left">Functional medicine · Lifestyle · Wellbeing</p>
+          <h1>Your health has a<br><em>story.</em><br>Let's explore it.</h1>
+          <p class="lead">Your symptoms, your history and your everyday life are connected. Dr. Fouzia takes time to look at the bigger picture and explore what may be contributing to your health concerns.</p>
+          <div class="actions" style="justify-content:flex-start">
+            <a class="btn btn-primary" href="#contact">
+              Book a consultation
+              <span class="arrow-circle"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+            <a class="btn btn-outline" href="#services">Explore services</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <strong>FA</strong>
+            <p>Dr. Fouzia Al Ali</p>
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot"></span>
+            26+ years of experience
+          </div>
+          <div class="hero-float">
+            <span class="hero-float-dot"></span>
+            Personalized care
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strip -->
+  <div class="strip">
+    <div class="strip-track">
+      <span class="strip-item">Hormonal changes</span>
+      <span class="strip-item"><em>Gut &amp; digestive health</em></span>
+      <span class="strip-item">Stress &amp; sleep</span>
+      <span class="strip-item"><em>Fatigue &amp; brain fog</em></span>
+      <span class="strip-item">Metabolic health</span>
+      <span class="strip-item"><em>Healthy aging</em></span>
+      <span class="strip-item">Weight management</span>
+      <span class="strip-item"><em>Skin &amp; hair wellness</em></span>
+      <span class="strip-item">Women's health</span>
+      <span class="strip-item"><em>Energy &amp; vitality</em></span>
+      <span class="strip-item">Emotional wellbeing</span>
+      <span class="strip-item"><em>Mental clarity</em></span>
+      <span class="strip-item">Hormonal changes</span>
+      <span class="strip-item"><em>Gut &amp; digestive health</em></span>
+      <span class="strip-item">Stress &amp; sleep</span>
+      <span class="strip-item"><em>Fatigue &amp; brain fog</em></span>
+      <span class="strip-item">Metabolic health</span>
+      <span class="strip-item"><em>Healthy aging</em></span>
+      <span class="strip-item">Weight management</span>
+      <span class="strip-item"><em>Skin &amp; hair wellness</em></span>
+      <span class="strip-item">Women's health</span>
+      <span class="strip-item"><em>Energy &amp; vitality</em></span>
+      <span class="strip-item">Emotional wellbeing</span>
+      <span class="strip-item"><em>Mental clarity</em></span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="section services-section" id="services">
+    <div class="wrap">
+      <div class="services-header">
+        <div>
+          <p class="eyebrow" style="text-align:left">Our specialities</p>
+          <h2 class="section-title" style="text-align:left;margin:14px 0 0">Your concerns.<br>One <em>person</em> at a time.</h2>
+        </div>
+        <div class="services-nav">
+          <button onclick="scrollServices(-1)" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button onclick="scrollServices(1)" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <p class="lead">Each service is shaped around you, your history, your goals, your pace. Explore what feels relevant.</p>
+      <div class="services-scroll">
+        <div class="service-card card-blue">
+          <div class="service-card-bg"><span class="card-num">01</span></div>
+          <div class="service-card-content">
+            <h3>Functional Medicine</h3>
+            <p>A broader look at symptoms, lifestyle, nutrition, sleep, stress, hormones, gut health, medications and medical history.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+        <div class="service-card card-teal">
+          <div class="service-card-bg"><span class="card-num">02</span></div>
+          <div class="service-card-content">
+            <h3>Women's Hormone, Stress &amp; Lifestyle</h3>
+            <p>Personalized support across hormonal changes, stress, sleep, mood and everyday habits.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+        <div class="service-card card-sky">
+          <div class="service-card-bg"><span class="card-num">03</span></div>
+          <div class="service-card-content">
+            <h3>Gut–Brain Health</h3>
+            <p>Explore digestive concerns alongside stress, sleep, mood and lifestyle factors.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+        <div class="service-card card-mint">
+          <div class="service-card-bg"><span class="card-num">04</span></div>
+          <div class="service-card-content">
+            <h3>Stress, Sleep &amp; Energy Reset</h3>
+            <p>Support for persistent stress, poor sleep, fatigue, mental overload and reduced energy.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+        <div class="service-card card-lavender">
+          <div class="service-card-bg"><span class="card-num">05</span></div>
+          <div class="service-card-content">
+            <h3>Weight, Metabolic Health &amp; Mindset</h3>
+            <p>Nutrition, metabolic health strategies, lifestyle medicine and behavior-change support.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+        <div class="service-card card-warm">
+          <div class="service-card-bg"><span class="card-num">06</span></div>
+          <div class="service-card-content">
+            <h3>Healthy Aging</h3>
+            <p>A personalized focus on nutrition, movement, muscle health, sleep, stress and cognitive wellbeing.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+        <div class="service-card card-rose">
+          <div class="service-card-bg"><span class="card-num">07</span></div>
+          <div class="service-card-content">
+            <h3>CBT</h3>
+            <p>Structured, practical therapy for eligible Arabic-speaking female clients.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+        <div class="service-card card-sage">
+          <div class="service-card-bg"><span class="card-num">08</span></div>
+          <div class="service-card-content">
+            <h3>Inside-Out Skin &amp; Wellness</h3>
+            <p>Explore nutritional, hormonal, metabolic, sleep, stress and lifestyle factors related to skin and hair concerns.</p>
+            <span class="card-link">Read more →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="section philosophy" id="approach">
+    <div class="wrap">
+      <p class="eyebrow">Our approach</p>
+      <h2 class="section-title">A whole-person view<br>of <em>health.</em></h2>
+      <p class="lead lead-center">Rather than looking at one symptom in isolation, the assessment considers the wider context of your health, nutrition, sleep, stress, hormones, gut health, medications and lifestyle.</p>
+      <div class="philosophy-grid">
+        <div class="philosophy-card">
+          <div class="philosophy-icon">✦</div>
+          <h3>Listen first</h3>
+          <p>Your story matters. Every consultation starts with understanding your experience, not rushing to a diagnosis.</p>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-icon">✦</div>
+          <h3>Consider the whole</h3>
+          <p>Symptoms rarely exist in isolation. We explore how different areas of your health may be connected.</p>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-icon">✦</div>
+          <h3>Practical next steps</h3>
+          <p>Clear, personalized recommendations based on clinical need, not assumptions or unnecessary testing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-section">
+    <div class="wrap">
+      <h2 class="section-title">Understanding your body<br>is the first step to <em>change.</em></h2>
+      <p class="lead lead-center" style="color:rgba(255,255,255,.5);margin-top:20px">When you know what's driving your symptoms, you can make choices that actually move you forward.</p>
+    </div>
+  </section>
+
+  <!-- Doctor -->
+  <section class="section doctor-section" id="doctor">
+    <div class="wrap">
+      <div class="doctor-inner">
+        <div class="doctor-portrait">
+          <div>
+            <strong>FA</strong>
+            <p>Dr. Fouzia Al Ali</p>
+            <small style="opacity:.6;font-size:12px;display:block;margin-top:4px">Consultant Family Physician</small>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow" style="text-align:left">Meet Dr. Fouzia</p>
+          <h2 class="section-title" style="text-align:left;margin:14px 0 20px">Care shaped by<br>experience, &amp; by <em>listening.</em></h2>
+          <p class="lead">Dr. Fouzia Al Ali is a Consultant Family Physician with more than 26 years of experience in primary healthcare. Her approach brings together medical knowledge, evidence-based care, lifestyle medicine, behavioral change and personalized health planning.</p>
+          <p class="lead" style="margin-top:14px">Her work spans Functional Medicine, lifestyle medicine, CBT, women's health, healthy aging and aesthetic medicine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey -->
+  <section class="section journey-section" id="journey">
+    <div class="wrap">
+      <p class="eyebrow">How we move forward</p>
+      <h2 class="section-title">From conversation to<br><em>considered</em> next steps.</h2>
+      <div class="journey-steps">
+        <div class="journey-step">
+          <div class="step-num">01</div>
+          <h3>Tell your story</h3>
+          <p>Share your concerns, health history, lifestyle and what matters to you.</p>
+        </div>
+        <div class="journey-step">
+          <div class="step-num">02</div>
+          <h3>Explore the picture</h3>
+          <p>Review relevant factors and consider investigations based on clinical need.</p>
+        </div>
+        <div class="journey-step">
+          <div class="step-num">03</div>
+          <h3>Plan next steps</h3>
+          <p>Discuss practical recommendations and follow-up appropriate to your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section class="section instagram-section">
+    <div class="wrap" style="text-align:center">
+      <p class="eyebrow">From Instagram</p>
+      <h2 class="section-title">Health information,<br>made <em>understandable.</em></h2>
+      <p class="lead lead-center">Educational posts on symptoms, lifestyle and the questions that can help you understand your health.</p>
+      <div class="socials">
+        <img src="assets/instagram-post-tests.png" alt="Health education post">
+        <img src="assets/instagram-post-smoking.png" alt="Health education post">
+        <img src="assets/instagram-post-mitochondria.png" alt="Health education post">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="wrap">
+      <div class="contactbox">
+        <p class="eyebrow">Your next step</p>
+        <h2 class="section-title" style="font-size:clamp(30px,4vw,48px)">A conversation is a<br>place to <em>begin.</em></h2>
+        <p class="lead lead-center">If you would like to learn more about Dr. Fouzia's approach, get in touch to discuss the next step.</p>
+        <div class="actions">
+          <button class="btn btn-primary" onclick="contact()">
+            Contact the clinic
+            <span class="arrow-circle"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </button>
+        </div>
+        <p id="contact-note" class="note"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <b>DR. FOUZIA AL ALI</b>
+  <span>Functional Medicine · Lifestyle Medicine · CBT · Aesthetic Medicine</span>
+  <span>Homepage concept · Content subject to clinical and client review</span>
+</footer>
+
+<dialog id="modal">
+  <button class="close" onclick="this.closest('dialog').close()">×</button>
+  <p class="eyebrow">Service overview</p>
+  <h2 id="modal-title" style="font-size:26px;font-weight:500;letter-spacing:-.02em;margin:12px 0"></h2>
+  <p id="modal-copy" style="color:var(--muted);line-height:1.7;margin-top:10px"></p>
+  <p class="note">Service information is an initial summary. Confirm details before publication.</p>
+</dialog>
+
+<script>
+const services=[
+  ['Functional Medicine','A broader look at symptoms, lifestyle, nutrition, sleep, stress, hormones, gut health, medications and medical history.'],
+  ['Women\'s Hormone, Stress & Lifestyle','Personalized support across hormonal changes, stress, sleep, mood and everyday habits.'],
+  ['Gut–Brain Health','Explore digestive concerns alongside stress, sleep, mood and lifestyle factors.'],
+  ['Stress, Sleep & Energy Reset','Support for persistent stress, poor sleep, fatigue, mental overload and reduced energy.'],
+  ['Weight, Metabolic Health & Mindset','Nutrition, metabolic health strategies, lifestyle medicine and behavior-change support.'],
+  ['Healthy Aging / Biological Age Reset','A personalized focus on nutrition, movement, muscle health, sleep, stress and cognitive wellbeing.'],
+  ['CBT','Structured, practical therapy for eligible Arabic-speaking female clients; eligibility to be confirmed.'],
+  ['Inside-Out Skin & Wellness','Explore nutritional, hormonal, metabolic, sleep, stress and lifestyle factors related to skin and hair concerns.']
+];
+
+function openService(i){
+  document.querySelector('#modal-title').textContent=services[i][0];
+  document.querySelector('#modal-copy').textContent=services[i][1];
+  document.querySelector('#modal').showModal();
+}
+
+function contact(){
+  document.querySelector('#contact-note').textContent='This concept uses a demonstration contact action. Add the clinic\'s approved booking link and contact details before launch.';
+}
+
+function toggleLang(){
+  document.querySelector('#lang-note').hidden=false;
+}
+
+function scrollServices(dir){
+  var el=document.querySelector('.services-scroll');
+  el.scrollBy({left:dir*324,behavior:'smooth'});
+}
+</script>
+</body>
+</html>

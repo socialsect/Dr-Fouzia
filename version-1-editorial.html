@@ -1,0 +1,1304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dr. Fouzia Al Ali, Homepage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── Ekya-exact replica · Dr. Fouzia brand ── */
+:root {
+  --ink: #1A1A1A;
+  --ink-soft: #3D3A36;
+  --muted: #8A847C;
+  --cream: #FBF7F1;
+  --cream-deep: #F4ECE0;
+  --line: #E8DFD2;
+  --blue: #2F91BC;
+  --teal: #5DBBA8;
+  --teal-deep: #3F9FBE;
+  --teal-ink: #1F4E79;
+  --orange: #F39034;
+  --green: #2BA868;
+  --whatsapp: #25D366;
+  --gradient-brand: linear-gradient(135deg, #2F91BC, #3F9FBE 45%, #5DBBA8);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow: 0 30px 80px -30px rgba(20,30,80,.12);
+  --shadow-lg: 0 40px 100px -25px rgba(20,30,80,.18);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; overflow-x: clip; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font: 16px/1.65 var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+
+/* ── Nav ── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--line);
+  background: rgba(251,247,241,.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--ink);
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--blue);
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-links a {
+  padding: 10px 14px;
+  border-radius: 100px;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  transition: background .2s, color .2s;
+}
+.nav-links a:hover { background: var(--cream-deep); color: var(--ink); }
+.nav-links a.active { background: var(--cream-deep); color: var(--ink); }
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0;
+  transition: all .2s;
+}
+.nav-cta:hover { background: var(--teal-ink); transform: translateY(-1px); }
+
+.nav-cta .pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% { box-shadow: 0 0 0 0 rgba(43,168,104,.6); }
+  70% { box-shadow: 0 0 0 8px rgba(43,168,104,0); }
+  100% { box-shadow: 0 0 0 0 rgba(43,168,104,0); }
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 64px 0 112px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  right: -200px;
+  top: -200px;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(93,187,168,.14), transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  left: -150px;
+  bottom: -150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(47,145,188,.1), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 70px;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--teal-deep);
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  height: 1.5px;
+  width: 28px;
+  background: var(--teal-deep);
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 6.2vw, 78px);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.035em;
+  color: var(--ink);
+  margin-bottom: 28px;
+  font-variation-settings: "opsz" 144;
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  background: var(--gradient-brand);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero-desc {
+  max-width: 540px;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin-bottom: 36px;
+}
+
+.hero-desc strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  padding: 16px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn-ink {
+  background: var(--ink);
+  color: var(--cream);
+}
+.btn-ink:hover {
+  background: var(--teal-ink);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -8px rgba(31,78,121,.4);
+}
+
+.btn-wa {
+  background: var(--whatsapp);
+  color: white;
+}
+.btn-wa:hover {
+  background: #1FB055;
+  transform: translateY(-2px);
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: white;
+}
+.btn-blue:hover { background: #247A9E; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+}
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Hero stats */
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
+
+.hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: var(--ink);
+}
+
+.hero-stat-num em {
+  font-style: italic;
+  background: var(--gradient-brand);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero-stat-label {
+  max-width: 110px;
+  font-size: 13px;
+  line-height: 1.3;
+  color: var(--muted);
+}
+
+.hero-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Hero card (right column) */
+.hero-card {
+  position: relative;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 36px;
+  box-shadow: var(--shadow-lg);
+  transform: rotate(2deg);
+  transition: transform .5s;
+}
+
+.hero-card:hover { transform: rotate(0); }
+
+.hero-card-badge {
+  position: absolute;
+  top: -16px;
+  right: 24px;
+  transform: rotate(4deg);
+  background: var(--orange);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+.hero-card-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.hero-card h3 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  margin-bottom: 24px;
+}
+
+.hero-card-list {
+  list-style: none;
+}
+
+.hero-card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+
+.hero-card-list li:last-child { border-bottom: 0; }
+
+.hero-card-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--cream-deep);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.hero-card-list strong { font-weight: 700; }
+
+.hero-card-list .arrow {
+  color: var(--teal-deep);
+  margin: 0 4px;
+}
+
+.hero-card-list .desc {
+  color: var(--ink-soft);
+}
+
+/* ── Ticker ── */
+.ticker {
+  background: var(--ink);
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 40s linear infinite;
+}
+.ticker-track:hover { animation-play-state: paused; }
+
+.ticker-item {
+  flex-shrink: 0;
+  padding: 0 30px;
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 500;
+  letter-spacing: -.01em;
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  white-space: nowrap;
+}
+
+.ticker-item em {
+  font-style: italic;
+  color: #B7AFB5;
+}
+
+.ticker-item::after {
+  content: '\2726';
+  font-family: var(--font-sans);
+  font-size: 18px;
+  color: var(--orange);
+  flex-shrink: 0;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Sections ── */
+.section { padding: 120px 5.5%; }
+.section-cream { background: var(--cream); }
+.section-deep { background: var(--cream-deep); }
+.section-dark { background: var(--ink); color: var(--cream); }
+
+.wrap { max-width: 1200px; margin: auto; }
+
+/* Eyebrow */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: var(--muted);
+}
+
+.eyebrow::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 32px;
+  background: var(--ink);
+}
+
+.section-dark .eyebrow { color: rgba(255,255,255,.4); }
+.section-dark .eyebrow::before { background: rgba(255,255,255,.3); }
+
+/* Section title */
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -.03em;
+  color: var(--ink);
+  font-variation-settings: "opsz" 72;
+}
+
+.section-title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-title .brand-em {
+  background: var(--gradient-brand);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-dark .section-title { color: var(--cream); }
+.section-dark .section-title em { color: rgba(255,255,255,.5); }
+
+/* ── Services ── */
+.services-deco {
+  position: absolute;
+  right: -60px;
+  top: 60px;
+  font-family: var(--font-display);
+  font-size: 280px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: .8;
+  color: rgba(26,26,26,.04);
+  pointer-events: none;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: white;
+  padding: 36px;
+  transition: all .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.service-card-num {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -.02em;
+  color: var(--teal-deep);
+}
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  line-height: 1.2;
+}
+
+.service-card p {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.service-tag {
+  border-radius: 100px;
+  background: var(--cream-deep);
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.service-card-cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--teal-ink);
+}
+
+.service-card-cta span {
+  transition: transform .2s;
+}
+.service-card:hover .service-card-cta span {
+  transform: translateX(4px);
+}
+
+/* ── Doctor ── */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: .45fr .55fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.doctor-quote {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -.02em;
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+
+.doctor-quote em {
+  font-style: italic;
+  color: var(--teal-deep);
+}
+
+.quote-mark {
+  font-family: var(--font-display);
+  font-size: 80px;
+  line-height: 1;
+  color: var(--cream-deep);
+  margin-bottom: -10px;
+  display: block;
+}
+
+.doctor-attribution {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.doctor-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.doctor-name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.doctor-title {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.doctor-bio {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+
+.doctor-portrait {
+  aspect-ratio: 3/4;
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, #C8E4F0, #8CBED4);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+}
+
+.doctor-portrait strong {
+  font-family: var(--font-display);
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.doctor-portrait p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+  opacity: .9;
+}
+
+/* ── Process ── */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.process-step {
+  padding: 36px 24px;
+  border-right: 1px solid var(--line);
+}
+.process-step:last-child { border-right: 0; }
+
+.process-num {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.process-step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.process-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.process-step strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ── Why ── */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.why-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 28px 24px;
+}
+
+.why-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+/* ── Instagram ── */
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.insta-card {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  background: var(--cream-deep);
+  position: relative;
+  transition: transform .3s;
+}
+
+.insta-card:hover { transform: scale(1.02); }
+
+.insta-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--teal-ink);
+  transition: gap .2s;
+}
+.link-arrow:hover { gap: 10px; }
+
+/* ── CTA ── */
+.cta-box {
+  max-width: 880px;
+  margin: auto;
+  background: var(--blue-light, #E1F2FD);
+  border-radius: var(--radius);
+  padding: clamp(40px, 7vw, 80px);
+  text-align: center;
+}
+
+.cta-box .section-title { max-width: 600px; margin: 0 auto 16px; }
+
+.cta-desc {
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,.4);
+  padding: 80px 5.5% 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-brand {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-desc {
+  font-size: 13px;
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+.footer-col h5 {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  margin-bottom: 14px;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 13px;
+  padding: 3px 0;
+  transition: color .2s;
+}
+.footer-col a:hover { color: white; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  font-size: 11px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ── Dialog ── */
+dialog {
+  border: 0;
+  border-radius: var(--radius);
+  max-width: 480px;
+  padding: 32px;
+  color: var(--ink);
+  background: white;
+  box-shadow: 0 24px 60px rgba(0,0,0,.12);
+}
+dialog::backdrop { background: rgba(0,0,0,.2); }
+
+.close {
+  float: right;
+  border: 0;
+  background: var(--cream-deep);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+}
+
+.note { font-size: 11px; color: var(--muted); margin-top: 12px; }
+
+.lang-note {
+  background: #FFF8E1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  margin: 10px 5.5%;
+  border: 1px solid #F0DFA0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero { padding: 48px 0 80px; }
+  .hero-card { transform: none; max-width: 400px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .doctor-grid { grid-template-columns: 1fr; }
+  .doctor-portrait { max-width: 300px; margin: 0 auto; }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-step { border-right: 0; border-bottom: 1px solid var(--line); }
+  .process-step:last-child { border-bottom: 0; }
+  .why-grid { grid-template-columns: 1fr; }
+  .insta-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .section { padding: 80px 5.5%; }
+  .services-deco { display: none; }
+}
+
+@media (max-width: 430px) {
+  .hero h1 { font-size: 36px; }
+  .insta-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-stats { gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-icon">FA</span>
+      DR. FOUZIA AL ALI
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctor">Meet Dr. Fouzia</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/" target="_blank">
+      <span class="pulse"></span>
+      Book on WhatsApp
+    </a>
+  </div>
+</nav>
+
+<div id="lang-note" class="lang-note" hidden>Arabic layout and reviewed Arabic copy are to be completed after client approval.</div>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">Holistic health · Functional medicine · Dubai</div>
+      <h1>Symptoms don't exist<br>in <em>isolation.</em><br>Neither should your care.</h1>
+      <p class="hero-desc">Dr. Fouzia looks at the full picture, your history, lifestyle, nutrition, sleep, stress and hormones, to understand what's really going on. <strong>26 years of clinical experience</strong> shaped by curiosity, not shortcuts.</p>
+      <div class="hero-actions">
+        <a class="btn btn-ink" href="#contact">Book free consult →</a>
+        <a class="btn btn-wa" href="https://wa.me/" target="_blank">WhatsApp us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num"><em>1500+</em></div>
+          <div class="hero-stat-label">Patients treated</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">26 yrs</div>
+          <div class="hero-stat-label">Clinical experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">1:1</div>
+          <div class="hero-stat-label">Personalized care</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-badge">Start here</div>
+      <div class="hero-card-eyebrow">What Dr. Fouzia covers</div>
+      <h3>Eight services, one philosophy</h3>
+      <ul class="hero-card-list">
+        <li>
+          <span class="hero-card-num">1</span>
+          <div><strong>Functional Medicine</strong> <span class="arrow">→</span> <span class="desc">root-cause assessment</span></div>
+        </li>
+        <li>
+          <span class="hero-card-num">2</span>
+          <div><strong>Women's Hormones &amp; Stress</strong> <span class="arrow">→</span> <span class="desc">cycles, mood, sleep</span></div>
+        </li>
+        <li>
+          <span class="hero-card-num">3</span>
+          <div><strong>Gut–Brain Health</strong> <span class="arrow">→</span> <span class="desc">digestion, clarity, energy</span></div>
+        </li>
+        <li>
+          <span class="hero-card-num">4</span>
+          <div><strong>Metabolic &amp; Weight</strong> <span class="arrow">→</span> <span class="desc">nutrition, lifestyle, habits</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">Hormonal changes</span>
+    <span class="ticker-item"><em>Gut &amp; digestive health</em></span>
+    <span class="ticker-item">Stress &amp; sleep</span>
+    <span class="ticker-item"><em>Fatigue &amp; brain fog</em></span>
+    <span class="ticker-item">Metabolic health</span>
+    <span class="ticker-item"><em>Healthy aging</em></span>
+    <span class="ticker-item">Weight management</span>
+    <span class="ticker-item"><em>Skin &amp; hair wellness</em></span>
+    <span class="ticker-item">Women's health</span>
+    <span class="ticker-item"><em>Energy &amp; vitality</em></span>
+    <span class="ticker-item">Emotional wellbeing</span>
+    <span class="ticker-item"><em>Mental clarity</em></span>
+    <span class="ticker-item">Hormonal changes</span>
+    <span class="ticker-item"><em>Gut &amp; digestive health</em></span>
+    <span class="ticker-item">Stress &amp; sleep</span>
+    <span class="ticker-item"><em>Fatigue &amp; brain fog</em></span>
+    <span class="ticker-item">Metabolic health</span>
+    <span class="ticker-item"><em>Healthy aging</em></span>
+    <span class="ticker-item">Weight management</span>
+    <span class="ticker-item"><em>Skin &amp; hair wellness</em></span>
+    <span class="ticker-item">Women's health</span>
+    <span class="ticker-item"><em>Energy &amp; vitality</em></span>
+    <span class="ticker-item">Emotional wellbeing</span>
+    <span class="ticker-item"><em>Mental clarity</em></span>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="section section-deep" id="services" style="position:relative">
+  <div class="services-deco">CARE</div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="eyebrow">Services</div>
+    <h2 class="section-title">Where would you like<br>to <span class="brand-em">begin?</span></h2>
+    <p style="font-size:15px;color:var(--ink-soft);max-width:500px;margin-top:10px">Each service is a full clinical approach, not a quick fix. Choose an area to learn how Dr. Fouzia works through it.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-card-num">01 / Women's hormones</span>
+        <h3>Hormone, Stress &amp; Lifestyle</h3>
+        <p>A comprehensive look at how hormones, stress, sleep, nutrition and daily habits interact. Dr. Fouzia maps the connections between these factors to build a clearer clinical picture.</p>
+        <div class="service-tags">
+          <span class="service-tag">Irregular cycles</span>
+          <span class="service-tag">Menopause</span>
+          <span class="service-tag">Mood swings</span>
+          <span class="service-tag">Stress</span>
+        </div>
+        <a class="service-card-cta" href="#contact">See protocol <span>→</span></a>
+      </div>
+      <div class="service-card">
+        <span class="service-card-num">02 / Gut–brain</span>
+        <h3>Gut–Brain Connection</h3>
+        <p>Digestive concerns often sit alongside stress, poor sleep and mood changes. Dr. Fouzia explores these connections to understand the full picture.</p>
+        <div class="service-tags">
+          <span class="service-tag">Bloating</span>
+          <span class="service-tag">IBS</span>
+          <span class="service-tag">Brain fog</span>
+          <span class="service-tag">Sleep</span>
+        </div>
+        <a class="service-card-cta" href="#contact">See protocol <span>→</span></a>
+      </div>
+      <div class="service-card">
+        <span class="service-card-num">03 / Metabolic</span>
+        <h3>Weight, Metabolism &amp; Mindset</h3>
+        <p>Metabolic health isn't just about weight. Dr. Fouzia looks at nutrition, insulin, thyroid function, sleep quality and behavioral patterns together.</p>
+        <div class="service-tags">
+          <span class="service-tag">Weight</span>
+          <span class="service-tag">Insulin resistance</span>
+          <span class="service-tag">Fatigue</span>
+          <span class="service-tag">Thyroid</span>
+        </div>
+        <a class="service-card-cta" href="#contact">See protocol <span>→</span></a>
+      </div>
+      <div class="service-card">
+        <span class="service-card-num">04 / Healthy aging</span>
+        <h3>Aging, Skin &amp; Emotional Health</h3>
+        <p>Healthy aging involves nutrition, movement, muscle health, sleep and cognitive wellbeing. CBT is also available for eligible clients.</p>
+        <div class="service-tags">
+          <span class="service-tag">Aging</span>
+          <span class="service-tag">Skin &amp; hair</span>
+          <span class="service-tag">CBT</span>
+          <span class="service-tag">Wellbeing</span>
+        </div>
+        <a class="service-card-cta" href="#contact">See protocol <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Doctor -->
+<section class="section section-cream" id="doctor">
+  <div class="wrap">
+    <div class="doctor-grid">
+      <div>
+        <span class="quote-mark">"</span>
+        <p class="doctor-quote">Every person has a story that explains their health. I <em>listen</em> to that story before I treat anything.</p>
+        <div class="doctor-attribution">
+          <div class="doctor-avatar">FA</div>
+          <div>
+            <div class="doctor-name">Dr. Fouzia Al Ali</div>
+            <div class="doctor-title">Consultant Family Physician</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+          <span style="font-size:12px;padding:6px 14px;border-radius:100px;border:1px solid var(--line);color:var(--muted);font-weight:500">Functional Medicine</span>
+          <span style="font-size:12px;padding:6px 14px;border-radius:100px;border:1px solid var(--line);color:var(--muted);font-weight:500">Lifestyle Medicine</span>
+          <span style="font-size:12px;padding:6px 14px;border-radius:100px;border:1px solid var(--line);color:var(--muted);font-weight:500">CBT</span>
+        </div>
+        <p class="doctor-bio">Dr. Fouzia brings together medical knowledge, evidence-based care, lifestyle medicine and behavioral change. Her approach is shaped by one belief: that understanding the whole person leads to better outcomes than treating symptoms alone.</p>
+        <p class="doctor-bio">With more than 26 years in primary healthcare, she works with patients dealing with hormonal imbalances, digestive concerns, metabolic challenges, stress-related conditions and the complexities of healthy aging.</p>
+        <a class="link-arrow" href="#contact" style="margin-top:20px">Read her story →</a>
+      </div>
+      <div class="doctor-portrait">
+        <div>
+          <strong>FA</strong>
+          <p>Dr. Fouzia Al Ali</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section section-cream" id="journey">
+  <div class="wrap">
+    <div class="eyebrow">Our process</div>
+    <h2 class="section-title">Your journey, <em>step by step.</em></h2>
+    <p style="font-size:15px;color:var(--ink-soft);max-width:520px;margin-top:10px">No rushed appointments. No unnecessary tests. Just a clear path from conversation to action.</p>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <h3>Consultation</h3>
+        <p class="process-meta">30–45 min · In-clinic or online</p>
+        <p>A unhurried conversation about your <strong>health history, symptoms, lifestyle and goals</strong>. Dr. Fouzia reviews what you've tried, what's worked, and what hasn't, before suggesting anything.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <h3>Personalized plan</h3>
+        <p class="process-meta">Built around your life</p>
+        <p>A <strong>clinical protocol designed for you</strong>, nutrition, movement, sleep, stress management, and medical support where needed. Practical enough to fit your actual routine.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <h3>Ongoing support</h3>
+        <p class="process-meta">Follow-up as needed</p>
+        <p>We <strong>adapt as you progress</strong>. Your plan evolves based on how your body responds, because no two people follow the same path.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why -->
+<section class="section section-deep">
+  <div class="wrap">
+    <div class="eyebrow">Why Dr. Fouzia</div>
+    <h2 class="section-title">Why patients choose <em>this approach.</em></h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <h4>Holistic, not piecemeal</h4>
+        <p>We treat the system, not the symptom. Gut, hormones, sleep, stress, all in sequence.</p>
+      </div>
+      <div class="why-card">
+        <h4>1:1 personalized</h4>
+        <p>No templates. Every protocol is built for one person's biology, history and life.</p>
+      </div>
+      <div class="why-card">
+        <h4>Backed by science</h4>
+        <p>Evidence-based medicine combined with lifestyle, behavioral change and clinical nutrition.</p>
+      </div>
+      <div class="why-card">
+        <h4>Continuity of care</h4>
+        <p>Weekly check-ins keep your plan moving as your body responds and changes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram -->
+<section class="section section-cream">
+  <div class="wrap">
+    <div class="eyebrow">@drfouziaalali</div>
+    <h2 class="section-title">Learn more on <em>Instagram.</em></h2>
+    <p style="font-size:15px;color:var(--ink-soft);margin-top:8px">Health education, symptom breakdowns and practical insights from the clinic. Follow along.</p>
+    <div class="insta-grid">
+      <div class="insta-card"><img src="assets/instagram-post-tests.png" alt="Health education post"></div>
+      <div class="insta-card"><img src="assets/instagram-post-smoking.png" alt="Health education post"></div>
+      <div class="insta-card"><img src="assets/instagram-post-mitochondria.png" alt="Health education post"></div>
+    </div>
+    <div style="margin-top:24px">
+      <a class="link-arrow" href="https://instagram.com/" target="_blank">Follow @drfouziaalali →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" id="contact" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="cta-box" style="background:var(--cream-deep)">
+      <div class="eyebrow" style="justify-content:center">Get in touch</div>
+      <h2 class="section-title">Ready to understand<br>your health <em>better?</em></h2>
+      <p class="cta-desc">Book a consultation with Dr. Fouzia to explore what's happening in your body, and what practical steps might help.</p>
+      <div class="cta-actions">
+        <a class="btn btn-ink" href="#contact">Book free consult →</a>
+        <a class="btn btn-wa" href="https://wa.me/" target="_blank">WhatsApp us</a>
+      </div>
+      <p id="contact-note" class="note" style="margin-top:16px"></p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-icon" style="width:28px;height:28px;font-size:12px">FA</span>
+          DR. FOUZIA AL ALI
+        </div>
+        <p class="footer-desc">Holistic, root-cause care for health and wellbeing. Led by Dr. Fouzia Al Ali, Consultant Family Physician. Dubai, UAE.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Visit</h5>
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#doctor">Meet Dr. Fouzia</a>
+        <a href="#journey">Your journey</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="https://wa.me/" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/" target="_blank">@drfouziaalali</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Treats</h5>
+        <a href="#services">Functional Medicine</a>
+        <a href="#services">Hormones &amp; Lifestyle</a>
+        <a href="#services">Gut–Brain Health</a>
+        <a href="#services">Metabolic Health</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dr. Fouzia Al Ali. All rights reserved.</span>
+      <span>Information here is educational. Always consult a qualified clinician for medical advice.</span>
+    </div>
+  </div>
+</footer>
+
+<dialog id="modal">
+  <button class="close" onclick="this.closest('dialog').close()">×</button>
+  <p class="eyebrow">Service overview</p>
+  <h2 id="modal-title" style="font-family:var(--font-display);font-size:24px;font-weight:500;letter-spacing:-.02em;margin:12px 0"></h2>
+  <p id="modal-copy" style="color:var(--ink-soft);line-height:1.7;margin-top:10px"></p>
+  <p class="note">Service information is an initial summary. Confirm details before publication.</p>
+</dialog>
+
+<script>
+function contact(){
+  document.querySelector('#contact-note').textContent='This concept uses a demonstration contact action. Add the clinic\'s approved booking link and contact details before launch.';
+}
+</script>
+</body>
+</html>
