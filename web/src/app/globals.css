@@ -1,0 +1,333 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════
+   DR. FOUZIA AL ALI — Design System Tokens
+   Aesthetic: Warm Editorial + Soft Utility
+   Scale: 1.333 (Perfect Fourth)
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── TYPE — 1.333 perfect fourth ── */
+  --font-display: var(--font-dm-serif), Georgia, serif;
+  --font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  --step--1: 0.75rem;    /* 12px — labels, metadata */
+  --step-0: 1rem;        /* 16px — body */
+  --step-1: 1.25rem;     /* 20px — small headings */
+  --step-2: 1.563rem;    /* 25px — h3 */
+  --step-3: 2.041rem;    /* 33px — h2 mobile */
+  --step-4: 2.721rem;    /* 43px — h2 desktop */
+  --step-5: 3.627rem;    /* 58px — h1 mobile */
+  --step-6: 4.836rem;    /* 77px — h1 desktop */
+
+  /* ── SPACE — 4px base, consistent multiples ── */
+  --space-3xs: 0.25rem;  /* 4px */
+  --space-2xs: 0.5rem;   /* 8px */
+  --space-xs: 0.75rem;   /* 12px */
+  --space-s: 1rem;       /* 16px */
+  --space-m: 1.5rem;     /* 24px */
+  --space-l: 2rem;       /* 32px */
+  --space-xl: 3rem;      /* 48px */
+  --space-2xl: 4rem;     /* 64px */
+  --space-3xl: 6rem;     /* 96px */
+  --space-4xl: 8rem;     /* 128px */
+
+  /* ── COLOR — Dr. Fouzia's brand ── */
+  --base: #FFFFFF;       /* page background */
+  --surface: #F0F8FE;    /* raised surfaces, sectionalternates */
+  --surface-deep: #E1F2FD; /* deeper accents */
+  --ink: #0E2A3A;        /* primary text — very dark blue, not black */
+  --ink-2: #3A5A6E;      /* secondary text */
+  --ink-3: #5A7A8E;      /* tertiary / meta — passes 4.5:1 on white */
+  --line: #D0E4EE;       /* borders */
+  --line-light: #E5F0F6; /* subtle dividers */
+  --accent: #2F91BC;     /* brand blue — links, CTAs, active states */
+  --accent-deep: #1B6A90; /* hover state */
+  --teal: #5DBBA8;       /* gradient end — used sparingly */
+
+  /* ── FORM ── */
+  --radius: 12px;        /* one value everywhere */
+  --radius-full: 9999px; /* pills only */
+  --border: 1px solid var(--line);
+
+  /* ── MOTION ── */
+  --dur-fast: 120ms;
+  --dur: 220ms;
+  --dur-slow: 420ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-background: var(--base);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+
+  --color-sky: var(--surface-deep);
+  --color-sky-light: var(--surface);
+  --color-blue: var(--accent);
+  --color-blue-deep: var(--accent-deep);
+  --color-teal: var(--teal);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-2);
+  --color-ink-muted: var(--ink-3);
+  --color-muted: var(--ink-3);
+  --color-muted-light: #7A9AAC;
+  --color-line: var(--line);
+  --color-line-light: var(--line-light);
+  --color-line-dark: #B7DDED;
+  --color-white: var(--base);
+  --color-surface-sky: var(--surface);
+  --color-surface-deep: var(--surface-deep);
+
+  /* Shadows */
+  --shadow-near: 0 1px 3px rgba(14, 42, 58, 0.04);
+  --shadow-far: 0 8px 24px rgba(14, 42, 58, 0.06);
+  --shadow-blue: 0 8px 24px rgba(47, 145, 188, 0.15);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BASE
+   ═══════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--base);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LAYOUT
+   ═══════════════════════════════════════════════════════════ */
+
+.wrap {
+  width: min(1200px, 88%);
+  margin: 0 auto;
+}
+
+.wrap-narrow {
+  width: min(900px, 88%);
+  margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TYPE
+   ═══════════════════════════════════════════════════════════ */
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   EYEBROW
+   ═══════════════════════════════════════════════════════════ */
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: var(--step--1);
+  color: var(--accent);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1.5px;
+  background: var(--accent);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BUTTONS — all 5 states
+   ═══════════════════════════════════════════════════════════ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  border: 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--dur) var(--ease-out);
+  text-decoration: none;
+  font-family: var(--font-body);
+  outline: none;
+}
+
+/* Rest + Hover + Active + Focus + Disabled */
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-deep);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-blue);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-ghost:active {
+  background: var(--surface);
+}
+
+.btn-ghost:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn-ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-white {
+  background: var(--base);
+  color: var(--accent);
+}
+
+.btn-white:hover {
+  background: var(--surface);
+  transform: translateY(-1px);
+}
+
+.btn-white:active {
+  transform: translateY(0);
+}
+
+.btn-white:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SCROLLBAR
+   ═══════════════════════════════════════════════════════════ */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 2px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TICKER
+   ═══════════════════════════════════════════════════════════ */
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 40s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MENU
+   ═══════════════════════════════════════════════════════════ */
+
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.menu-backdrop[data-open="true"] {
+  pointer-events: auto;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════════════════════ */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
