@@ -6,24 +6,11 @@ import { useState, useEffect, useCallback } from "react";
 const mainNav = [
   { label: "Home", href: "/" },
   { label: "About Dr. Fouzia", href: "/about-dr-fouzia" },
-  { label: "Services", href: "/services", hasSubmenu: true },
+  { label: "Services", href: "/services" },
   { label: "Programs", href: "/integrated-functional-medicine-cbt" },
   { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
   { label: "CBT", href: "/cbt" },
   { label: "Contact", href: "/contact" },
-];
-
-const servicesSubmenu = [
-  { label: "Functional Medicine", href: "/functional-medicine" },
-  { label: "Women's Hormonal Health", href: "/womens-hormonal-health" },
-  { label: "Gut & Digestive Health", href: "/gut-digestive-health" },
-  { label: "Stress, Sleep & Energy", href: "/stress-sleep-nervous-system-health" },
-  { label: "Metabolic Health", href: "/metabolic-health-weight-management" },
-  { label: "Healthy Aging", href: "/healthy-aging-longevity" },
-  { label: "Skin & Hair Health", href: "/skin-hair-health" },
-  { label: "CBT", href: "/cbt" },
-  { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
-  { label: "All Services →", href: "/services" },
 ];
 
 const concerns = [
@@ -39,38 +26,29 @@ const concerns = [
 export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuReady, setMenuReady] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
 
   const openMenu = useCallback(() => {
     setMenuOpen(true);
     document.body.style.overflow = "hidden";
+    // Small delay so the enter animation triggers after mount
     requestAnimationFrame(() => setMenuReady(true));
   }, []);
 
   const closeMenu = useCallback(() => {
     setMenuReady(false);
-    setServicesOpen(false);
     document.body.style.overflow = "";
+    // Wait for exit animation then unmount
     setTimeout(() => setMenuOpen(false), 400);
   }, []);
 
-  const toggleServices = useCallback(() => {
-    setServicesOpen((prev) => !prev);
-  }, []);
-
+  // Close on escape
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape") {
-        if (servicesOpen) {
-          setServicesOpen(false);
-        } else if (menuReady) {
-          closeMenu();
-        }
-      }
+      if (e.key === "Escape" && menuReady) closeMenu();
     }
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
-  }, [menuReady, closeMenu, servicesOpen]);
+  }, [menuReady, closeMenu]);
 
   return (
     <>
@@ -167,86 +145,24 @@ export function Navigation() {
                   </div>
                   <nav className="flex flex-col">
                     {mainNav.map((item, i) => (
-                      <div key={item.label}>
-                        {item.hasSubmenu ? (
-                          <>
-                            <button
-                              onClick={toggleServices}
-                              className={`group flex w-full items-center justify-between border-b border-line-light py-4 text-left font-normal tracking-[-0.02em] text-ink transition-all duration-500 hover:text-blue ${
-                                menuReady
-                                  ? "opacity-100 translate-y-0"
-                                  : "opacity-0 translate-y-4"
-                              }`}
-                              style={{ fontSize: "clamp(var(--step-1), 3.5vw, var(--step-2))", transitionDelay: menuReady ? `${120 + i * 40}ms` : "0ms" }}
-                            >
-                              <span className="inline-flex items-baseline gap-4">
-                                <span className="text-[12px] font-medium text-muted transition-colors group-hover:text-blue">
-                                  {String(i + 1).padStart(2, "0")}
-                                </span>
-                                {item.label}
-                              </span>
-                              <svg
-                                width="14"
-                                height="14"
-                                viewBox="0 0 14 14"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className={`text-muted transition-transform duration-300 ${
-                                  servicesOpen ? "rotate-180" : ""
-                                }`}
-                              >
-                                <path d="M3 5l4 4 4-4" />
-                              </svg>
-                            </button>
-
-                            {/* Services submenu */}
-                            <div
-                              className={`overflow-hidden transition-all duration-400 ${
-                                servicesOpen
-                                  ? "max-h-[500px] opacity-100"
-                                  : "max-h-0 opacity-0"
-                              }`}
-                            >
-                              <div className="pl-8 pb-2 pt-1">
-                                {servicesSubmenu.map((s, j) => (
-                                  <Link
-                                    key={s.href}
-                                    href={s.href}
-                                    onClick={closeMenu}
-                                    className="block py-2 text-[14px] text-ink-soft transition-colors hover:text-blue"
-                                    style={{
-                                      transitionDelay: servicesOpen ? `${j * 30}ms` : "0ms",
-                                    }}
-                                  >
-                                    {s.label}
-                                  </Link>
-                                ))}
-                              </div>
-                            </div>
-                          </>
-                        ) : (
-                          <Link
-                            href={item.href}
-                            onClick={closeMenu}
-                            className={`group border-b border-line-light py-4 font-normal tracking-[-0.02em] text-ink transition-all duration-500 hover:text-blue ${
-                              menuReady
-                                ? "opacity-100 translate-y-0"
-                                : "opacity-0 translate-y-4"
-                            }`}
-                            style={{ fontSize: "clamp(var(--step-1), 3.5vw, var(--step-2))", transitionDelay: menuReady ? `${120 + i * 40}ms` : "0ms" }}
-                          >
-                            <span className="inline-flex items-baseline gap-4">
-                              <span className="text-[12px] font-medium text-muted transition-colors group-hover:text-blue">
-                                {String(i + 1).padStart(2, "0")}
-                              </span>
-                              {item.label}
-                            </span>
-                          </Link>
-                        )}
-                      </div>
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        onClick={closeMenu}
+                        className={`group border-b border-line-light py-4 font-normal tracking-[-0.02em] text-ink transition-all duration-500 hover:text-blue ${
+                          menuReady
+                            ? "opacity-100 translate-y-0"
+                            : "opacity-0 translate-y-4"
+                        }`}
+                        style={{ fontSize: "clamp(var(--step-1), 3.5vw, var(--step-2))", transitionDelay: menuReady ? `${120 + i * 40}ms` : "0ms" }}
+                      >
+                        <span className="inline-flex items-baseline gap-4">
+                          <span className="text-[12px] font-medium text-muted transition-colors group-hover:text-blue">
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
+                          {item.label}
+                        </span>
+                      </Link>
                     ))}
                   </nav>
                 </div>
