@@ -1,16 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 const mainNav = [
   { label: "Home", href: "/" },
   { label: "About Dr. Fouzia", href: "/about-dr-fouzia" },
-  { label: "Services", href: "/services" },
+  { label: "Services", href: "/services", hasDropdown: true },
   { label: "Programs", href: "/integrated-functional-medicine-cbt" },
   { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
   { label: "CBT", href: "/cbt" },
   { label: "Contact", href: "/contact" },
+];
+
+const servicesDropdown = [
+  { label: "Functional Medicine", href: "/functional-medicine" },
+  { label: "Women's Hormonal Health", href: "/womens-hormonal-health" },
+  { label: "Gut & Digestive Health", href: "/gut-digestive-health" },
+  { label: "Stress, Sleep & Energy", href: "/stress-sleep-nervous-system-health" },
+  { label: "Metabolic Health", href: "/metabolic-health-weight-management" },
+  { label: "Healthy Aging", href: "/healthy-aging-longevity" },
+  { label: "Skin & Hair Health", href: "/skin-hair-health" },
+  { label: "CBT", href: "/cbt" },
+  { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
+  { label: "All Services →", href: "/services" },
 ];
 
 const concerns = [
@@ -26,34 +39,44 @@ const concerns = [
 export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuReady, setMenuReady] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
 
   const openMenu = useCallback(() => {
     setMenuOpen(true);
     document.body.style.overflow = "hidden";
-    // Small delay so the enter animation triggers after mount
     requestAnimationFrame(() => setMenuReady(true));
   }, []);
 
   const closeMenu = useCallback(() => {
     setMenuReady(false);
     document.body.style.overflow = "";
-    // Wait for exit animation then unmount
     setTimeout(() => setMenuOpen(false), 400);
   }, []);
 
-  // Close on escape
+  const openDropdown = useCallback(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setDropdownOpen(true);
+  }, []);
+
+  const closeDropdown = useCallback(() => {
+    timeoutRef.current = setTimeout(() => setDropdownOpen(false), 150);
+  }, []);
+
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
       if (e.key === "Escape" && menuReady) closeMenu();
+      if (e.key === "Escape" && dropdownOpen) setDropdownOpen(false);
     }
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
-  }, [menuReady, closeMenu]);
+  }, [menuReady, closeMenu, dropdownOpen]);
 
   return (
     <>
       {/* ── Top bar ── */}
-      <header className="fixed top-0 left-0 right-0 z-50">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg">
         <div className="flex items-center justify-between px-6 py-5 md:px-10 md:py-6">
           {/* Brand */}
           <Link
@@ -63,22 +86,81 @@ export function Navigation() {
             Dr. Fouzia Al Ali
           </Link>
 
-          {/* Menu trigger */}
+          {/* Desktop nav */}
+          <nav className="hidden items-center gap-1 md:flex">
+            {mainNav.map((item) =>
+              item.hasDropdown ? (
+                <div
+                  key={item.label}
+                  ref={dropdownRef}
+                  className="relative"
+                  onMouseEnter={openDropdown}
+                  onMouseLeave={closeDropdown}
+                >
+                  <Link
+                    href={item.href}
+                    className={`flex items-center gap-1 px-4 py-2 text-[13px] font-medium transition-colors ${
+                      dropdownOpen ? "text-blue" : "text-ink-soft hover:text-blue"
+                    }`}
+                  >
+                    {item.label}
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
+                    >
+                      <path d="M2 3.5l3 3 3-3" />
+                    </svg>
+                  </Link>
+
+                  {/* Dropdown */}
+                  <div
+                    className={`absolute left-1/2 top-full -translate-x-1/2 pt-2 transition-all duration-200 ${
+                      dropdownOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
+                    }`}
+                  >
+                    <div className="min-w-[240px] rounded-2xl border border-line bg-white p-3 shadow-[var(--shadow-far)]">
+                      {servicesDropdown.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          className="flex items-center rounded-xl px-4 py-2.5 text-[13px] text-ink-soft transition-colors hover:bg-sky-light hover:text-blue"
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="px-4 py-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-blue"
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
+          </nav>
+
+          {/* Menu trigger (mobile) */}
           <button
             onClick={menuOpen ? closeMenu : openMenu}
-            className="group flex items-center gap-3 text-[11px] font-semibold tracking-[0.08em] uppercase text-ink"
+            className="group flex items-center gap-3 text-[11px] font-semibold tracking-[0.08em] uppercase text-ink md:hidden"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            <span className="hidden md:inline">
-              {menuOpen ? "Close" : "Menu"}
-            </span>
-            {/* Hamburger / Close icon */}
+            <span>{menuOpen ? "Close" : "Menu"}</span>
             <div className="relative h-4 w-5">
               <span
                 className={`absolute left-0 h-[1.5px] bg-ink transition-all duration-300 ${
-                  menuOpen
-                    ? "top-1/2 w-5 -translate-y-1/2 rotate-45"
-                    : "top-0 w-5"
+                  menuOpen ? "top-1/2 w-5 -translate-y-1/2 rotate-45" : "top-0 w-5"
                 }`}
               />
               <span
@@ -88,9 +170,7 @@ export function Navigation() {
               />
               <span
                 className={`absolute left-0 h-[1.5px] bg-ink transition-all duration-300 ${
-                  menuOpen
-                    ? "top-1/2 w-5 -translate-y-1/2 -rotate-45"
-                    : "bottom-0 w-3"
+                  menuOpen ? "top-1/2 w-5 -translate-y-1/2 -rotate-45" : "bottom-0 w-3"
                 }`}
               />
             </div>
@@ -98,13 +178,9 @@ export function Navigation() {
         </div>
       </header>
 
-      {/* ── Full-screen menu ── */}
+      {/* ── Full-screen menu (mobile) ── */}
       {menuOpen && (
-        <div
-          className="menu-backdrop"
-          data-open={menuReady ? "true" : "false"}
-        >
-          {/* Backdrop */}
+        <div className="menu-backdrop" data-open={menuReady ? "true" : "false"}>
           <div
             className={`absolute inset-0 bg-white transition-opacity duration-500 ${
               menuReady ? "opacity-100" : "opacity-0"
@@ -112,15 +188,11 @@ export function Navigation() {
             onClick={closeMenu}
           />
 
-          {/* Panel */}
           <div
             className={`absolute inset-0 overflow-y-auto bg-white transition-all duration-500 ${
-              menuReady
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-4"
+              menuReady ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
             }`}
           >
-            {/* Close button */}
             <button
               onClick={closeMenu}
               aria-label="Close menu"
@@ -132,15 +204,9 @@ export function Navigation() {
             </button>
 
             <div className="wrap flex min-h-screen flex-col justify-between py-28 md:py-32">
-              {/* Top area — two columns */}
               <div className="grid gap-16 md:grid-cols-[1.2fr_0.8fr] md:gap-24">
-                {/* Main navigation */}
                 <div>
-                  <div
-                    className={`mb-8 text-[10px] font-semibold uppercase tracking-[0.15em] text-muted transition-all duration-500 delay-100 ${
-                      menuReady ? "opacity-100" : "opacity-0"
-                    }`}
-                  >
+                  <div className={`mb-8 text-[10px] font-semibold uppercase tracking-[0.15em] text-muted transition-all duration-500 delay-100 ${menuReady ? "opacity-100" : "opacity-0"}`}>
                     Navigation
                   </div>
                   <nav className="flex flex-col">
@@ -150,9 +216,7 @@ export function Navigation() {
                         href={item.href}
                         onClick={closeMenu}
                         className={`group border-b border-line-light py-4 font-normal tracking-[-0.02em] text-ink transition-all duration-500 hover:text-blue ${
-                          menuReady
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-4"
+                          menuReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                         }`}
                         style={{ fontSize: "clamp(var(--step-1), 3.5vw, var(--step-2))", transitionDelay: menuReady ? `${120 + i * 40}ms` : "0ms" }}
                       >
@@ -167,15 +231,9 @@ export function Navigation() {
                   </nav>
                 </div>
 
-                {/* Right column — explore by concern + info */}
                 <div className="flex flex-col gap-12">
-                  {/* Explore by concern */}
                   <div>
-                    <div
-                      className={`mb-6 text-[10px] font-semibold uppercase tracking-[0.15em] text-muted transition-all duration-500 delay-300 ${
-                        menuReady ? "opacity-100" : "opacity-0"
-                      }`}
-                    >
+                    <div className={`mb-6 text-[10px] font-semibold uppercase tracking-[0.15em] text-muted transition-all duration-500 delay-300 ${menuReady ? "opacity-100" : "opacity-0"}`}>
                       Explore by concern
                     </div>
                     <div className="flex flex-col gap-2.5">
@@ -195,51 +253,24 @@ export function Navigation() {
                     </div>
                   </div>
 
-                  {/* Divider */}
                   <div className="h-px bg-line" />
 
-                  {/* Contact info */}
-                  <div
-                    className={`transition-all duration-500 delay-500 ${
-                      menuReady ? "opacity-100" : "opacity-0"
-                    }`}
-                  >
+                  <div className={`transition-all duration-500 delay-500 ${menuReady ? "opacity-100" : "opacity-0"}`}>
                     <div className="mb-3 text-[10px] font-semibold uppercase tracking-[0.15em] text-muted">
                       Get in touch
                     </div>
-                    <a
-                      href="https://wa.me/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mb-2 block text-[15px] font-medium text-ink transition-colors hover:text-blue"
-                    >
+                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="mb-2 block text-[15px] font-medium text-ink transition-colors hover:text-blue">
                       WhatsApp
                     </a>
-                    <a
-                      href="https://instagram.com/drfouziaalali"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mb-6 block text-[15px] font-medium text-ink transition-colors hover:text-blue"
-                    >
+                    <a href="https://instagram.com/drfouziaalali" target="_blank" rel="noopener noreferrer" className="mb-6 block text-[15px] font-medium text-ink transition-colors hover:text-blue">
                       Instagram
                     </a>
-
-                    {/* CTA */}
-                    <Link
-                      href="/book-consultation"
-                      onClick={closeMenu}
-                      className="btn btn-primary inline-flex"
-                    >
+                    <Link href="/book-consultation" onClick={closeMenu} className="btn btn-primary inline-flex">
                       Book a consultation
                     </Link>
                   </div>
 
-                  {/* Language */}
-                  <div
-                    className={`transition-all duration-500 delay-600 ${
-                      menuReady ? "opacity-100" : "opacity-0"
-                    }`}
-                  >
+                  <div className={`transition-all duration-500 delay-600 ${menuReady ? "opacity-100" : "opacity-0"}`}>
                     <button className="rounded-full border border-line px-4 py-2 text-[12px] font-medium text-ink transition-colors hover:border-blue hover:text-blue">
                       عربي
                     </button>
@@ -247,12 +278,7 @@ export function Navigation() {
                 </div>
               </div>
 
-              {/* Bottom — closing line */}
-              <div
-                className={`mt-16 border-t border-line pt-8 transition-all duration-500 delay-700 ${
-                  menuReady ? "opacity-100" : "opacity-0"
-                }`}
-              >
+              <div className={`mt-16 border-t border-line pt-8 transition-all duration-500 delay-700 ${menuReady ? "opacity-100" : "opacity-0"}`}>
                 <p className="font-display text-[clamp(18px,2.5vw,24px)] font-normal italic tracking-[-0.01em] text-ink-soft">
                   Your health is personal. Your care should be too.
                 </p>
