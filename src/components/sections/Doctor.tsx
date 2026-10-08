@@ -33,8 +33,14 @@ export function Doctor() {
 
             <Reveal direction="left" delay={200}>
               <div className="mb-6 flex items-center gap-3.5">
-                <div className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-full bg-blue text-[15px] font-semibold text-white">
-                  FA
+                <div className="h-11 w-11 flex-shrink-0 overflow-hidden rounded-full bg-blue">
+                  <img
+                    src="/images/dr-fouzia/dr-fouzia-portrait.jpg"
+                    alt=""
+                    width={939}
+                    height={1675}
+                    className="h-full w-full object-cover object-[center_20%]"
+                  />
                 </div>
                 <div>
                   <div className="text-[14px] font-semibold text-ink">
@@ -95,16 +101,14 @@ export function Doctor() {
               className="relative overflow-hidden border border-line bg-surface-sky transition-transform duration-700 ease-out"
               style={{ borderRadius: "var(--radius)", aspectRatio: "4/5" }}
             >
-              {/* Placeholder — replace with <img> when real photo is supplied */}
-              <div className="absolute inset-0 grid place-items-center transition-transform duration-700 ease-out hover:scale-105">
-                <div className="text-center">
-                  <span className="block font-display text-[72px] font-normal leading-[1] text-blue/15">
-                    FA
-                  </span>
-                  <span className="mt-2 block text-[12px] font-medium tracking-[0.06em] uppercase text-blue/30">
-                    Photo
-                  </span>
-                </div>
+              <div className="absolute inset-0 overflow-hidden transition-transform duration-700 ease-out hover:scale-105">
+                <img
+                  src="/images/dr-fouzia/dr-fouzia-portrait.jpg"
+                  alt="Dr. Fouzia Al Ali"
+                  width={939}
+                  height={1675}
+                  className="h-full w-full object-cover object-[center_20%]"
+                />
               </div>
               {/* Decorative corner accent */}
               <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-blue/5" />
