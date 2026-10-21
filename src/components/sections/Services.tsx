@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { services } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 
@@ -18,14 +19,12 @@ export function Services() {
         <Reveal direction="left">
           <div className="mb-12 flex items-end justify-between gap-6">
             <div>
-              <div className="eyebrow mb-5">Explore services</div>
+              <div className="eyebrow mb-5">Services</div>
               <h2
                 className="font-display font-normal leading-[1.08] tracking-[-0.04em] text-ink"
                 style={{ fontSize: "clamp(var(--step-3), 3.8vw, var(--step-4))" }}
               >
-                Different ways to support
-                <br />
-                your <em className="text-blue">health goals.</em>
+                Care built <em className="text-blue">around you</em>
               </h2>
             </div>
             <div className="hidden gap-2 md:flex">
@@ -53,8 +52,8 @@ export function Services() {
 
         <Reveal direction="left" delay={100}>
           <p className="mb-10 max-w-[440px] text-ink-soft" style={{ fontSize: "var(--step-0)", lineHeight: 1.65 }}>
-            Each service is shaped around you&mdash;your history, your goals, your
-            pace.
+            Each area starts with a medical review, then adds nutrition,
+            lifestyle and, where useful, therapy skills.
           </p>
         </Reveal>
 
@@ -66,8 +65,10 @@ export function Services() {
             style={{ scrollSnapType: "x mandatory" }}
           >
             {services.map((s) => (
-              <article
+              <Link
                 key={s.num}
+                href={s.slug}
+                aria-label={`${s.title}: ${s.description}`}
                 className="group flex min-w-[280px] max-w-[300px] flex-shrink-0 flex-col border-r border-line px-6 py-4 transition-colors hover:bg-sky-light"
                 style={{ scrollSnapAlign: "start" }}
               >
@@ -81,9 +82,9 @@ export function Services() {
                   {s.description}
                 </p>
                 <span className="text-[12px] font-medium text-blue transition-all group-hover:tracking-[0.02em]">
-                  Read overview &nearr;
+                  Read service details &nearr;
                 </span>
-              </article>
+              </Link>
             ))}
           </div>
         </Reveal>

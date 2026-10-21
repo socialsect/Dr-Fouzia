@@ -15,24 +15,24 @@ interface RevealProps {
 
 const directionStyles: Record<Direction, { hidden: string; visible: string }> = {
   up: {
-    hidden: "opacity-0 translate-y-8",
-    visible: "opacity-100 translate-y-0",
+    hidden: "translate-y-8",
+    visible: "translate-y-0",
   },
   down: {
-    hidden: "opacity-0 -translate-y-8",
-    visible: "opacity-100 translate-y-0",
+    hidden: "-translate-y-8",
+    visible: "translate-y-0",
   },
   left: {
-    hidden: "opacity-0 -translate-x-12",
-    visible: "opacity-100 translate-x-0",
+    hidden: "-translate-x-12",
+    visible: "translate-x-0",
   },
   right: {
-    hidden: "opacity-0 translate-x-12",
-    visible: "opacity-100 translate-x-0",
+    hidden: "translate-x-12",
+    visible: "translate-x-0",
   },
   none: {
-    hidden: "opacity-0",
-    visible: "opacity-100",
+    hidden: "",
+    visible: "",
   },
 };
 
@@ -49,7 +49,7 @@ export function Reveal({
   return (
     <div
       ref={ref}
-      className={`${styles.hidden} ${isVisible ? styles.visible : ""} ${className}`}
+      className={`${isVisible ? "opacity-100" : "opacity-0"} ${isVisible ? styles.visible : styles.hidden} ${className}`}
       style={{
         transition: `opacity ${duration}ms cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16,1,0.3,1) ${delay}ms`,
       }}

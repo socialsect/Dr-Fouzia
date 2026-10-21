@@ -10,7 +10,7 @@ const mainNav = [
   { label: "Programs", href: "/integrated-functional-medicine-cbt" },
   { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
   { label: "CBT", href: "/cbt" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const concerns = [

@@ -15,8 +15,7 @@ export function Why() {
             className="mb-12 font-display font-normal leading-[1.08] tracking-[-0.04em] text-ink"
             style={{ fontSize: "clamp(var(--step-3), 3.8vw, var(--step-4))" }}
           >
-            Why patients choose{" "}
-            <em>this approach.</em>
+            What sets this practice <em className="text-blue">apart</em>
           </h2>
         </Reveal>
 
@@ -97,10 +96,6 @@ export function Why() {
                 <p className="text-[14px] leading-[1.65] text-ink-soft">
                   {whyCards[3].description}
                 </p>
-              </div>
-              <div className="flex items-center gap-3 text-[13px] font-medium text-blue">
-                <span className="underline underline-offset-4">Learn more</span>
-                <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </div>
             </div>
           </div>

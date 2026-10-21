@@ -18,30 +18,25 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Dr. Fouzia Al Ali — Functional Medicine & Lifestyle | Dubai",
+    default: "Functional Medicine Doctor Dubai | Dr Fouzia Al Ali",
     template: "%s | Dr. Fouzia Al Ali",
   },
   description:
-    "Dr. Fouzia Al Ali is a Consultant Family Physician with 26+ years of experience in functional medicine, lifestyle medicine, and holistic healthcare in Dubai, UAE.",
+    "See a functional medicine doctor in Dubai who looks for the cause, not just the symptom. Dr Fouzia, a family physician, offers unhurried care. Book a consult.",
   keywords: [
+    "functional medicine doctor Dubai",
     "functional medicine Dubai",
-    "lifestyle medicine",
-    "holistic healthcare",
-    "Dr. Fouzia",
-    "women's health",
-    "gut health",
-    "hormonal health",
-    "metabolic health",
-    "healthy aging",
-    "CBT Dubai",
+    "family physician Dubai",
+    "holistic doctor Dubai",
+    "women's health doctor Dubai",
   ],
   openGraph: {
     type: "website",
     locale: "en_AE",
     siteName: "Dr. Fouzia Al Ali",
-    title: "Dr. Fouzia Al Ali — Functional Medicine & Lifestyle | Dubai",
+    title: "Functional Medicine Doctor Dubai | Dr Fouzia Al Ali",
     description:
-      "Holistic, root-cause care for health and wellbeing. Led by Dr. Fouzia Al Ali, Consultant Family Physician. Dubai, UAE.",
+      "See a functional medicine doctor in Dubai who looks for the cause, not just the symptom. Dr Fouzia, a family physician, offers unhurried care. Book a consult.",
   },
 };
 
@@ -51,9 +46,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${inter.variable} ${dmSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full">
+      <body className="min-h-full" suppressHydrationWarning>
         <SiteChrome>{children}</SiteChrome>
       </body>
     </html>

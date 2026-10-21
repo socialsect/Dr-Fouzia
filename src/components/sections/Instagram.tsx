@@ -14,14 +14,13 @@ export function Instagram() {
             className="mb-4 font-display font-normal leading-[1.08] tracking-[-0.04em] text-ink"
             style={{ fontSize: "clamp(var(--step-3), 3.8vw, var(--step-4))" }}
           >
-            Learn more on{" "}
-            <em>Instagram.</em>
+            Short health guides from the <em className="text-blue">clinic</em>
           </h2>
         </Reveal>
         <Reveal direction="left" delay={200}>
           <p className="mb-10 max-w-[440px] text-ink-soft" style={{ fontSize: "var(--step-0)", lineHeight: 1.65 }}>
-            Health education, symptom breakdowns and practical insights from the
-            clinic.
+            Practical tips on energy, sleep, hormones and gut health, shared by
+            Dr Fouzia.
           </p>
         </Reveal>
 

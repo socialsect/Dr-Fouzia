@@ -15,29 +15,23 @@ export function Contact() {
             className="mb-5 font-display font-normal leading-[1.08] tracking-[-0.04em] text-ink"
             style={{ fontSize: "clamp(var(--step-3), 3.8vw, var(--step-4))" }}
           >
-            A conversation can open up
-            <br />a <em className="text-blue">clearer path.</em>
+            Ready for a clearer picture of your <em className="text-blue">health?</em>
           </h2>
         </Reveal>
         <Reveal direction="up" delay={200}>
           <p className="mx-auto mb-10 max-w-[440px] text-ink-soft" style={{ fontSize: "var(--step-0)", lineHeight: 1.7 }}>
-            Ask about the services, consultation options and next steps that may
-            be appropriate for you.
+            Book a consultation and tell your story to a doctor who has the time
+            to hear it.
           </p>
         </Reveal>
         <Reveal direction="up" delay={300}>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/book-consultation" className="btn btn-primary">
+            <Link href="/consultation#enquiry-form-1" className="btn btn-primary">
               Book free consult
             </Link>
-            <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost"
-            >
-              WhatsApp us
-            </a>
+            <Link href="/consultation#enquiry-form-2" className="btn btn-ghost">
+              Get in touch
+            </Link>
           </div>
         </Reveal>
       </div>

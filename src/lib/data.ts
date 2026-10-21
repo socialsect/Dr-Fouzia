@@ -3,41 +3,31 @@ export const healthFactors = [
     id: "medical",
     title: "Medical history",
     description:
-      "Your history, symptoms, medications and previous investigations help build a fuller clinical picture. Understanding what has been tried before shapes what comes next.",
-    connections: ["Hormones", "Gut health", "Metabolism"],
-    relatedServices: ["Functional Medicine", "Health Marker Review"],
+      "Your timeline, past illnesses, family history and medicines. Patterns across the years often point to the next step.",
   },
   {
     id: "nutrition",
-    title: "Nutrition & movement",
+    title: "Food and movement",
     description:
-      "Eating patterns, hydration, activity levels and strength are considered as part of a lifestyle assessment. Small changes in daily habits can shift how the body functions.",
-    connections: ["Metabolism", "Gut health", "Energy"],
-    relatedServices: ["Personalised Nutrition", "Metabolic Health"],
+      "What you eat, when you eat and how you move. Small, realistic changes come before restrictive diets.",
   },
   {
     id: "sleep",
     title: "Sleep & stress",
     description:
-      "Sleep quality, stress load and recovery patterns are relevant to how you feel and function. These factors often sit behind symptoms that seem unrelated.",
-    connections: ["Hormones", "Energy", "Brain function"],
-    relatedServices: ["Stress, Sleep & Energy Reset", "CBT"],
+      "Sleep quality, workload and recovery. Poor rest and constant pressure can drive tiredness, gut upset and low mood.",
   },
   {
     id: "hormones",
     title: "Hormones & metabolism",
     description:
-      "Hormonal and metabolic factors are explored in the context of symptoms and medical history. These systems interact with nearly everything else in the body.",
-    connections: ["Energy", "Weight", "Mood"],
-    relatedServices: ["Women's Hormonal Health", "Metabolic Health"],
+      "Cycle changes, thyroid, blood sugar and weight. Tests are chosen only when the result would change your care.",
   },
   {
     id: "gut",
-    title: "Gut & wellbeing",
+    title: "Gut and wellbeing",
     description:
-      "Digestive symptoms are considered alongside lifestyle, stress, sleep and other health factors. The gut connects to immunity, mood and energy in ways that are still being understood.",
-    connections: ["Nutrition", "Brain function", "Immunity"],
-    relatedServices: ["Gut & Digestive Health", "Brain & Cognitive Wellness"],
+      "Digestion, appetite and energy through the day. Red-flag symptoms are checked first.",
   },
 ] as const;
 
@@ -46,120 +36,124 @@ export type HealthFactor = (typeof healthFactors)[number];
 export const services = [
   {
     num: "01",
-    title: "Functional Medicine",
-    description:
-      "A broader look at symptoms, lifestyle, nutrition, sleep, stress, hormones, gut health, medications and medical history.",
+    title: "Functional medicine",
+    description: "A detailed review of what is behind ongoing symptoms.",
     slug: "/functional-medicine/",
   },
   {
     num: "02",
-    title: "Women's Hormonal Health",
-    description:
-      "Personalized support across hormonal changes, stress, sleep, mood and everyday habits.",
+    title: "Women's hormonal health",
+    description: "Support for cycles, PMS, perimenopause and menopause.",
     slug: "/womens-hormonal-health/",
   },
   {
     num: "03",
-    title: "Gut & Digestive Health",
-    description:
-      "Explore digestive concerns alongside stress, sleep, mood and lifestyle factors.",
+    title: "Gut and digestive health",
+    description: "Bloating, reflux and bowel changes, checked safely.",
     slug: "/gut-digestive-health/",
   },
   {
     num: "04",
-    title: "Stress, Sleep & Energy",
-    description:
-      "Support for persistent stress, poor sleep, fatigue, mental overload and reduced energy.",
+    title: "Stress, sleep and nervous system",
+    description: "Practical care for poor sleep and constant tension.",
     slug: "/stress-sleep-nervous-system-health/",
   },
   {
     num: "05",
-    title: "Metabolic Health",
-    description:
-      "Nutrition, metabolic health strategies, lifestyle medicine and behavior-change support.",
-    slug: "/metabolic-health-weight-management/",
+    title: "Fatigue and brain fog",
+    description: "Medical causes first, then a plan to rebuild energy.",
+    slug: "/fatigue-low-energy-brain-fog/",
   },
   {
     num: "06",
-    title: "Healthy Aging",
-    description:
-      "A personalized focus on nutrition, movement, muscle health, sleep, stress and cognitive wellbeing.",
-    slug: "/healthy-aging-longevity/",
+    title: "Metabolic health and weight",
+    description: "Blood sugar, insulin resistance and sustainable habits.",
+    slug: "/metabolic-health-weight-management/",
   },
   {
     num: "07",
     title: "CBT",
-    description:
-      "Structured, practical therapy for eligible clients. Addresses anxiety, overthinking, stress and more.",
+    description: "Skills-based therapy for anxiety, overthinking and low mood.",
     slug: "/cbt/",
   },
   {
     num: "08",
-    title: "Aesthetic Medicine",
-    description:
-      "Non-surgical aesthetic treatments including anti-wrinkle, fillers, skin boosters and more.",
+    title: "Aesthetic medicine",
+    description: "Doctor-led, non-surgical treatments after a full consultation.",
     slug: "/aesthetic-medicine/",
   },
 ] as const;
 
 export const tickerItems = [
-  "Hormonal changes",
-  "Gut & digestive health",
-  "Stress & sleep",
-  "Fatigue & brain fog",
-  "Metabolic health",
+  "Functional medicine Dubai",
+  "Family physician Dubai",
+  "Women's health doctor Dubai",
+  "Gut health",
+  "Fatigue and low energy",
+  "Sleep and stress",
+  "Hormonal health",
   "Healthy aging",
-  "Weight management",
-  "Skin & hair wellness",
-  "Women's health",
-  "Energy & vitality",
-  "Emotional wellbeing",
-  "Mental clarity",
+  "CBT Dubai",
+  "Aesthetic medicine Dubai",
 ];
 
 export const processSteps = [
   {
     num: "01",
     title: "Consultation",
-    time: "30\u201345 min \u00B7 In-clinic or online",
     description:
-      "Share your health history, symptoms, lifestyle, questions and goals. This is an unhurried conversation, not a rushed appointment.",
+      "We go through your symptoms, history, daily routine and what you want to change.",
   },
   {
     num: "02",
-    title: "Assessment",
-    time: "Built around your life",
+    title: "Medical review",
     description:
-      "Explore relevant factors and consider tests only when clinically appropriate. A clear picture leads to a clear plan.",
+      "A physical check and, only if useful, blood tests or other investigations. You will know why each one is needed.",
   },
   {
     num: "03",
-    title: "Personalized plan",
-    time: "Follow-up as needed",
+    title: "Your written plan",
     description:
-      "Discuss practical strategies and follow-up based on the clinical assessment. Your plan adapts as you progress.",
+      "A short, prioritised list of next steps, then follow-up visits to adjust as you go.",
   },
 ];
 
 export const whyCards = [
   {
-    title: "Holistic, not piecemeal",
+    title: "Whole-person view",
     description:
-      "The system is treated, not just the symptom. Gut, hormones, sleep, stress, all considered together.",
+      "Sleep, stress, food, hormones and gut health are looked at together, not in separate appointments.",
   },
   {
-    title: "1:1 personalized",
+    title: "One doctor throughout",
     description:
-      "No templates. Every protocol is built for one person's biology, history and life.",
+      "The same physician follows your progress from the first visit onwards.",
   },
   {
-    title: "Backed by science",
+    title: "Evidence first",
     description:
-      "Evidence-based medicine combined with lifestyle, behavioral change and clinical nutrition.",
+      "Recommendations are explained, and supplements are suggested only with a reason.",
   },
   {
-    title: "Continuity of care",
+    title: "Doctor-led in every area",
     description:
-      "Follow-up keeps your plan moving as your body responds and changes.",
+      "Functional medicine, CBT and aesthetic care are delivered under medical supervision.",
   },
 ];
+
+export const homepageFaqItems = [
+  {
+    question: "What does a functional medicine doctor do?",
+    answer:
+      "A functional medicine doctor looks for the factors behind symptoms, such as nutrition, sleep, stress, gut health and hormones, using a detailed history and selected tests alongside normal medical assessment.",
+  },
+  {
+    question: "Is Dr Fouzia a licensed doctor in Dubai?",
+    answer: "Yes. She is a consultant family physician.",
+  },
+  {
+    question: "Does Dr Fouzia treat women's health concerns?",
+    answer:
+      "Yes, including irregular periods, PMS, perimenopause and menopause.",
+  },
+] as const;

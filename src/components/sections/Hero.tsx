@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const coverItems = [
-  { num: 1, title: "Functional Medicine", desc: "root-cause assessment" },
-  { num: 2, title: "Women's Hormones & Stress", desc: "cycles, mood, sleep" },
-  { num: 3, title: "Gut–Brain Health", desc: "digestion, clarity, energy" },
-  { num: 4, title: "Metabolic & Weight", desc: "nutrition, lifestyle, habits" },
+  { num: 1, title: "Functional medicine", desc: "root-cause review" },
+  { num: 2, title: "Women's health", desc: "cycles, mood, midlife" },
+  { num: 3, title: "Gut and digestion", desc: "bloating, reflux, bowels" },
+  { num: 4, title: "Metabolic health", desc: "weight, blood sugar, energy" },
 ];
 
 export function Hero() {
@@ -16,59 +16,42 @@ export function Hero() {
           <div>
             <h1
               className="mb-10 font-display font-normal leading-[1.08] tracking-[-0.04em] text-ink"
-              style={{ fontSize: "clamp(var(--step-5), 6.5vw, 72px)" }}
+              style={{ fontSize: "clamp(var(--step-4), 6.5vw, 72px)" }}
             >
-              Symptoms don&rsquo;t
-              <br />
-              exist in <em className="text-blue">isolation.</em>
-              <br />
-              Neither should
-              <br />
-              your care.
+              Functional Medicine Doctor in <em className="text-blue">Dubai</em>
             </h1>
 
-            <p className="mb-12 max-w-[520px] text-ink-soft" style={{ fontSize: "var(--step-0)", lineHeight: 1.6 }}>
-              Dr. Fouzia looks at the full picture&mdash;your history, lifestyle,
-              nutrition, sleep, stress and hormones&mdash;to understand what&rsquo;s
-              really going on.
+            <p
+              className="mb-6 -mt-5 font-display text-blue"
+              style={{ fontSize: "clamp(var(--step-1), 2.8vw, var(--step-2))" }}
+            >
+              Find the cause. Then fix the plan.
+            </p>
+
+            <p className="mb-10 max-w-[520px] text-ink-soft" style={{ fontSize: "var(--step-0)", lineHeight: 1.6 }}>
+              Dr Fouzia Al Ali is a consultant family physician who takes the
+              time to understand your sleep, stress, digestion and hormones
+              before suggesting a single test or supplement.
             </p>
 
             {/* Buttons */}
-            <div className="mb-14 flex flex-wrap gap-3.5">
-              <Link href="/book-consultation" className="btn btn-primary">
+            <div className="mb-10 flex flex-wrap gap-3.5">
+              <Link href="/consultation#enquiry-form-1" className="btn btn-primary">
                 Book free consult
               </Link>
               <Link href="/#services" className="btn btn-ghost">
-                Explore services
+                See services
               </Link>
             </div>
 
-            {/* Stats */}
-            <div className="flex flex-wrap items-baseline gap-x-8 gap-y-3 border-t border-line pt-6">
-              <div className="flex items-baseline gap-2">
-                <span className="font-display text-[32px] font-normal tracking-[-0.03em] text-blue">
-                  1500+
-                </span>
-                <span className="text-muted" style={{ fontSize: "var(--step--1)" }}>
-                  patients
-                </span>
-              </div>
-              <div className="flex items-baseline gap-2">
-                <span className="font-display text-[32px] font-normal tracking-[-0.03em] text-ink">
-                  26
-                </span>
-                <span className="text-muted" style={{ fontSize: "var(--step--1)" }}>
-                  years experience
-                </span>
-              </div>
-              <div className="flex items-baseline gap-2">
-                <span className="font-display text-[32px] font-normal tracking-[-0.03em] text-ink">
-                  1:1
-                </span>
-                <span className="text-muted" style={{ fontSize: "var(--step--1)" }}>
-                  personalized care
-                </span>
-              </div>
+            {/* Keep the trust strip free of unconfirmed patient and experience counts. */}
+            <div className="border-t border-line pt-5">
+              <p className="font-display text-[20px] tracking-[-0.02em] text-ink">
+                One doctor
+              </p>
+              <p className="text-muted" style={{ fontSize: "var(--step--1)" }}>
+                from first visit to follow-up
+              </p>
             </div>
           </div>
 
@@ -80,17 +63,17 @@ export function Hero() {
             >
               {/* Badge */}
               <span className="absolute -top-4 right-6 rotate-[4deg] rounded-full bg-[#F39034] px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.15em] text-white">
-                Start here
+                Consultations in Dubai
               </span>
 
               <div className="mb-2 text-[11px] font-bold uppercase tracking-[0.15em] text-muted">
-                What Dr. Fouzia covers
+                Where Dr Fouzia can help
               </div>
               <h3
                 className="mb-6 font-display font-semibold tracking-[-0.02em] text-ink"
                 style={{ fontSize: "var(--step-2)" }}
               >
-                Eight services, one philosophy
+                Care built <em className="text-blue">around you</em>
               </h3>
 
               <ul className="flex flex-col">
