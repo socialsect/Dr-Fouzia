@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, DM_Serif_Display } from "next/font/google";
+import Script from "next/script";
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import "./globals.css";
 
@@ -50,6 +51,19 @@ export default function RootLayout({
       className={`${inter.variable} ${dmSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full" suppressHydrationWarning>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NWRMS6MNS2"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NWRMS6MNS2');
+          `}
+        </Script>
         <SiteChrome>{children}</SiteChrome>
       </body>
     </html>

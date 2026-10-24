@@ -1,34 +1,102 @@
-import { ServicePage } from "@/components/layout/ServicePage";
+import type { Metadata } from "next";
+import { HealthConcernContent } from "@/components/layout/HealthConcernContent";
 
-export const metadata = {
-  title: "Brain Fog & Cognitive Wellness Programme | Dr. Fouzia Dubai",
+export const metadata: Metadata = {
+  title: "Brain Fog Treatment Dubai | Dr Fouzia Al Ali",
   description:
-    "Clear the fog and reclaim your focus. Dr. Fouzia's Brain Fog & Cognitive Wellness Programme in Dubai investigates and treats the root causes of cognitive fatigue.",
+    "A structured brain fog programme in Dubai with a family physician. Dr Fouzia joins a medical review, lifestyle plan and CBT skills over several visits.",
 };
 
 export default function BrainFogCognitiveWellnessPage() {
   return (
-    <ServicePage
-      eyebrow="Programme"
-      title="Brain Fog & Cognitive Wellness"
-      highlight="clarity, focus, and mental energy"
-      description="Brain fog is not a diagnosis — it's a signal that something needs attention. Whether it's difficulty concentrating, forgetfulness, mental fatigue, or feeling 'switched off', Dr. Fouzia's Brain Fog & Cognitive Wellness Programme investigates the underlying causes — from nutritional deficiencies and gut health to sleep quality, stress, and hormonal imbalances. Combining functional medicine testing with cognitive strategies, this programme helps you restore mental clarity and perform at your best."
-      bullets={[
-        "Comprehensive assessment of cognitive function and lifestyle factors",
-        "Testing for nutritional deficiencies, thyroid, and hormonal markers",
-        "Gut health investigation (the gut-brain connection matters)",
-        "Sleep quality assessment and optimisation",
-        "CBT strategies for focus, mental stamina, and clarity",
-        "Personalised plan targeting your specific cognitive concerns",
+    <HealthConcernContent
+      eyebrowLabel="Programme"
+      highlightsEyebrow="Brain fog programme in Dubai"
+      title="Brain Fog Treatment"
+      highlight="in Dubai"
+      description="A step-by-step programme for foggy, tired thinking. Brain fog is a description of how thinking feels: slow, hazy, forgetful or hard to hold together. It is not a diagnosis, and it has many possible causes. Dr Fouzia is a consultant family physician who offers this brain fog programme in Dubai. It runs over several visits, so you can find and address likely causes in a sensible order, learn skills for managing mental tiredness and review how you are getting on."
+      highlightsTitle="Who it"
+      highlightsAccent="suits."
+      highlights={[
+        "People whose thinking has felt slow or unreliable for weeks or months",
+        "Those who forget words, appointments or tasks more than usual",
+        "Professionals whose mental stamina has dropped",
+        "People with tiredness, poor sleep or stress alongside the fog",
       ]}
-      cta={{ label: "Book a consultation", href: "/book-consultation" }}
-      secondCta={{ label: "Learn about our approach", href: "/our-approach" }}
-      relatedLinks={[
-        { label: "Gut-Brain Health Programme", href: "/gut-brain-health-program" },
-        { label: "Stress, Sleep & Energy Reset", href: "/stress-sleep-energy-reset" },
-        { label: "CBT for Overthinking", href: "/cbt-overthinking" },
-        { label: "Healthy Aging & Biological Age Reset", href: "/healthy-aging-biological-age-reset" },
+      sections={[
+        {
+          eyebrow: "Brain fog treatment in Dubai",
+          heading: "The order of",
+          accent: "the programme.",
+          paragraphs: [
+            "The programme works through likely causes in a sensible order, treating what is found before moving to the next step.",
+          ],
+          bullets: [
+            "Medical review: history, medicines, sleep, mood and routine, with blood tests where they would help such as iron, B12, thyroid, vitamin D and blood sugar",
+            "Treat what is found: for example, correcting a deficiency or addressing poor sleep",
+            "Lifestyle changes: regular meals, movement, caffeine, alcohol and screen habits",
+            "Skills: pacing, planning and CBT techniques for stress, worry and low mood",
+            "Review and adjust at follow-up visits",
+          ],
+        },
+        {
+          eyebrow: "Mental fatigue treatment in Dubai",
+          heading: "What helps with",
+          accent: "a tired mind.",
+          paragraphs: [
+            "Mental fatigue often eases when recovery is planned: sleep routines, workload pacing, breaks and gentle activity. Dr Fouzia helps you build a routine that suits your work and family life, and reviews it with you.",
+          ],
+          links: [
+            { label: "Fatigue and low energy", href: "/fatigue-low-energy-brain-fog" },
+            { label: "CBT for stress management", href: "/cbt-stress-management" },
+          ],
+        },
+        {
+          eyebrow: "Cognitive wellness in Dubai",
+          heading: "When to seek",
+          accent: "a wider review.",
+          paragraphs: [
+            "If memory problems are getting worse, family have noticed a change, or you are losing track of familiar tasks, tell Dr Fouzia so that a fuller assessment can be arranged, which may include a referral to a memory specialist. This programme is not a treatment for dementia or other brain conditions, and it does not replace specialist neurological care.",
+          ],
+          links: [
+            { label: "Brain and cognitive wellness", href: "/brain-cognitive-wellness" },
+            { label: "Supplement review", href: "/supplement-review" },
+            { label: "Stress, sleep and energy reset", href: "/stress-sleep-energy-reset" },
+          ],
+        },
       ]}
+      faqs={[
+        {
+          question: "How is this different from the Brain and Cognitive Wellness page?",
+          answer:
+            "That page explains the concern and a consultation. This page describes the multi-visit programme.",
+        },
+        {
+          question: "Do I need brain scans?",
+          answer:
+            "Not usually. They are arranged only if your symptoms suggest a reason.",
+        },
+        {
+          question: "Will I need supplements?",
+          answer:
+            "Only where a test or your history shows a clear need.",
+        },
+        {
+          question: "Can I do it online?",
+          answer:
+            "Yes, the programme is available online as well as in person in Dubai.",
+        },
+      ]}
+      safety={{
+        text: "Sudden confusion, severe headache, weakness on one side, difficulty speaking or a head injury need emergency care now. In the UAE, call",
+        emergencyLinks: [
+          { label: "998 for an ambulance", href: "tel:998" },
+        ],
+        closing: "If you have thoughts of harming yourself or cannot keep yourself safe, call 999 or go to the nearest emergency department.",
+      }}
+      ctaTitle="Start with a review of what may"
+      ctaAccent="be behind your brain fog."
+      ctaDescription="Book a consultation with a doctor who has time to listen."
     />
   );
 }
