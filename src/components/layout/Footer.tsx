@@ -8,6 +8,7 @@ const navLinks = [
   { label: "About Dr. Fouzia", href: "/about-dr-fouzia" },
   { label: "Services", href: "/#services" },
   { label: "Your Journey", href: "/#journey" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
