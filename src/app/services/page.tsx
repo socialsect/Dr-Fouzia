@@ -154,13 +154,8 @@ export default function ServicesPage() {
             {primaryServices.map((service, index) => (
               <Reveal key={service.number} direction="up" delay={(index % 4) * 55}>
                 <article className="group flex h-full flex-col rounded-2xl border border-line bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:border-blue hover:shadow-[var(--shadow-far)] md:p-6">
-                  <div className="mb-5 flex items-center justify-between">
-                    <span className="grid h-10 w-10 place-items-center rounded-xl bg-surface text-blue">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </span>
-                    <span className="text-[12px] font-semibold tracking-[0.08em] text-muted">{service.number}</span>
+                  <div className="mb-5 flex items-center justify-end">
+                    <span className="font-display text-[22px] font-normal leading-none tracking-[-0.02em] text-blue/30">{service.number}</span>
                   </div>
                   <h3 className="mb-3 text-[16px] font-semibold leading-[1.35] tracking-[-0.01em] text-ink md:text-[17px]">
                     {service.title}
