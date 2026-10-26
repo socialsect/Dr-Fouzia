@@ -28,7 +28,7 @@ export function Why() {
                 <circle cx="12" cy="10" r="3" />
               </svg>
             </span>
-            <h3 className="mb-2 text-[20px] font-semibold tracking-[-0.01em] text-ink md:text-[24px]">
+            <h3 className="mb-2 text-[18px] font-semibold tracking-[-0.01em] text-ink">
               {whyCards[0].title}
             </h3>
             <p className="max-w-[600px] text-[15px] leading-[1.7] text-ink-soft">
