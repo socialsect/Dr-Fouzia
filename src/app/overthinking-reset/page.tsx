@@ -22,7 +22,7 @@ export default function OverthinkingResetPage() {
         "Structured programme with measurable progress",
       ]}
       cta={{ label: "Book a consultation", href: "/book-consultation" }}
-      secondCta={{ label: "Learn about our approach", href: "/our-approach" }}
+      secondCta={{ label: "Learn about our approach", href: "/functional-medicine" }}
       relatedLinks={[
         { label: "CBT for Overthinking", href: "/cbt-overthinking" },
         { label: "Stress Management", href: "/cbt-stress-management" },
