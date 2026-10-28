@@ -82,7 +82,7 @@ export function Services() {
                   {s.description}
                 </p>
                 <span className="text-[12px] font-medium text-blue transition-all group-hover:tracking-[0.02em]">
-                  Read service details &nearr;
+                  Read service details &#8599;
                 </span>
               </Link>
             ))}
