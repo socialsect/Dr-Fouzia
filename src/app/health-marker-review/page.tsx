@@ -98,6 +98,7 @@ export default function HealthMarkerReviewPage() {
       ctaTitle="Bring your results and let’s"
       ctaAccent="make sense of them."
       ctaDescription="Talk through your numbers with a doctor who has time to explain."
+      showEnquiryForm
     />
   );
 }

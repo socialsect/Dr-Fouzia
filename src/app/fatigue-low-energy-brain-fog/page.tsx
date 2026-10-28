@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
   title: "Fatigue Doctor Dubai | Low Energy & Brain Fog | Dr Fouzia",
@@ -306,6 +307,7 @@ export default function FatigueLowEnergyBrainFogPage() {
           </p>
         </div>
       </section>
+      <PageEnquirySection />
     </main>
   );
 }

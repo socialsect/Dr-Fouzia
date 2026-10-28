@@ -61,7 +61,7 @@ export default function FacialContouringPage() {
             { label: "Aesthetic medicine", href: "/aesthetic-medicine" },
             { label: "Anti-wrinkle treatments", href: "/anti-wrinkle-treatments" },
             { label: "Skin boosters", href: "/skin-boosters" },
-            { label: "Book a consultation", href: "/book-consultation" },
+            { label: "Book a consultation", href: "/contact" },
           ],
         },
         {

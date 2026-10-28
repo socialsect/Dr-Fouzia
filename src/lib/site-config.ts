@@ -1,11 +1,9 @@
 export const siteConfig = {
   /**
    * Front-desk WhatsApp number in international format without "+" or spaces.
-   * Example: "971501234567"
-   * TODO(clinic): REQUIRED before launch — every WhatsApp CTA on the
-   * landing page resolves through this single value.
+   * Every WhatsApp link on the site resolves through this single value.
    */
-  whatsappNumber: "",
+  whatsappNumber: "971557570393",
 
   instagramUrl: "https://instagram.com/drfouziaalali",
   // TODO(clinic): brief section M lists "@dr.fouziaalali" while the live site

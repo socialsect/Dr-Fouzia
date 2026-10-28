@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 type PageLink = { label: string; href: string };
 
@@ -36,6 +37,7 @@ type HealthConcernContentProps = {
   ctaTitle: string;
   ctaAccent: string;
   ctaDescription: string;
+  showEnquiryForm?: boolean;
 };
 
 export function HealthConcernContent({
@@ -53,6 +55,7 @@ export function HealthConcernContent({
   ctaTitle,
   ctaAccent,
   ctaDescription,
+  showEnquiryForm = false,
 }: HealthConcernContentProps) {
   return (
     <main className="bg-white">
@@ -263,6 +266,7 @@ export function HealthConcernContent({
           </p>
         </div>
       </section>
+      {showEnquiryForm && <PageEnquirySection />}
     </main>
   );
 }

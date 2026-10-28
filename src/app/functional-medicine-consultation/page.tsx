@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
   title: "Functional Medicine Consultation Dubai | Dr Fouzia Al Ali",
@@ -218,6 +219,7 @@ export default function FunctionalMedicineConsultationPage() {
           </p>
         </div>
       </section>
+      <PageEnquirySection />
     </main>
   );
 }

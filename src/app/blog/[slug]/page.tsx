@@ -115,7 +115,7 @@ export default async function ArticlePage({ params }: PageProps<"/blog/[slug]">)
         <ArticleBody blocks={blocks.slice(0, mid)} />
         <aside className="my-10 rounded-[var(--radius)] bg-sky-light p-6">
           <p className="mb-3 font-serif text-[length:var(--step-1)] text-ink">Want personalised guidance?</p>
-          <Link href="/book-consultation" className="text-blue underline underline-offset-4 hover:text-blue-deep">
+          <Link href="/contact" className="text-blue underline underline-offset-4 hover:text-blue-deep">
             Book a consultation →
           </Link>
         </aside>

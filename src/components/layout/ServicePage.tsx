@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 interface ServicePageProps {
   eyebrow: string;
@@ -12,6 +13,7 @@ interface ServicePageProps {
   cta?: { label: string; href: string };
   secondCta?: { label: string; href: string };
   relatedLinks?: { label: string; href: string }[];
+  showEnquiryForm?: boolean;
 }
 
 export function ServicePage({
@@ -20,11 +22,13 @@ export function ServicePage({
   highlight,
   description,
   bullets,
-  cta = { label: "Book a consultation", href: "/book-consultation" },
+  cta = { label: "Book a consultation", href: "/contact" },
   secondCta,
   relatedLinks,
+  showEnquiryForm = false,
 }: ServicePageProps) {
   return (
+    <>
     <main className="bg-white pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="wrap">
         <Reveal direction="left">
@@ -106,5 +110,7 @@ export function ServicePage({
         )}
       </div>
     </main>
+    {showEnquiryForm && <PageEnquirySection />}
+    </>
   );
 }

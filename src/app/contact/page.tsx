@@ -1,9 +1,9 @@
 "use client";
 
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const contactMethods = [
   {
@@ -26,7 +26,7 @@ const contactMethods = [
     label: "WhatsApp",
     value: "Chat with the clinic team",
     sub: "Fastest way to reach us",
-    href: "https://wa.me/",
+    href: buildWhatsAppUrl(""),
     external: true,
     cta: "Open WhatsApp",
     ctaStyle: "whatsapp",
@@ -187,41 +187,14 @@ export default function ContactPage() {
                   </div>
                 </Reveal>
               ))}
-
-              {/* Clinic hours */}
-              <Reveal direction="left" delay={280}>
-                <div className="mt-2 rounded-2xl bg-surface-deep p-5">
-                  <div className="text-[11px] font-semibold uppercase tracking-[0.1em] text-muted mb-3">
-                    Clinic Hours
-                  </div>
-                  <div className="space-y-1.5 text-[14px]">
-                    {[
-                      ["Sunday – Thursday", "9:00 am – 6:00 pm"],
-                      ["Friday", "By appointment"],
-                      ["Saturday", "Closed"],
-                    ].map(([day, time]) => (
-                      <div key={day} className="flex items-center justify-between gap-4">
-                        <span className="text-ink-soft">{day}</span>
-                        <span className="font-medium text-ink">{time}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-4 flex items-center gap-2 text-[12px] text-muted">
-                    <span className="relative flex h-1.5 w-1.5">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue opacity-60" />
-                      <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-blue" />
-                    </span>
-                    Accepting new patients
-                  </div>
-                </div>
-              </Reveal>
             </div>
 
             {/* Right — enquiry form */}
             <Reveal direction="right" delay={100}>
-              <div className="rounded-2xl border border-line bg-white p-6 shadow-[var(--shadow-far)] md:p-8">
-                {submitted ? (
-                  <div className="flex flex-col items-center gap-4 py-10 text-center">
+              <div>
+                <div className="rounded-2xl border border-line bg-white p-6 shadow-[var(--shadow-far)] md:p-8">
+                  {submitted ? (
+                    <div className="flex flex-col items-center gap-4 py-10 text-center">
                     <span className="flex h-14 w-14 items-center justify-center rounded-full bg-surface-deep text-blue">
                       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -236,7 +209,7 @@ export default function ContactPage() {
                       working day.
                     </p>
                     <Link
-                      href="https://wa.me/"
+                      href={buildWhatsAppUrl("")}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-whatsapp mt-2"
@@ -247,19 +220,19 @@ export default function ContactPage() {
                       </svg>
                       Chat on WhatsApp now
                     </Link>
-                  </div>
-                ) : (
-                  <>
-                    <div className="mb-6">
-                      <h2 className="font-display text-[1.6rem] font-normal leading-[1.15] tracking-[-0.03em] text-ink">
-                        Send an enquiry
-                      </h2>
-                      <p className="mt-1 text-[14px] text-ink-soft">
-                        We reply the same working day.
-                      </p>
                     </div>
+                  ) : (
+                    <>
+                      <div className="mb-6">
+                        <h2 className="font-display text-[1.6rem] font-normal leading-[1.15] tracking-[-0.03em] text-ink">
+                          Send an enquiry
+                        </h2>
+                        <p className="mt-1 text-[14px] text-ink-soft">
+                          We reply the same working day.
+                        </p>
+                      </div>
 
-                    <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+                      <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
                       {/* Name */}
                       <div>
                         <label htmlFor="contact-name" className="mb-1.5 block text-[13px] font-semibold text-ink">
@@ -359,12 +332,73 @@ export default function ContactPage() {
                       <p className="text-center text-[12px] text-muted">
                         Our team will reply on WhatsApp the same working day.
                       </p>
-                    </form>
-                  </>
-                )}
+                      </form>
+                    </>
+                  )}
+                </div>
+
               </div>
             </Reveal>
           </div>
+
+          {/* Map — a standalone full-width section keeps the layout balanced. */}
+          <Reveal direction="up" delay={180}>
+            <div className="mt-12 overflow-hidden rounded-2xl border border-line bg-white shadow-[var(--shadow-far)] md:mt-16">
+              <div className="p-6 pb-5 md:p-8 md:pb-6">
+                <div className="eyebrow mb-3">Find the clinic</div>
+                <h2 className="font-display text-[1.7rem] font-normal leading-[1.15] tracking-[-0.03em] text-ink md:text-[2.1rem]">
+                  Al Borj Medical Center
+                </h2>
+                <p className="mt-2 text-[14px] leading-[1.65] text-ink-soft md:text-[15px]">
+                  Dubai, UAE — in-person consultations are available here.
+                </p>
+              </div>
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-surface-deep md:aspect-[2.5/1]">
+                <iframe
+                  title="Map showing Al Borj Medical Center in Dubai"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4319.920568344681!2d55.26293967538186!3d25.199222477709696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f430034064a5f%3A0xfca8fd41f57f3a0!2sDr.Fawezya%20Al%20ALi%20%7C%20Non-Surgical%20Cosmetic%20Treatment%20%7C%20Skin%20Health%20%7C%20Preventive%20Services%20%7C%20General%20Medicine!5e1!3m2!1sen!2sin!4v1793012471730!5m2!1sen!2sin"
+                  className="absolute inset-0 h-full w-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                />
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Clinic hours — kept separate from the contact cards so the map can
+              follow it as its own information section. */}
+          <Reveal direction="up" delay={240}>
+            <div className="mt-12 rounded-2xl bg-surface-deep p-6 md:mt-16 md:p-8">
+              <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-center md:gap-12">
+                <div>
+                  <div className="eyebrow mb-3">Clinic hours</div>
+                  <h2 className="font-display text-[1.7rem] font-normal leading-[1.15] tracking-[-0.03em] text-ink md:text-[2rem]">
+                    Plan your visit
+                  </h2>
+                  <div className="mt-4 flex items-center gap-2 text-[12px] text-muted">
+                    <span className="relative flex h-1.5 w-1.5">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue opacity-60" />
+                      <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-blue" />
+                    </span>
+                    Accepting new patients
+                  </div>
+                </div>
+                <div className="grid gap-2 text-[14px] sm:grid-cols-3 sm:gap-4">
+                  {[
+                    ["Sunday – Thursday", "9:00 am – 6:00 pm"],
+                    ["Friday", "By appointment"],
+                    ["Saturday", "Closed"],
+                  ].map(([day, time]) => (
+                    <div key={day} className="rounded-xl border border-line/70 bg-white/60 px-4 py-3">
+                      <span className="block text-ink-soft">{day}</span>
+                      <span className="mt-1 block font-medium text-ink">{time}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -425,7 +459,7 @@ export default function ContactPage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="https://wa.me/"
+                  href={buildWhatsAppUrl("")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp"
@@ -435,9 +469,6 @@ export default function ContactPage() {
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.534 5.881L0 24l6.291-1.516A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.732.899.937-3.617-.234-.373A9.818 9.818 0 0 1 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/>
                   </svg>
                   Chat on WhatsApp
-                </Link>
-                <Link href="/book-consultation" className="btn btn-ghost">
-                  Book a consultation
                 </Link>
               </div>
             </div>

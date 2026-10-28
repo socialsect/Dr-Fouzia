@@ -9,6 +9,7 @@ export const metadata = {
 export default function PreventiveHealthLifestyleMedicinePage() {
   return (
     <ServicePage
+      showEnquiryForm
       eyebrow="Health Concern"
       title="Preventive Health & Lifestyle Medicine"
       highlight="The best treatment is never needing it"
@@ -21,11 +22,7 @@ export default function PreventiveHealthLifestyleMedicinePage() {
         "Stress and resilience building strategies",
         "Long-term health optimisation planning",
       ]}
-      cta={{ label: "Book a consultation", href: "/book-consultation" }}
-      secondCta={{
-        label: "Explore connected health",
-        href: "/connected-health",
-      }}
+      cta={{ label: "Book a consultation", href: "/contact" }}
       relatedLinks={[
         { label: "Health Marker Review", href: "/health-marker-review" },
         { label: "Healthy Aging & Longevity", href: "/healthy-aging-longevity" },

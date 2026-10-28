@@ -98,6 +98,7 @@ export default function SupplementReviewPage() {
       ctaTitle="Bring your supplements and let’s"
       ctaAccent="go through them together."
       ctaDescription="Book a consultation with a doctor who will explain each recommendation."
+      showEnquiryForm
     />
   );
 }

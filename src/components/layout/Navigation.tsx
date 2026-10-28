@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const mainNav = [
   { label: "Home", href: "/" },
@@ -11,7 +12,7 @@ const mainNav = [
   { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
   { label: "CBT", href: "/cbt" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const concerns = [
@@ -209,7 +210,7 @@ export function Navigation() {
                       Get in touch
                     </div>
                     <a
-                      href="https://wa.me/"
+                      href={buildWhatsAppUrl("")}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mb-2 block text-[15px] font-medium text-ink transition-colors hover:text-blue"
@@ -227,7 +228,7 @@ export function Navigation() {
 
                     {/* CTA */}
                     <Link
-                      href="/book-consultation"
+                      href="/contact"
                       onClick={closeMenu}
                       className="btn btn-primary inline-flex"
                     >

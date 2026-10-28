@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
   title: "Women’s Health Doctor Dubai | Hormonal Health | Dr Fouzia",
@@ -316,6 +317,7 @@ export default function WomensHormonalHealthPage() {
           </p>
         </div>
       </section>
+      <PageEnquirySection />
     </main>
   );
 }

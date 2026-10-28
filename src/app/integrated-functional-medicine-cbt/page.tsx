@@ -93,6 +93,7 @@ export default function IntegratedFunctionalMedicineCBTPage() {
       ctaTitle="Start with one conversation"
       ctaAccent="about the whole picture."
       ctaDescription="Talk through your health with a doctor who has time to listen."
+      showEnquiryForm
     />
   );
 }

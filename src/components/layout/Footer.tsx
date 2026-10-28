@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useEffect, useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -21,9 +22,9 @@ const serviceLinks = [
 ];
 
 const socialLinks = [
-  { label: "WhatsApp", href: "https://wa.me/", external: true },
+  { label: "WhatsApp", href: buildWhatsAppUrl(""), external: true },
   { label: "@drfouziaalali", href: "https://instagram.com/drfouziaalali", external: true },
-  { label: "Book Consultation", href: "/book-consultation", external: false },
+  { label: "Book Consultation", href: "/contact", external: false },
 ];
 
 /* ── Intersection reveal (safe: starts visible) ── */
@@ -138,7 +139,7 @@ export function Footer() {
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
-              <Link href="/book-consultation" className="btn btn-primary">
+              <Link href="/contact" className="btn btn-primary">
                 Book free consult
               </Link>
               <Link

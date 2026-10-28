@@ -35,7 +35,7 @@ export default function NotFound() {
         <Link href="/" className="rounded-full bg-blue px-6 py-3 text-sm font-medium text-white">
           Back to home
         </Link>
-        <Link href="/book-consultation" className="rounded-full border border-line px-6 py-3 text-sm font-medium text-ink">
+        <Link href="/contact" className="rounded-full border border-line px-6 py-3 text-sm font-medium text-ink">
           Book a consultation
         </Link>
       </div>

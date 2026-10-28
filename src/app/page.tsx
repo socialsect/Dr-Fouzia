@@ -5,6 +5,7 @@ import { Services } from "@/components/sections/Services";
 import { Doctor } from "@/components/sections/Doctor";
 import { Process } from "@/components/sections/Process";
 import { Why } from "@/components/sections/Why";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 import { Instagram } from "@/components/sections/Instagram";
 import { Contact } from "@/components/sections/Contact";
 import { Faq } from "@/components/sections/Faq";
@@ -58,6 +59,7 @@ export default function Home() {
         <Doctor />
         <Process />
         <Why />
+        <PageEnquirySection />
         <Instagram />
         <Contact />
         <Faq />

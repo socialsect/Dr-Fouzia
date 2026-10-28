@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
   title: "Dr Fouzia Dubai | Family Physician & Functional Medicine",
@@ -234,6 +235,7 @@ export default function AboutDrFouziaPage() {
           </p>
         </div>
       </section>
+      <PageEnquirySection />
     </main>
   );
 }

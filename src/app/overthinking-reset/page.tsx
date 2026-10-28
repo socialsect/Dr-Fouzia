@@ -21,7 +21,7 @@ export default function OverthinkingResetPage() {
         "Includes journaling and self-reflection exercises",
         "Structured programme with measurable progress",
       ]}
-      cta={{ label: "Book a consultation", href: "/book-consultation" }}
+      cta={{ label: "Book a consultation", href: "/contact" }}
       secondCta={{ label: "Learn about our approach", href: "/functional-medicine" }}
       relatedLinks={[
         { label: "CBT for Overthinking", href: "/cbt-overthinking" },

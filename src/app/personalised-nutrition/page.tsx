@@ -106,6 +106,7 @@ export default function PersonalisedNutritionPage() {
       ctaTitle="Start with a nutrition plan"
       ctaAccent="built around you."
       ctaDescription="Talk through your health and eating habits with a doctor who has time to listen."
+      showEnquiryForm
     />
   );
 }

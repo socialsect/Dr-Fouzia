@@ -105,6 +105,7 @@ export default function BrainCognitiveWellnessPage() {
       ctaTitle="Book a review of how you are"
       ctaAccent="thinking and feeling."
       ctaDescription="Talk through your concerns with a doctor who has time to listen."
+      showEnquiryForm
     />
   );
 }

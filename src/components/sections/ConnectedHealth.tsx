@@ -5,7 +5,7 @@ import { healthFactors, type HealthFactor } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function ConnectedHealth() {
-  const [active, setActive] = useState<HealthFactor | null>(null);
+  const [active, setActive] = useState<HealthFactor | null>(healthFactors[0]);
 
   return (
     <section id="approach" className="bg-surface-deep py-16 md:py-20">

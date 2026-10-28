@@ -98,6 +98,7 @@ export default function WomensMidlifeWellnessPage() {
       ctaTitle="Talk through this stage with"
       ctaAccent="a doctor who has time to listen."
       ctaDescription="Book a consultation to look at your symptoms and your options."
+      showEnquiryForm
     />
   );
 }

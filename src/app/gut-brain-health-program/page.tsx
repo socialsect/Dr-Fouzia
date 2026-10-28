@@ -91,6 +91,7 @@ export default function GutBrainHealthProgramPage() {
       ctaTitle="Talk through your gut, mood"
       ctaAccent="and stress together."
       ctaDescription="Book a consultation with a doctor who has time to listen."
+      showEnquiryForm
     />
   );
 }

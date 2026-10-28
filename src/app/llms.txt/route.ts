@@ -15,7 +15,7 @@ export function GET() {
 
 Home: ${SITE_URL}
 Sitemap: ${SITE_URL}/sitemap.xml
-Booking: ${SITE_URL}/book-consultation
+Booking: ${SITE_URL}/contact
 
 ## Pages
 

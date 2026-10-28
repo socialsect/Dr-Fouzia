@@ -97,6 +97,7 @@ export default function BrainFogCognitiveWellnessPage() {
       ctaTitle="Start with a review of what may"
       ctaAccent="be behind your brain fog."
       ctaDescription="Book a consultation with a doctor who has time to listen."
+      showEnquiryForm
     />
   );
 }

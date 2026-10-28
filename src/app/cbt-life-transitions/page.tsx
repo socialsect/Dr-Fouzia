@@ -21,7 +21,7 @@ export default function CBTLifeTransitionsPage() {
         "Strengthen resilience and problem-solving skills",
         "Create a forward-looking plan aligned with your new circumstances",
       ]}
-      cta={{ label: "Book a consultation", href: "/book-consultation" }}
+      cta={{ label: "Book a consultation", href: "/contact" }}
       secondCta={{ label: "View all CBT services", href: "/cbt" }}
       relatedLinks={[
         { label: "Stress Management", href: "/cbt-stress-management" },
