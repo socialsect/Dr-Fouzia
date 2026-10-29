@@ -196,7 +196,7 @@ export default function FunctionalMedicinePage() {
                 <Reveal key={step} direction="up" delay={(index % 3) * 45}>
                   <div className="flex items-start gap-5 py-4 md:py-5">
                     <span className="font-display text-[22px] leading-none text-blue/70">0{index + 1}</span>
-                    <div className="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                       <p className="text-[14px] leading-[1.7] text-ink-soft md:text-[15px]">{step}</p>
                       {index === 1 && <Link href="/functional-medicine-consultation" className="text-[12px] font-semibold text-blue">Consultation details &#8594;</Link>}
                       {index === 2 && <Link href="/health-marker-review" className="text-[12px] font-semibold text-blue">Health marker review &#8594;</Link>}

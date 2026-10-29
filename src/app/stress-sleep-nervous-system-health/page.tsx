@@ -253,7 +253,7 @@ export default function StressSleepNervousSystemHealthPage() {
         </div>
       </section>
 
-      <section className="bg-white pb-16 md:pb-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="wrap">
           <Reveal direction="up">
             <div className="rounded-2xl border border-line bg-surface-deep px-6 py-10 md:px-12 md:py-14">

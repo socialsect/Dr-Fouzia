@@ -55,14 +55,17 @@ export function Navigation() {
   return (
     <>
       {/* ── Top bar ── */}
-      <header className="fixed top-0 left-0 right-0 z-50">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white">
         <div className="flex items-center justify-between px-6 py-5 md:px-10 md:py-6">
           {/* Brand */}
-          <Link
-            href="/"
-            className="text-[11px] font-semibold tracking-[0.08em] uppercase text-ink no-underline"
-          >
-            Dr. Fouzia Al Ali
+          <Link href="/" aria-label="Dr. Fouzia Al Ali home">
+            <img
+              src="/images/dr-fouzia-logo.png"
+              alt="Dr. Fouzia Al Ali"
+              width={489}
+              height={217}
+              className="h-9 w-auto md:h-11"
+            />
           </Link>
 
           {/* Menu trigger */}
