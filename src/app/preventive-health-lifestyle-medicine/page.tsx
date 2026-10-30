@@ -28,6 +28,31 @@ export default function PreventiveHealthLifestyleMedicinePage() {
         { label: "Healthy Aging & Longevity", href: "/healthy-aging-longevity" },
         { label: "Metabolic Health", href: "/metabolic-health-weight-management" },
       ]}
+      faqs={[
+        {
+          question: "What is preventive medicine and why is it important?",
+          answer:
+            "Preventive medicine focuses on identifying health risks early and supporting long-term health through appropriate screening, nutrition, physical activity, sleep and lifestyle changes. It aims to reduce the risk of preventable health complications.",
+        },
+        {
+          question:
+            "Where can I get a preventive health assessment in Dubai?",
+          answer:
+            "Dr Fouzia Al Ali offers preventive health assessments in Dubai, considering medical history, cardiovascular risk, metabolic health, lifestyle habits and screening requirements to develop an individualised prevention plan.",
+        },
+        {
+          question:
+            "Which health checks should adults consider for disease prevention?",
+          answer:
+            "Appropriate health checks depend on age, sex, family history and individual risk factors. They may include blood pressure, cholesterol, blood glucose and recommended age-appropriate screening tests.",
+        },
+        {
+          question:
+            "Can lifestyle medicine help reduce the risk of diabetes and heart disease?",
+          answer:
+            "Lifestyle medicine supports cardiovascular and metabolic health through balanced nutrition, regular physical activity, healthy weight management, adequate sleep and stress management. These measures can help reduce risk, although individual outcomes vary.",
+        },
+      ]}
     />
   );
 }

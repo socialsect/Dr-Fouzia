@@ -59,6 +59,29 @@ const faqs = [
     answer:
       "No. Depending on the assessment, support may include lifestyle and nutrition guidance, CBT for mood or sleep, or medical treatment when indicated.",
   },
+  {
+    question:
+      "Where can I consult a women's hormonal health doctor in Dubai?",
+    answer:
+      "Dr Fouzia Al Ali provides women's hormonal health consultations in Dubai, addressing menstrual irregularities, PMS, PCOS, thyroid-related concerns, perimenopause and menopause symptoms.",
+  },
+  {
+    question: "What are the common signs of hormonal imbalance in women?",
+    answer:
+      "Common symptoms may include irregular periods, heavy menstruation, mood changes, acne, sleep difficulties, unexplained fatigue, weight changes and hot flushes. These symptoms can have different medical causes and require appropriate assessment.",
+  },
+  {
+    question:
+      "Can hormonal changes cause fatigue, mood swings and poor sleep?",
+    answer:
+      "Yes. Hormonal fluctuations during the menstrual cycle, perimenopause and menopause can influence energy levels, mood and sleep. Other causes, including thyroid conditions and anaemia, may also contribute.",
+  },
+  {
+    question:
+      "When should I see a doctor for irregular periods or suspected PCOS?",
+    answer:
+      "Consult a doctor if periods are consistently irregular, unusually heavy or painful, or accompanied by other concerning symptoms. A medical assessment can help investigate PCOS, thyroid conditions and other possible causes.",
+  },
 ];
 
 export default function WomensHormonalHealthPage() {

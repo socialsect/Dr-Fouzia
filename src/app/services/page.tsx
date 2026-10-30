@@ -110,6 +110,28 @@ const faqs = [
     question: "Can I combine services?",
     answer: "Yes. Many plans combine medical care with therapy or lifestyle support.",
   },
+  {
+    question: "What healthcare services does Dr Fouzia Al Ali offer in Dubai?",
+    answer:
+      "Dr Fouzia Al Ali offers functional medicine consultations, digestive health assessments, women's hormonal health support, personalised nutrition, supplement reviews, fatigue assessments, cognitive wellness and preventive healthcare services in Dubai.",
+  },
+  {
+    question:
+      "Which service should I choose for ongoing fatigue, digestive issues or hormonal problems?",
+    answer:
+      "The most appropriate service depends on your symptoms and medical history. A functional medicine consultation can help identify the right starting point and determine whether a specialised digestive, hormonal, nutritional or metabolic assessment is needed.",
+  },
+  {
+    question:
+      "Does Dr Fouzia Al Ali offer personalised healthcare programmes?",
+    answer:
+      "Yes. Her healthcare programmes are structured around individual health concerns and may combine medical assessment, lifestyle guidance, nutrition support and follow-up consultations, depending on the programme.",
+  },
+  {
+    question: "How do I choose the right functional medicine service in Dubai?",
+    answer:
+      "Start by identifying your primary health concern, such as digestion, hormonal health, fatigue or cognitive difficulties. Dr Fouzia Al Ali can review your symptoms and recommend an appropriate consultation or programme.",
+  },
 ];
 
 export default function ServicesPage() {

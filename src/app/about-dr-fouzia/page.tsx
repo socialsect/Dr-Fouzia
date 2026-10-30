@@ -36,6 +36,22 @@ const faqs = [
     answer:
       "Common reasons include fatigue, gut and digestive symptoms, hormonal changes, stress and sleep problems, weight and metabolic concerns, and aesthetic goals. She does not treat emergencies.",
   },
+  {
+    question: "What makes Dr Fouzia Al Ali's healthcare approach different?",
+    answer:
+      "Dr Fouzia Al Ali takes a whole-person approach by considering medical history, symptoms, lifestyle, nutrition, sleep and emotional well-being. Recommendations are based on individual health needs rather than a standard treatment template.",
+  },
+  {
+    question:
+      "Which conditions and health concerns does Dr Fouzia Al Ali address?",
+    answer:
+      "Her areas of care include digestive discomfort, hormonal changes, fatigue, brain fog, metabolic health, sleep-related concerns, nutritional requirements and healthy ageing.",
+  },
+  {
+    question: "How can I consult Dr Fouzia Al Ali in Dubai?",
+    answer:
+      "You can contact her clinic through the official website to enquire about appointment availability, consultation options and the service most appropriate for your health concerns.",
+  },
 ];
 
 export default function AboutDrFouziaPage() {

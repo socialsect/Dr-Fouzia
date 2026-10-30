@@ -81,6 +81,29 @@ export default function IntegratedFunctionalMedicineCBTPage() {
           answer:
             "Yes, both parts of the programme are available online as well as in person in Dubai.",
         },
+        {
+          question:
+            "What is integrated functional medicine and mind wellness?",
+          answer:
+            "Integrated functional medicine and mind wellness combines medical assessment with practical support for stress, emotional well-being and lifestyle habits. It considers how physical symptoms and emotional health may influence each other.",
+        },
+        {
+          question:
+            "Who can benefit from an integrated functional medicine programme in Dubai?",
+          answer:
+            "Individuals experiencing ongoing stress alongside sleep difficulties, digestive discomfort, fatigue, low mood or lifestyle-related health concerns may benefit from an integrated assessment and personalised support programme.",
+        },
+        {
+          question: "How do Calm mind sessions support emotional well-being?",
+          answer:
+            "Calm mind sessions focus on practical approaches to managing worry, stress responses and unhelpful thought patterns. They complement medical assessment and lifestyle guidance to support emotional well-being.",
+        },
+        {
+          question:
+            "Does integrated functional medicine address both physical and emotional health?",
+          answer:
+            "Yes. This approach considers medical factors alongside stress, sleep, nutrition and daily habits. Dr Fouzia Al Ali reviews these areas together to develop a healthcare plan that addresses relevant individual needs.",
+        },
       ]}
       safety={{
         text: "If you have thoughts of harming yourself, or feel unable to keep yourself safe, get urgent help now. Chest pain, fainting or severe breathlessness also need urgent medical care. In the UAE, call",

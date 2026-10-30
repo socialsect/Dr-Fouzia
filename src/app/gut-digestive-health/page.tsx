@@ -60,6 +60,28 @@ const faqs = [
     answer:
       "Dr Fouzia assesses you and supports management once other causes have been excluded.",
   },
+  {
+    question:
+      "When should I consult a gut health doctor in Dubai for persistent bloating?",
+    answer:
+      "Consult a doctor if bloating is persistent, recurrent, worsening or affecting your daily activities. Dr Fouzia Al Ali can review your digestive symptoms, eating habits, medical history and possible underlying causes to determine the appropriate next steps.",
+  },
+  {
+    question:
+      "What digestive problems can a functional medicine doctor help assess?",
+    answer:
+      "A functional medicine assessment can help investigate bloating, constipation, diarrhoea, reflux, indigestion and recurring abdominal discomfort. Depending on your symptoms, conditions such as irritable bowel syndrome, coeliac disease and bacterial overgrowth may also be considered.",
+  },
+  {
+    question: "Can stress affect gut health and digestion?",
+    answer:
+      "Yes. Stress can influence digestive activity and may worsen symptoms such as abdominal discomfort, bloating and changes in bowel habits. Dr Fouzia Al Ali considers the relationship between digestive health, stress, sleep and lifestyle when developing an appropriate care plan.",
+  },
+  {
+    question: "How can I improve my gut health naturally?",
+    answer:
+      "Supporting digestive health may involve balanced nutrition, adequate hydration, regular physical activity, sufficient sleep and identifying individual food triggers. Persistent symptoms should be medically assessed rather than managed through dietary changes alone.",
+  },
 ];
 
 export default function GutDigestiveHealthPage() {

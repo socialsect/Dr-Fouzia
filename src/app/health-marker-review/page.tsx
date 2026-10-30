@@ -89,6 +89,30 @@ export default function HealthMarkerReviewPage() {
           answer:
             "Turnaround times depend on the tests and laboratory. Contact the clinic for current timing and fees.",
         },
+        {
+          question:
+            "Where can I get my blood test results reviewed by a doctor in Dubai?",
+          answer:
+            "Dr Fouzia Al Ali offers health marker reviews in Dubai, where laboratory results are interpreted alongside your medical history, symptoms, medications and relevant health concerns.",
+        },
+        {
+          question:
+            "Can a doctor explain normal blood test results if I still feel unwell?",
+          answer:
+            "Yes. A result within a laboratory's reference range does not always explain how you feel. A doctor can review the complete report alongside your symptoms, medical history and other relevant health factors.",
+        },
+        {
+          question:
+            "Which blood markers should be checked during a health assessment?",
+          answer:
+            "Depending on your medical history and symptoms, a health assessment may consider blood count, iron, thyroid function, vitamin levels, blood glucose, cholesterol and other relevant markers. Not everyone requires every test.",
+        },
+        {
+          question:
+            "Do I need to repeat blood tests if my previous results are normal?",
+          answer:
+            "Not necessarily. Repeat testing depends on your symptoms, medical history, previous results and whether new information would influence your healthcare plan. Dr Fouzia Al Ali recommends further testing when clinically justified.",
+        },
       ]}
       safety={{
         text: "If a report is marked urgent or critical, contact the clinician who ordered it promptly. Chest pain, severe shortness of breath or fainting needs emergency medical care. Call",

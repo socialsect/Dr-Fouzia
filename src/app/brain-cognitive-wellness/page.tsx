@@ -93,6 +93,30 @@ export default function BrainCognitiveWellnessPage() {
           answer:
             "That varies with the cause. Your doctor can discuss reasonable expectations after reviewing your symptoms and health history.",
         },
+        {
+          question:
+            "How can I improve brain health and cognitive function naturally?",
+          answer:
+            "Brain health can be supported through regular physical activity, adequate sleep, balanced nutrition, social engagement and effective stress management. Medical assessment is important when memory or concentration difficulties are persistent.",
+        },
+        {
+          question:
+            "What causes memory problems and poor concentration in adults?",
+          answer:
+            "Memory and concentration difficulties can be associated with sleep disorders, stress, hormonal changes, thyroid conditions, low iron, vitamin B12 deficiency, low mood and medication effects. A medical assessment helps identify potential contributors.",
+        },
+        {
+          question:
+            "What does a cognitive wellness assessment in Dubai include?",
+          answer:
+            "A cognitive wellness assessment may include a review of memory, concentration, sleep, mood, nutrition, medical history and medications. Dr Fouzia Al Ali may recommend relevant investigations or further evaluation depending on the findings.",
+        },
+        {
+          question:
+            "Are Clear mind sessions suitable for people experiencing mental fatigue?",
+          answer:
+            "Clear mind sessions are intended to provide practical support for concentration, mental clarity and managing cognitive fatigue. Suitability depends on individual needs, and persistent or worsening cognitive symptoms should first receive appropriate medical assessment.",
+        },
       ]}
       safety={{
         text: "Sudden confusion, a severe headache, weakness on one side, difficulty speaking or a fall with head injury needs emergency care in the UAE. Call",

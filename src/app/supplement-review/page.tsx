@@ -89,6 +89,29 @@ export default function SupplementReviewPage() {
           answer:
             "No. A supplement review focuses on products you take or are considering. Food-based guidance is covered in a personalised nutrition consultation.",
         },
+        {
+          question:
+            "Where can I get my vitamins and supplements reviewed by a doctor in Dubai?",
+          answer:
+            "Dr Fouzia Al Ali offers medical supplement reviews in Dubai, assessing your current vitamins, minerals and other supplements alongside your medications, health conditions and relevant laboratory results.",
+        },
+        {
+          question:
+            "How do I know which supplements my body actually needs?",
+          answer:
+            "Supplement requirements depend on dietary intake, medical history, symptoms and nutritional status. A doctor can assess whether supplementation is appropriate and whether relevant tests are needed before recommending specific products.",
+        },
+        {
+          question: "Can taking too many supplements affect my health?",
+          answer:
+            "Yes. Taking excessive amounts of certain vitamins and minerals can cause adverse effects. Some supplements may also interact with prescription medications or overlap with other products. A medical review helps assess these risks.",
+        },
+        {
+          question:
+            "Should I take vitamin D, B12 or iron supplements without a blood test?",
+          answer:
+            "Not everyone requires these supplements. The decision depends on individual risk factors, dietary intake, symptoms and medical history. Testing may be appropriate when a deficiency is suspected.",
+        },
       ]}
       safety={{
         text: "Do not stop a prescribed medicine because of a supplement review without speaking with your prescriber. Swelling of the face or throat, breathing difficulty or a widespread rash can be an emergency. Call",

@@ -86,6 +86,30 @@ export default function WomensMidlifeWellnessPage() {
           answer:
             "Fees are confirmed at your first consultation. Message us for current information.",
         },
+        {
+          question:
+            "What is included in a women's midlife wellness programme in Dubai?",
+          answer:
+            "Dr Fouzia Al Ali's women's midlife wellness programme combines medical assessment, lifestyle guidance and practical emotional well-being support. It addresses concerns such as sleep changes, hot flushes, mood changes, fatigue and cognitive difficulties.",
+        },
+        {
+          question:
+            "What are the common symptoms of perimenopause and menopause?",
+          answer:
+            "Common symptoms include irregular periods, hot flushes, night sweats, poor sleep, mood changes, reduced energy, weight changes, vaginal dryness and difficulty concentrating. Symptoms vary between individuals.",
+        },
+        {
+          question:
+            "How can I manage menopause-related mood swings, anxiety and sleep problems?",
+          answer:
+            "Management may involve reviewing hormonal changes, sleep habits, nutrition, physical activity and emotional well-being. Calm mind sessions can provide additional practical support for managing stress and emotional changes during midlife.",
+        },
+        {
+          question:
+            "When should I start a menopause or perimenopause wellness programme?",
+          answer:
+            "Consider seeking medical advice when hormonal changes begin affecting your sleep, mood, energy, periods or daily activities. Early assessment can help identify contributing factors and discuss suitable management options.",
+        },
       ]}
       safety={{
         text: "See a doctor promptly for bleeding after menopause, very heavy bleeding, bleeding between periods, a breast lump, chest pain or severe pelvic pain. If you have thoughts of harming yourself or cannot keep yourself safe, get urgent help now. In the UAE, call",

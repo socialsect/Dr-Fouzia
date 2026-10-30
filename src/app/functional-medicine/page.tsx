@@ -59,6 +59,27 @@ const faqs = [
     question: "How long until I notice a change?",
     answer: "It varies, and no outcome can be guaranteed.",
   },
+  {
+    question: "What is functional medicine and how does it work?",
+    answer:
+      "Functional medicine is an approach to healthcare that considers how nutrition, sleep, stress, hormones, digestion and lifestyle may contribute to health concerns. Dr Fouzia Al Ali uses medical assessments and relevant investigations to develop personalised healthcare recommendations.",
+  },
+  {
+    question: "Who should consider functional medicine in Dubai?",
+    answer:
+      "People experiencing persistent fatigue, digestive problems, hormonal changes, recurring health concerns or unexplained symptoms may benefit from a functional medicine assessment. It can also support individuals interested in preventive health and long-term wellness.",
+  },
+  {
+    question:
+      "Does functional medicine help identify the underlying causes of chronic symptoms?",
+    answer:
+      "Functional medicine aims to investigate potential contributors to ongoing symptoms by reviewing medical history, lifestyle, relevant laboratory results and associated health factors. Further investigations are recommended when clinically appropriate.",
+  },
+  {
+    question: "How long does it take to see results from functional medicine?",
+    answer:
+      "The timeline depends on the underlying health concern, individual circumstances and recommended interventions. Some changes may be noticed relatively quickly, while longer-standing health concerns may require ongoing assessment and follow-up.",
+  },
 ];
 
 export default function FunctionalMedicinePage() {

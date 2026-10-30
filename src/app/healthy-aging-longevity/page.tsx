@@ -47,6 +47,29 @@ const faqs = [
     answer:
       "No outcome can be promised. The aim is to identify risks that can be addressed and support your health and function over time.",
   },
+  {
+    question:
+      "Where can I consult a healthy aging and longevity doctor in Dubai?",
+    answer:
+      "Dr Fouzia Al Ali offers healthy aging and preventive healthcare assessments in Dubai, focusing on cardiovascular health, metabolic function, muscle strength, bone health, sleep and age-related health risks.",
+  },
+  {
+    question:
+      "What is longevity medicine and how does it support healthy aging?",
+    answer:
+      "Longevity medicine focuses on maintaining health and function as people age. It considers cardiovascular and metabolic health, nutrition, physical activity, sleep, muscle strength and appropriate preventive screening.",
+  },
+  {
+    question: "Which health markers are important for healthy aging?",
+    answer:
+      "Important health markers may include blood pressure, cholesterol, blood glucose, kidney function and other indicators selected according to individual medical history and risk factors. Bone and muscle health should also be considered.",
+  },
+  {
+    question:
+      "How can I maintain energy, memory and physical strength as I age?",
+    answer:
+      "Healthy aging involves regular exercise, strength training, balanced nutrition, adequate protein, quality sleep, social engagement and appropriate preventive healthcare. A personalised medical assessment can help identify areas requiring additional attention.",
+  },
 ];
 
 export default function HealthyAgingLongevityPage() {

@@ -86,6 +86,27 @@ export default function BrainFogCognitiveWellnessPage() {
           answer:
             "Yes, the programme is available online as well as in person in Dubai.",
         },
+        {
+          question: "What causes brain fog and difficulty concentrating?",
+          answer:
+            "Brain fog can be associated with poor sleep, prolonged stress, nutritional deficiencies, thyroid problems, hormonal changes, low mood and certain medications. It is a symptom rather than a medical diagnosis and should be assessed when persistent.",
+        },
+        {
+          question: "How can I improve mental clarity and concentration?",
+          answer:
+            "Improving mental clarity may involve addressing sleep problems, reviewing nutrition, managing stress, maintaining physical activity and investigating relevant medical causes. Dr Fouzia Al Ali develops recommendations based on individual assessment.",
+        },
+        {
+          question:
+            "What is included in a brain fog wellness programme in Dubai?",
+          answer:
+            "The programme involves reviewing medical history, sleep, mood, medications, nutrition and relevant health markers. It may also include lifestyle recommendations, follow-up assessments and Clear mind sessions to support concentration and mental wellness.",
+        },
+        {
+          question: "When should I see a doctor for persistent brain fog?",
+          answer:
+            "Seek medical advice if brain fog continues for weeks, affects work or daily activities, or occurs alongside fatigue, sleep difficulties or memory problems. Sudden confusion or sudden neurological symptoms require urgent medical attention.",
+        },
       ]}
       safety={{
         text: "Sudden confusion, severe headache, weakness on one side, difficulty speaking or a head injury need emergency care now. In the UAE, call",

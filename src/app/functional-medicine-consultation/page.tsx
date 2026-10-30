@@ -40,6 +40,30 @@ const faqs = [
     question: "Do I have to commit to treatment?",
     answer: "No. The decision is yours.",
   },
+  {
+    question:
+      "What happens during a functional medicine consultation in Dubai?",
+    answer:
+      "A functional medicine consultation with Dr Fouzia Al Ali involves reviewing your symptoms, medical history, medications, lifestyle, nutrition, sleep and health goals. Relevant investigations may be recommended before developing a personalised care plan.",
+  },
+  {
+    question:
+      "How much does a functional medicine consultation cost in Dubai?",
+    answer:
+      "Consultation fees depend on the appointment type and services required. Contact Dr Fouzia Al Ali's clinic directly to confirm the current consultation charges and available appointment options.",
+  },
+  {
+    question:
+      "Do I need blood tests before my functional medicine consultation?",
+    answer:
+      "No, you do not necessarily need blood tests before your first appointment. Dr Fouzia Al Ali reviews your medical history and symptoms before deciding whether specific blood tests or investigations would provide useful information.",
+  },
+  {
+    question:
+      "What should I bring to my first functional medicine appointment?",
+    answer:
+      "Bring previous laboratory reports, medical records, a list of medications and supplements, and details of your current symptoms. Information about your sleep, diet and lifestyle can also help make the consultation more productive.",
+  },
 ];
 
 export default function FunctionalMedicineConsultationPage() {

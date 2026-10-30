@@ -156,4 +156,27 @@ export const homepageFaqItems = [
     answer:
       "Yes, including irregular periods, PMS, perimenopause and menopause.",
   },
+  {
+    question:
+      "Who is the best functional medicine doctor in Dubai for personalised healthcare?",
+    answer:
+      "Dr Fouzia Al Ali provides personalised functional medicine care in Dubai, focusing on understanding the factors contributing to ongoing symptoms. Her approach considers medical history, nutrition, digestion, hormones, sleep and lifestyle before recommending an appropriate healthcare plan.",
+  },
+  {
+    question: "What health concerns can Dr Fouzia Al Ali help with?",
+    answer:
+      "Dr Fouzia Al Ali offers support for digestive problems, hormonal changes, persistent fatigue, low energy, brain fog, sleep difficulties, metabolic health and preventive healthcare through individualised medical assessments.",
+  },
+  {
+    question:
+      "How is functional medicine different from conventional medical care?",
+    answer:
+      "Functional medicine considers how different aspects of health, including nutrition, sleep, hormones, digestion and stress, may interact. It complements conventional medical care by examining potential contributing factors and developing an evidence-informed personalised plan.",
+  },
+  {
+    question:
+      "How can I book a functional medicine consultation with Dr Fouzia Al Ali in Dubai?",
+    answer:
+      "You can contact Dr Fouzia Al Ali's clinic through the website or WhatsApp to enquire about consultation availability. The clinic team can guide you through the appointment booking process and help identify the most appropriate service.",
+  },
 ] as const;

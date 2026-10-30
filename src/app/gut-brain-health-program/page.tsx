@@ -80,6 +80,29 @@ export default function GutBrainHealthProgramPage() {
           answer:
             "This is confirmed at your first consultation, based on your symptoms and goals.",
         },
+        {
+          question:
+            "What is the gut-brain connection and how does it affect health?",
+          answer:
+            "The gut-brain connection refers to the two-way communication between the digestive system and the brain. It involves nerve signalling, hormones and other biological pathways that can influence digestion, mood, stress responses and overall well-being.",
+        },
+        {
+          question:
+            "Who can benefit from a gut-brain health programme in Dubai?",
+          answer:
+            "People experiencing digestive symptoms that worsen during stressful periods, including bloating, abdominal discomfort and changes in bowel habits, may benefit from an assessment. It may also suit individuals whose digestive symptoms occur alongside sleep, mood or concentration difficulties.",
+        },
+        {
+          question: "Can stress and anxiety make digestive problems worse?",
+          answer:
+            "Yes. Stress and anxiety can affect gut movement, sensitivity and digestive function. A combined approach that considers medical causes, nutrition and stress management may help address the factors contributing to recurring symptoms.",
+        },
+        {
+          question:
+            "What are Calm mind sessions in the gut-brain health programme?",
+          answer:
+            "Calm mind sessions provide practical support for managing stress, worry and emotional responses that may affect digestive well-being. They complement medical assessment and nutrition guidance as part of an individualised gut-brain health programme.",
+        },
       ]}
       safety={{
         text: "See a doctor urgently for blood in stool, black stools, unexplained weight loss, persistent vomiting, severe or worsening abdominal pain, trouble swallowing or a family history of bowel cancer. In the UAE, call",

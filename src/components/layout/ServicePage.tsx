@@ -13,6 +13,7 @@ interface ServicePageProps {
   cta?: { label: string; href: string };
   secondCta?: { label: string; href: string };
   relatedLinks?: { label: string; href: string }[];
+  faqs?: { question: string; answer: string }[];
   showEnquiryForm?: boolean;
 }
 
@@ -25,6 +26,7 @@ export function ServicePage({
   cta = { label: "Book a consultation", href: "/contact" },
   secondCta,
   relatedLinks,
+  faqs,
   showEnquiryForm = false,
 }: ServicePageProps) {
   return (
@@ -110,6 +112,38 @@ export function ServicePage({
         )}
       </div>
     </main>
+    {faqs && faqs.length > 0 && (
+      <section className="bg-surface-deep py-16 md:py-24">
+        <div className="wrap-narrow">
+          <Reveal direction="up">
+            <div className="mb-6">
+              <div className="eyebrow mb-4">A few helpful answers</div>
+              <h2 className="font-display text-[clamp(2rem,4vw,3.25rem)] font-normal leading-[1.1] tracking-[-0.035em] text-ink">
+                Frequently asked <em className="text-blue">questions.</em>
+              </h2>
+            </div>
+          </Reveal>
+          <div className="divide-y divide-line border-y border-line">
+            {faqs.map((faq) => (
+              <details key={faq.question} className="group py-5">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 text-left font-semibold text-ink marker:content-none">
+                  {faq.question}
+                  <span
+                    className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-full border border-line text-blue transition-transform group-open:rotate-45"
+                    aria-hidden="true"
+                  >
+                    +
+                  </span>
+                </summary>
+                <p className="max-w-[760px] pt-4 pr-10 text-[15px] leading-[1.75] text-ink-soft">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
     {showEnquiryForm && <PageEnquirySection />}
     </>
   );

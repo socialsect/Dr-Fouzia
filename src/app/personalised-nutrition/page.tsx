@@ -99,6 +99,30 @@ export default function PersonalisedNutritionPage() {
           answer:
             "Please contact the clinic first so the team can confirm whether this consultation is suitable for your circumstances.",
         },
+        {
+          question:
+            "Where can I get personalised nutrition advice from a doctor in Dubai?",
+          answer:
+            "Dr Fouzia Al Ali provides personalised nutrition guidance in Dubai based on medical history, dietary habits, symptoms, relevant laboratory results and individual health goals.",
+        },
+        {
+          question:
+            "How is personalised nutrition different from a regular diet plan?",
+          answer:
+            "Personalised nutrition considers individual medical conditions, nutritional requirements, food preferences, lifestyle and health goals rather than following a standard diet. This helps make dietary recommendations more relevant and practical.",
+        },
+        {
+          question:
+            "Can personalised nutrition help with digestive problems and hormonal health?",
+          answer:
+            "Nutrition can influence digestive function, metabolic health and overall well-being. A personalised assessment can identify relevant dietary considerations and help develop an eating plan that supports individual digestive and hormonal health needs.",
+        },
+        {
+          question:
+            "Do I need blood tests before starting a personalised nutrition programme?",
+          answer:
+            "Blood tests are not always necessary. Dr Fouzia Al Ali reviews your symptoms, medical history and existing reports before deciding whether nutritional or metabolic investigations would be useful.",
+        },
       ]}
       safety={{
         text: "A nutrition plan is not a substitute for medical assessment. Seek prompt medical care for severe abdominal pain, black stools, vomiting blood or unexplained weight loss.",

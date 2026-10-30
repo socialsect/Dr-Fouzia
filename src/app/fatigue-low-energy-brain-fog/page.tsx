@@ -65,6 +65,27 @@ const faqs = [
     answer:
       "Yes. Concentration or memory changes can be discussed as part of a fatigue assessment. If your symptoms need specialist review, Dr Fouzia can refer you to neurology.",
   },
+  {
+    question: "Why am I always tired even after getting enough sleep?",
+    answer:
+      "Persistent tiredness can have several causes, including anaemia, thyroid problems, nutritional deficiencies, sleep disorders, hormonal changes, medication effects and prolonged stress. Dr Fouzia Al Ali can assess potential contributors through a medical consultation.",
+  },
+  {
+    question:
+      "Which doctor should I consult for constant fatigue and low energy in Dubai?",
+    answer:
+      "A family physician or doctor experienced in fatigue assessment can help investigate persistent low energy. Dr Fouzia Al Ali reviews medical history, sleep, nutrition, hormonal health and relevant blood markers to guide further assessment.",
+  },
+  {
+    question: "Can vitamin deficiencies cause fatigue and brain fog?",
+    answer:
+      "Yes. Low levels of certain nutrients, including iron, vitamin B12 and vitamin D, may contribute to tiredness and cognitive difficulties. Testing may be recommended when symptoms and medical history indicate a possible deficiency.",
+  },
+  {
+    question: "How can I improve my energy levels naturally?",
+    answer:
+      "Consistent sleep, balanced meals, regular movement, adequate hydration and stress management can support energy levels. However, persistent fatigue requires medical assessment to identify and address possible underlying causes.",
+  },
 ];
 
 export default function FatigueLowEnergyBrainFogPage() {
