@@ -4,9 +4,9 @@ import { Reveal } from "@/components/ui/Reveal";
 import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
-  title: "Healthcare Services Dubai | Functional, CBT & Aesthetic",
+  title: "Healthcare Services Dubai | Functional, Calm Mind Sessions & Aesthetic",
   description:
-    "Healthcare services in Dubai with Dr Fouzia: functional medicine, CBT, women’s health, programmes and aesthetic medicine, all under one doctor-led practice.",
+    "Healthcare services in Dubai with Dr Fouzia: functional medicine, Calm Mind Sessions, women’s health, programmes and aesthetic medicine, all under one doctor-led practice.",
 };
 
 const primaryServices = [
@@ -65,9 +65,9 @@ const primaryServices = [
 
 const additionalServices = [
   {
-    title: "CBT in Dubai",
+    title: "Calm Mind Sessions in Dubai",
     description: "Skills-based therapy for anxiety, overthinking, stress, low mood and sleep.",
-    href: "/cbt",
+    href: "/calm-mind-sessions",
   },
   {
     title: "Healthy aging and longevity",
@@ -77,7 +77,7 @@ const additionalServices = [
   {
     title: "Combined programmes",
     description: "Structured plans that join medical care with therapy skills.",
-    href: "/integrated-functional-medicine-cbt",
+    href: "/integrated-functional-medicine-calm-mind-sessions",
   },
   {
     title: "Aesthetic medicine in Dubai",
@@ -88,9 +88,9 @@ const additionalServices = [
 
 const startingPoints = [
   { need: "Ongoing physical symptoms", service: "Functional medicine consultation", href: "/functional-medicine-consultation" },
-  { need: "Worry, low mood, sleep or stress", service: "CBT", href: "/cbt" },
+  { need: "Worry, low mood, sleep or stress", service: "Calm Mind Sessions", href: "/calm-mind-sessions" },
   { need: "Hormone or cycle changes", service: "Women’s health", href: "/womens-hormonal-health" },
-  { need: "Both body and mind", service: "Integrated programme", href: "/integrated-functional-medicine-cbt" },
+  { need: "Both body and mind", service: "Integrated programme", href: "/integrated-functional-medicine-calm-mind-sessions" },
   { need: "Cosmetic goals", service: "Aesthetic consultation", href: "/aesthetic-medicine" },
 ];
 

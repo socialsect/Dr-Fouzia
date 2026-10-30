@@ -8,7 +8,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Articles on functional medicine, hormonal health, gut health, CBT and healthy ageing from Dr Fouzia Al Ali, family physician in Dubai.",
+    "Articles on functional medicine, hormonal health, gut health, Calm Mind Sessions and healthy ageing from Dr Fouzia Al Ali, family physician in Dubai.",
   alternates: { canonical: `${SITE_URL}/blog` },
 };
 

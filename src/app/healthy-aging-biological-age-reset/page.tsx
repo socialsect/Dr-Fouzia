@@ -56,7 +56,7 @@ export default function HealthyAgingBiologicalAgeResetPage() {
             "A first consultation covering health history, family history, routine and goals",
             "A medical review, with tests chosen for a reason",
             "A written plan with priorities in order and realistic steps",
-            "CBT-informed support for habits, motivation and stress where useful",
+            "Calm Mind Sessions support for habits, motivation and stress where useful",
             "Follow-up reviews to track progress and adjust",
           ],
         },

@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { useLanding } from "@/components/landing/i18n";
 import { WhatsAppButton } from "@/components/landing/WhatsAppButton";
 
-type FilterId = "all" | "gut" | "womens" | "cbt" | "functional";
+type FilterId = "all" | "gut" | "womens" | "calm-mind-sessions" | "functional";
 
 export function VideoWall() {
   const { copy } = useLanding();

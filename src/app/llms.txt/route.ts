@@ -11,7 +11,7 @@ export function GET() {
 
   const body = `# Dr. Fouzia Al Ali
 
-> Functional medicine doctor and family physician in Dubai, UAE. Root-cause, unhurried care across functional medicine, CBT, women's hormonal health, metabolic health, gut health, healthy ageing and aesthetic medicine.
+> Functional medicine doctor and family physician in Dubai, UAE. Root-cause, unhurried care across functional medicine, Calm Mind Sessions, women's hormonal health, metabolic health, gut health, healthy ageing and aesthetic medicine.
 
 Home: ${SITE_URL}
 Sitemap: ${SITE_URL}/sitemap.xml

@@ -6,7 +6,7 @@ import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 export const metadata: Metadata = {
   title: "Dr Fouzia Dubai | Family Physician & Functional Medicine",
   description:
-    "Meet Dr Fouzia, a consultant family physician in Dubai. Learn about her whole-person approach, functional medicine, CBT and aesthetic care.",
+    "Meet Dr Fouzia, a consultant family physician in Dubai. Learn about her whole-person approach, functional medicine, Calm Mind Sessions and aesthetic care.",
 };
 
 const highlights = [
@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Who is Dr Fouzia Al Ali?",
     answer:
-      "A consultant family physician in Dubai who practises functional medicine, CBT and aesthetic medicine.",
+      "A consultant family physician in Dubai who practises functional medicine, Calm Mind Sessions and aesthetic medicine.",
   },
   {
     question: "What conditions does she see patients for?",
@@ -70,7 +70,7 @@ export default function AboutDrFouziaPage() {
             >
               Meet Dr Fouzia, Family Physician in Dubai
               <br />
-              <em className="text-blue">Functional medicine, CBT and aesthetic care</em>
+              <em className="text-blue">Functional medicine, Calm Mind Sessions and aesthetic care</em>
             </h1>
           </Reveal>
 
@@ -150,7 +150,7 @@ export default function AboutDrFouziaPage() {
             <Reveal direction="up">
               <article className="h-full rounded-2xl border border-line bg-white p-6 md:p-8">
                 <h3 className="mb-4 font-display text-[26px] leading-[1.15] tracking-[-0.025em] text-ink md:text-[30px]">
-                  CBT and mind-body care
+                  Calm Mind Sessions and mind-body care
                 </h3>
                 <p className="text-[15px] leading-[1.75] text-ink-soft">
                   For concerns such as anxiety, low mood or poor sleep, care can consider possible

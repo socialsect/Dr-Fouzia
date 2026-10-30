@@ -56,10 +56,10 @@ export default function BrainCognitiveWellnessPage() {
           heading: "Make room for",
           accent: "steady steps.",
           paragraphs: [
-            "A plan may include sleep routines, pacing your workload, regular meals, movement and short breaks. If worry or low mood is part of the picture, CBT skills may also be discussed.",
+            "A plan may include sleep routines, pacing your workload, regular meals, movement and short breaks. If worry or low mood is part of the picture, Calm Mind Sessions skills may also be discussed.",
           ],
           links: [
-            { label: "Explore CBT for stress management", href: "/cbt-stress-management" },
+            { label: "Explore Calm Mind Sessions for stress management", href: "/calm-mind-sessions-stress-management" },
             { label: "Read about fatigue and brain fog", href: "/fatigue-low-energy-brain-fog" },
           ],
         },

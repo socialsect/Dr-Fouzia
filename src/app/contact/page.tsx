@@ -71,7 +71,7 @@ const faqs = [
   },
   {
     q: "Are consultations available online?",
-    a: "Yes. Both functional medicine consultations and CBT sessions are available online, wherever you are.",
+    a: "Yes. Both functional medicine consultations and Calm Mind Sessions are available online, wherever you are.",
   },
   {
     q: "How long does a first appointment take?",
@@ -86,7 +86,7 @@ const faqs = [
 const concerns = [
   "Gut and digestive health",
   "Women's hormonal health",
-  "CBT for women (Arabic)",
+  "Calm Mind Sessions for women (Arabic)",
   "Fatigue and brain fog",
   "Healthy aging",
   "Supplement review",
@@ -282,9 +282,9 @@ export default function ContactPage() {
                             <option key={c} value={c}>{c}</option>
                           ))}
                         </select>
-                        {form.concern === "CBT for women (Arabic)" && (
+                        {form.concern === "Calm Mind Sessions for women (Arabic)" && (
                           <p className="mt-1.5 text-[12px] text-ink-soft">
-                            CBT sessions are one-to-one, in Arabic, for women.
+                            Calm Mind Sessions is one-to-one, in Arabic, for women.
                           </p>
                         )}
                       </div>

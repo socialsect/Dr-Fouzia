@@ -4,7 +4,7 @@ import { HealthConcernContent } from "@/components/layout/HealthConcernContent";
 export const metadata: Metadata = {
   title: "Women\u2019s Wellness Dubai | Midlife Programme | Dr Fouzia",
   description:
-    "Support through perimenopause and menopause in Dubai. Dr Fouzia\u2019s women\u2019s midlife programme joins a medical review, lifestyle plan and CBT skills.",
+    "Support through perimenopause and menopause in Dubai. Dr Fouzia\u2019s women\u2019s midlife programme joins a medical review, lifestyle plan and Calm Mind Sessions skills.",
 };
 
 export default function WomensMidlifeWellnessPage() {
@@ -14,7 +14,7 @@ export default function WomensMidlifeWellnessPage() {
       highlightsEyebrow="Women's midlife health in Dubai"
       title="Women's Wellness Programme"
       highlight="in Dubai"
-      description="Support for the midlife transition, body and mind. Perimenopause and menopause can bring more than hot flushes. Many women notice changes in sleep, mood, energy, memory, weight, periods and confidence, often all at once. Dr Fouzia is a consultant family physician who offers this women\u2019s midlife wellness programme in Dubai. It combines a thorough medical review with lifestyle guidance and CBT skills, so you get a plan for how you feel now and for the years ahead."
+      description="Support for the midlife transition, body and mind. Perimenopause and menopause can bring more than hot flushes. Many women notice changes in sleep, mood, energy, memory, weight, periods and confidence, often all at once. Dr Fouzia is a consultant family physician who offers this women\u2019s midlife wellness programme in Dubai. It combines a thorough medical review with lifestyle guidance and Calm Mind Sessions skills, so you get a plan for how you feel now and for the years ahead."
       highlightsTitle="What can"
       highlightsAccent="change."
       highlights={[
@@ -46,7 +46,7 @@ export default function WomensMidlifeWellnessPage() {
             "A first consultation covering periods, symptoms, sleep, mood, health history and goals",
             "A medical review, with tests only where they would change your care",
             "Lifestyle guidance on food, movement, sleep and bone and heart health",
-            "CBT skills for low mood, worry, sleep problems and the thoughts that can come with this stage",
+            "Calm Mind Sessions skills for low mood, worry, sleep problems and the thoughts that can come with this stage",
             "Follow-up reviews to see what is helping and adjust",
           ],
         },
@@ -59,8 +59,8 @@ export default function WomensMidlifeWellnessPage() {
           ],
           links: [
             { label: "Women's hormonal health", href: "/womens-hormonal-health" },
-            { label: "CBT for sleep difficulties", href: "/cbt-sleep-insomnia" },
-            { label: "CBT for anxiety", href: "/cbt-anxiety" },
+            { label: "Calm Mind Sessions for sleep difficulties", href: "/calm-mind-sessions-sleep-insomnia" },
+            { label: "Calm Mind Sessions for anxiety", href: "/calm-mind-sessions-anxiety" },
             { label: "Fatigue and low energy", href: "/fatigue-low-energy-brain-fog" },
           ],
         },
@@ -102,7 +102,7 @@ export default function WomensMidlifeWellnessPage() {
           question:
             "How can I manage menopause-related mood swings, anxiety and sleep problems?",
           answer:
-            "Management may involve reviewing hormonal changes, sleep habits, nutrition, physical activity and emotional well-being. Calm mind sessions can provide additional practical support for managing stress and emotional changes during midlife.",
+            "Management may involve reviewing hormonal changes, sleep habits, nutrition, physical activity and emotional well-being. Calm Mind Sessions can provide additional practical support for managing stress and emotional changes during midlife.",
         },
         {
           question:

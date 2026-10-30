@@ -17,7 +17,7 @@ const serviceLinks = [
   { label: "Functional Medicine", href: "/functional-medicine" },
   { label: "Hormones & Lifestyle", href: "/womens-hormonal-health" },
   { label: "Gut Health", href: "/gut-digestive-health" },
-  { label: "CBT", href: "/cbt" },
+  { label: "Calm Mind Sessions", href: "/calm-mind-sessions" },
   { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
 ];
 

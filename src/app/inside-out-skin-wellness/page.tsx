@@ -14,7 +14,7 @@ export default function InsideOutSkinWellnessPage() {
       highlightsEyebrow="Skin health programme in Dubai"
       title="Skin Wellness"
       highlight="in Dubai"
-      description="Looking after skin from the inside as well as the surface. Skin responds to more than the products you put on it. Hormones, sleep, stress, food, medicines and underlying conditions can all play a part in breakouts, redness, dryness, pigmentation or dull-looking skin. Dr Fouzia is a consultant family physician who offers this skin wellness programme in Dubai. It starts with a medical review and builds a plan covering skincare habits, nutrition, sleep and stress, with CBT skills where stress and skin seem linked."
+      description="Looking after skin from the inside as well as the surface. Skin responds to more than the products you put on it. Hormones, sleep, stress, food, medicines and underlying conditions can all play a part in breakouts, redness, dryness, pigmentation or dull-looking skin. Dr Fouzia is a consultant family physician who offers this skin wellness programme in Dubai. It starts with a medical review and builds a plan covering skincare habits, nutrition, sleep and stress, with Calm Mind Sessions skills where stress and skin seem linked."
       highlightsTitle="Concerns we"
       highlightsAccent="look at."
       highlights={[
@@ -49,7 +49,7 @@ export default function InsideOutSkinWellnessPage() {
             "A medical review, with tests only where there is a reason",
             "A simple skincare routine, avoiding long product lists",
             "Nutrition and lifestyle guidance, with supplements only when justified",
-            "CBT skills for stress, picking, self-criticism and appearance worry where relevant",
+            "Calm Mind Sessions skills for stress, picking, self-criticism and appearance worry where relevant",
             "Follow-up reviews to see how your skin is responding and adjust",
           ],
         },
@@ -64,7 +64,7 @@ export default function InsideOutSkinWellnessPage() {
             { label: "Aesthetic medicine", href: "/aesthetic-medicine" },
             { label: "Personalised nutrition", href: "/personalised-nutrition" },
             { label: "Supplement review", href: "/supplement-review" },
-            { label: "CBT for stress management", href: "/cbt-stress-management" },
+            { label: "Calm Mind Sessions for stress management", href: "/calm-mind-sessions-stress-management" },
           ],
         },
         {

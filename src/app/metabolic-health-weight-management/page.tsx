@@ -192,14 +192,14 @@ export default function MetabolicHealthWeightManagementPage() {
               </h2>
               <p className="mb-6 text-[14.5px] leading-[1.75] text-ink-soft">
                 Weight is one measure among several. A plan can also consider energy, hunger
-                cues, sleep quality and stress. If eating is tied to emotions, CBT support is
+                cues, sleep quality and stress. If eating is tied to emotions, Calm Mind Sessions support is
                 available.
               </p>
               <Link
-                href="/cbt-emotional-eating"
+                href="/calm-mind-sessions-emotional-eating"
                 className="font-semibold text-blue underline underline-offset-4"
               >
-                Explore CBT for emotional eating <span aria-hidden="true">&#8594;</span>
+                Explore Calm Mind Sessions for emotional eating <span aria-hidden="true">&#8594;</span>
               </Link>
             </article>
           </Reveal>

@@ -4,7 +4,7 @@ import { HealthConcernContent } from "@/components/layout/HealthConcernContent";
 export const metadata: Metadata = {
   title: "Weight Management Dubai | Dr Fouzia Al Ali",
   description:
-    "A doctor-led weight management programme in Dubai. Dr Fouzia joins a metabolic health review, practical nutrition and CBT skills for habits and mindset.",
+    "A doctor-led weight management programme in Dubai. Dr Fouzia joins a metabolic health review, practical nutrition and Calm Mind Sessions skills for habits and mindset.",
 };
 
 export default function WeightMetabolicHealthMindsetPage() {
@@ -14,7 +14,7 @@ export default function WeightMetabolicHealthMindsetPage() {
       highlightsEyebrow="Weight management programme in Dubai"
       title="Weight Management"
       highlight="in Dubai"
-      description="A medical review, not a crash diet. Weight is shaped by many things besides willpower, including sleep, stress, hormones, medicines, blood sugar and daily routines. Dr Fouzia is a consultant family physician who offers a weight management programme in Dubai. It starts with a medical review of your metabolic health, then builds a realistic plan around food, movement and habits, with CBT skills to help you keep it going when life gets busy."
+      description="A medical review, not a crash diet. Weight is shaped by many things besides willpower, including sleep, stress, hormones, medicines, blood sugar and daily routines. Dr Fouzia is a consultant family physician who offers a weight management programme in Dubai. It starts with a medical review of your metabolic health, then builds a realistic plan around food, movement and habits, with Calm Mind Sessions skills to help you keep it going when life gets busy."
       highlightsTitle="What the programme"
       highlightsAccent="looks at."
       highlights={[
@@ -57,7 +57,7 @@ export default function WeightMetabolicHealthMindsetPage() {
             "A medical review, with blood tests only where they would help",
             "A nutrition plan built around your preferences, culture and schedule, with no extreme diets",
             "Movement guidance suited to your fitness and any health conditions",
-            "CBT skills for habits, motivation, stress eating and self-criticism",
+            "Calm Mind Sessions skills for habits, motivation, stress eating and self-criticism",
             "Follow-up reviews to track progress and adjust",
           ],
         },

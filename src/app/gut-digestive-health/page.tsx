@@ -250,12 +250,12 @@ export default function GutDigestiveHealthPage() {
               </h2>
               <p className="mb-6 text-[14px] leading-[1.75] text-ink-soft">
                 Stress and worry can make gut symptoms stronger, and gut discomfort can in turn
-                disturb sleep and mood. Where it fits, Dr Fouzia adds CBT skills for the stress
+                disturb sleep and mood. Where it fits, Dr Fouzia adds Calm Mind Sessions skills for the stress
                 side.
               </p>
               <div className="flex flex-wrap gap-x-5 gap-y-2 border-t border-line pt-5">
                 <Link href="/gut-brain-health-program" className="text-[12.5px] font-semibold text-blue">Gut brain health programme &#8594;</Link>
-                <Link href="/cbt-anxiety" className="text-[12.5px] font-semibold text-blue">CBT for anxiety &#8594;</Link>
+                <Link href="/calm-mind-sessions-anxiety" className="text-[12.5px] font-semibold text-blue">Calm Mind Sessions for anxiety &#8594;</Link>
               </div>
             </article>
           </Reveal>

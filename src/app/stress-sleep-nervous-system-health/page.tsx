@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "Stress and Sleep Doctor Dubai",
   description:
-    "Struggling with stress or poor sleep? Dr Fouzia, a stress and sleep doctor in Dubai, offers medical review, lifestyle plans and CBT. Book a consult.",
+    "Struggling with stress or poor sleep? Dr Fouzia, a stress and sleep doctor in Dubai, offers medical review, lifestyle plans and Calm Mind Sessions. Book a consult.",
 };
 
 const sleepFactors = [
@@ -13,7 +13,7 @@ const sleepFactors = [
   "Snoring, pauses in breathing or restless legs",
   "Waking during the night or very early",
   "Medicines and supplements that may affect sleep",
-  "Whether CBT for insomnia may be helpful",
+  "Whether Calm Mind Sessions for insomnia may be helpful",
 ];
 
 const tools = [
@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Do I need sleeping tablets?",
     answer:
-      "Not necessarily. CBT for insomnia is a recommended non-drug option for many adults with chronic insomnia. Medication is discussed only when appropriate to the individual assessment.",
+      "Not necessarily. Calm Mind Sessions for insomnia is a recommended non-drug option for many adults with chronic insomnia. Medication is discussed only when appropriate to the individual assessment.",
   },
   {
     question: "How long until I notice a difference?",
@@ -65,7 +65,7 @@ export default function StressSleepNervousSystemHealthPage() {
               next day may feel harder, and winding down at night can become difficult. A stress
               and sleep doctor in Dubai can look at both together. Dr Fouzia, a consultant family
               physician, checks for possible medical causes first, then combines functional
-              medicine and CBT tools in a plan suited to your needs.
+              medicine and Calm Mind Sessions tools in a plan suited to your needs.
             </p>
           </Reveal>
         </div>
@@ -126,10 +126,10 @@ export default function StressSleepNervousSystemHealthPage() {
             ))}
             <div className="py-5">
               <Link
-                href="/cbt-sleep-insomnia"
+                href="/calm-mind-sessions-sleep-insomnia"
                 className="font-semibold text-blue underline underline-offset-4"
               >
-                Learn about CBT for insomnia <span aria-hidden="true">&#8594;</span>
+                Learn about Calm Mind Sessions for insomnia <span aria-hidden="true">&#8594;</span>
               </Link>
             </div>
           </div>
@@ -168,14 +168,14 @@ export default function StressSleepNervousSystemHealthPage() {
                 Skills you can practise beyond the <em className="text-blue">visit.</em>
               </h2>
               <p className="mb-6 text-[14.5px] leading-[1.75] text-ink-soft">
-                CBT sessions can teach skills for worry, rumination and tension that you can
+                Calm Mind Sessions can teach skills for worry, rumination and tension that you can
                 continue using between appointments.
               </p>
               <Link
-                href="/cbt-stress-management"
+                href="/calm-mind-sessions-stress-management"
                 className="font-semibold text-blue underline underline-offset-4"
               >
-                Explore CBT for stress management <span aria-hidden="true">&#8594;</span>
+                Explore Calm Mind Sessions for stress management <span aria-hidden="true">&#8594;</span>
               </Link>
             </article>
           </Reveal>

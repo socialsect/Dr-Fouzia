@@ -156,7 +156,9 @@ export function bioToText(bio: PortableTextBlock[] | null | undefined): string {
         ? b.children.map((c) => (c as { text?: string }).text || "").join("")
         : "",
     )
-    .join("\n");
+    .join("\n")
+    // The CMS author bio may still contain the retired service acronym.
+    .replace(/\bCBT\b/gi, "Calm Mind Sessions");
 }
 
 export function formatDate(iso: string): string {

@@ -8,7 +8,7 @@ import { LandingPage } from "@/components/landing/LandingPage";
 export const metadata: Metadata = {
   title: "Dr. Fouzia Al Ali — Consultation",
   description:
-    "Personalized care for gut health, women's health, fatigue and stress, plus one-to-one CBT for women in Arabic. In person in Dubai or online.",
+    "Personalized care for gut health, women's health, fatigue and stress, plus one-to-one Calm Mind Sessions for women in Arabic. In person in Dubai or online.",
   robots: { index: false, follow: false },
 };
 

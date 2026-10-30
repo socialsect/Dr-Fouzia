@@ -4,7 +4,7 @@ import { HealthConcernContent } from "@/components/layout/HealthConcernContent";
 export const metadata: Metadata = {
   title: "Stress Sleep Fatigue Treatment Dubai | Dr Fouzia",
   description:
-    "Tired, wired and sleeping badly? Dr Fouzia\u2019s stress, sleep and energy programme in Dubai joins a medical review with CBT skills and a personal plan.",
+    "Tired, wired and sleeping badly? Dr Fouzia\u2019s stress, sleep and energy programme in Dubai joins a medical review with Calm Mind Sessions skills and a personal plan.",
 };
 
 export default function StressSleepEnergyResetPage() {
@@ -14,7 +14,7 @@ export default function StressSleepEnergyResetPage() {
       highlightsEyebrow="Stress and sleep programme in Dubai"
       title="Stress, Sleep and Fatigue Treatment"
       highlight="in Dubai"
-      description="A structured reset when you are running on empty. When stress, poor sleep and low energy have been going on for months, each one makes the others worse. You sleep badly, struggle through the day and feel too wired to rest. Dr Fouzia is a consultant family physician who offers this stress, sleep and fatigue programme in Dubai. It combines a medical review of what may be draining you with CBT skills for stress and sleep, and ends in a written plan that fits your life."
+      description="A structured reset when you are running on empty. When stress, poor sleep and low energy have been going on for months, each one makes the others worse. You sleep badly, struggle through the day and feel too wired to rest. Dr Fouzia is a consultant family physician who offers this stress, sleep and fatigue programme in Dubai. It combines a medical review of what may be draining you with Calm Mind Sessions skills for stress and sleep, and ends in a written plan that fits your life."
       highlightsTitle="Who it"
       highlightsAccent="suits."
       highlights={[
@@ -45,7 +45,7 @@ export default function StressSleepEnergyResetPage() {
           bullets: [
             "Your sleep pattern, timings and bedroom habits",
             "Caffeine, alcohol, screens and late meals",
-            "A structured CBT approach to insomnia where it applies",
+            "A structured Calm Mind Sessions approach to insomnia where it applies",
             "Snoring and breathing pauses, with referral for a sleep study if needed",
           ],
         },
@@ -59,7 +59,7 @@ export default function StressSleepEnergyResetPage() {
           bullets: [
             "A first consultation covering stress, sleep, energy, routine and goals",
             "A medical review, with blood tests only where they would help",
-            "CBT skills for stress, worry and unhelpful thinking",
+            "Calm Mind Sessions skills for stress, worry and unhelpful thinking",
             "A sleep plan, with gradual changes you agree to",
             "Practical energy habits: meals, movement, breaks and pacing",
             "Follow-up reviews to see what is helping and adjust",

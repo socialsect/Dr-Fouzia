@@ -3,7 +3,7 @@ import type { CampaignParams } from "@/lib/campaign";
 export const concernOptions = [
   { id: "gut", label: "Gut and digestive health" },
   { id: "womens", label: "Women's health" },
-  { id: "cbt", label: "CBT for women (Arabic)" },
+  { id: "calm-mind-sessions", label: "Calm Mind Sessions for women (Arabic)" },
   { id: "fatigue", label: "Fatigue and brain fog" },
   { id: "aging", label: "Healthy aging" },
   { id: "supplements", label: "Supplement review" },

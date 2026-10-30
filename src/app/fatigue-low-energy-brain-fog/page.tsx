@@ -43,8 +43,8 @@ const faqs = [
     answer: (
       <>
         It could contribute, though other causes may also need checking. You can read about the{" "}
-        <Link href="/cbt-burnout-work-stress" className="text-blue underline underline-offset-4">
-          CBT burnout and work stress page
+        <Link href="/calm-mind-sessions-burnout-work-stress" className="text-blue underline underline-offset-4">
+          Calm Mind Sessions for burnout and work stress
         </Link>
         .
       </>

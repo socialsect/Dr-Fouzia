@@ -9,8 +9,8 @@ const cardIcons = [
   <path key="gut" d="M6 4v5a4 4 0 0 0 4 4h4a4 4 0 0 1 4 4v3M6 4a2 2 0 0 0-2 2 2 2 0 0 0 2 2M18 20a2 2 0 0 0 2-2 2 2 0 0 0-2-2" />,
   // women's health — balance
   <path key="women" d="M12 3v18M7 7l5-4 5 4M7 17l5 4 5-4" />,
-  // cbt — head + spark
-  <path key="cbt" d="M15 20a5 5 0 0 0 5-5V9a6 6 0 1 0-12 0v2H5.5A2.5 2.5 0 0 0 3 13.5V15a5 5 0 0 0 4 4.9M9 11h.01M14 12h2" />,
+  // calm mind sessions — head + spark
+  <path key="calm-mind-sessions" d="M15 20a5 5 0 0 0 5-5V9a6 6 0 1 0-12 0v2H5.5A2.5 2.5 0 0 0 3 13.5V15a5 5 0 0 0 4 4.9M9 11h.01M14 12h2" />,
   // fatigue — battery low
   <path key="fatigue" d="M3 8h14a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1ZM21 11v2M5 11v2" />,
   // aging — leaf/growth

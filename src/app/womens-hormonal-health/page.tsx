@@ -57,7 +57,7 @@ const faqs = [
   {
     question: "Will every concern need medication?",
     answer:
-      "No. Depending on the assessment, support may include lifestyle and nutrition guidance, CBT for mood or sleep, or medical treatment when indicated.",
+      "No. Depending on the assessment, support may include lifestyle and nutrition guidance, Calm Mind Sessions for mood or sleep, or medical treatment when indicated.",
   },
   {
     question:
@@ -222,15 +222,15 @@ export default function WomensHormonalHealthPage() {
               </h2>
               <p className="mb-6 text-[14.5px] leading-[1.75] text-ink-soft">
                 Depending on what you need, support may include lifestyle and nutrition guidance,
-                CBT for mood or sleep, and medical treatment where indicated. Options are
+                Calm Mind Sessions for mood or sleep, and medical treatment where indicated. Options are
                 discussed after assessment.
               </p>
               <div className="flex flex-wrap gap-x-6 gap-y-3 border-t border-line pt-5 text-[14px] font-semibold">
                 <Link href="/womens-midlife-wellness" className="text-blue underline underline-offset-4">
                   Women’s midlife wellness
                 </Link>
-                <Link href="/cbt-sleep-insomnia" className="text-blue underline underline-offset-4">
-                  CBT for sleep concerns
+                <Link href="/calm-mind-sessions-sleep-insomnia" className="text-blue underline underline-offset-4">
+                  Calm Mind Sessions for sleep concerns
                 </Link>
               </div>
             </article>

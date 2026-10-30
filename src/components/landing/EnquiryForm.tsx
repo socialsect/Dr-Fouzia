@@ -279,9 +279,9 @@ export function EnquiryForm({ variant }: EnquiryFormProps) {
           <FieldError id={id("concern-error")} message={errors.concern} />
         </div>
 
-        {concern === "cbt" ? (
+        {concern === "calm-mind-sessions" ? (
           <p className="mb-4 rounded-xl bg-sky-light px-4 py-3 text-[13px] leading-[1.6] text-ink-soft">
-            {f.cbtNote}
+            {f.calmMindSessionsNote}
           </p>
         ) : null}
 

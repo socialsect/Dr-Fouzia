@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const LINKS = [
   { href: "/services", label: "Services" },
   { href: "/functional-medicine", label: "Functional medicine" },
-  { href: "/cbt", label: "CBT" },
+  { href: "/calm-mind-sessions", label: "Calm Mind Sessions" },
   { href: "/womens-hormonal-health", label: "Women's hormonal health" },
   { href: "/about-dr-fouzia", label: "About Dr. Fouzia" },
 ];

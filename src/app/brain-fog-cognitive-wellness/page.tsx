@@ -4,7 +4,7 @@ import { HealthConcernContent } from "@/components/layout/HealthConcernContent";
 export const metadata: Metadata = {
   title: "Brain Fog Treatment Dubai | Dr Fouzia Al Ali",
   description:
-    "A structured brain fog programme in Dubai with a family physician. Dr Fouzia joins a medical review, lifestyle plan and CBT skills over several visits.",
+    "A structured brain fog programme in Dubai with a family physician. Dr Fouzia joins a medical review, lifestyle plan and Calm Mind Sessions skills over several visits.",
 };
 
 export default function BrainFogCognitiveWellnessPage() {
@@ -35,7 +35,7 @@ export default function BrainFogCognitiveWellnessPage() {
             "Medical review: history, medicines, sleep, mood and routine, with blood tests where they would help such as iron, B12, thyroid, vitamin D and blood sugar",
             "Treat what is found: for example, correcting a deficiency or addressing poor sleep",
             "Lifestyle changes: regular meals, movement, caffeine, alcohol and screen habits",
-            "Skills: pacing, planning and CBT techniques for stress, worry and low mood",
+            "Skills: pacing, planning and Calm Mind Sessions techniques for stress, worry and low mood",
             "Review and adjust at follow-up visits",
           ],
         },
@@ -48,7 +48,7 @@ export default function BrainFogCognitiveWellnessPage() {
           ],
           links: [
             { label: "Fatigue and low energy", href: "/fatigue-low-energy-brain-fog" },
-            { label: "CBT for stress management", href: "/cbt-stress-management" },
+            { label: "Calm Mind Sessions for stress management", href: "/calm-mind-sessions-stress-management" },
           ],
         },
         {

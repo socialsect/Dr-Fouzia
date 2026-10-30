@@ -72,9 +72,9 @@ export const services = [
   },
   {
     num: "07",
-    title: "CBT",
+    title: "Calm Mind Sessions",
     description: "Skills-based therapy for anxiety, overthinking and low mood.",
-    slug: "/cbt/",
+    slug: "/calm-mind-sessions/",
   },
   {
     num: "08",
@@ -93,7 +93,7 @@ export const tickerItems = [
   "Sleep and stress",
   "Hormonal health",
   "Healthy aging",
-  "CBT Dubai",
+  "Calm Mind Sessions Dubai",
   "Aesthetic medicine Dubai",
 ];
 
@@ -137,7 +137,7 @@ export const whyCards = [
   {
     title: "Doctor-led in every area",
     description:
-      "Functional medicine, CBT and aesthetic care are delivered under medical supervision.",
+      "Functional medicine, Calm Mind Sessions and aesthetic care are delivered under medical supervision.",
   },
 ];
 

@@ -20,7 +20,7 @@ const homepageStructuredData = {
       url: "https://drfouziaalali.com/",
       jobTitle: "Consultant Family Physician",
       description:
-        "Dr Fouzia Al Ali is a consultant family physician offering functional medicine, women's health, CBT and aesthetic care in Dubai.",
+        "Dr Fouzia Al Ali is a consultant family physician offering functional medicine, women's health, Calm Mind Sessions and aesthetic care in Dubai.",
     },
     {
       "@type": "MedicalBusiness",

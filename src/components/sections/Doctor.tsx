@@ -55,7 +55,7 @@ export function Doctor() {
 
             <Reveal direction="left" delay={300}>
               <div className="mb-6 flex flex-wrap gap-2">
-                {["Functional Medicine", "Lifestyle Medicine", "CBT"].map((c) => (
+                {["Functional Medicine", "Lifestyle Medicine", "Calm Mind Sessions"].map((c) => (
                   <span
                     key={c}
                     className="rounded-full border border-line px-3 py-1.5 text-[11px] font-medium text-muted transition-colors duration-300 hover:border-blue hover:text-blue"

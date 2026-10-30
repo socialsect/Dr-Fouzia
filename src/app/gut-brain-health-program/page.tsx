@@ -4,7 +4,7 @@ import { HealthConcernContent } from "@/components/layout/HealthConcernContent";
 export const metadata: Metadata = {
   title: "Gut Brain Health Dubai | Dr Fouzia Al Ali",
   description:
-    "Digestive symptoms and stress often go together. Dr Fouzia offers a gut brain health programme in Dubai, joining medical review, nutrition and CBT skills.",
+    "Digestive symptoms and stress often go together. Dr Fouzia offers a gut brain health programme in Dubai, joining medical review, nutrition and Calm Mind Sessions skills.",
 };
 
 export default function GutBrainHealthProgramPage() {
@@ -14,7 +14,7 @@ export default function GutBrainHealthProgramPage() {
       highlightsEyebrow="Gut brain consultation in Dubai"
       title="Gut Brain Health Programme"
       highlight="in Dubai"
-      description="When digestion and stress affect each other. Many people notice that stress upsets their stomach, and that a troubled gut can leave them anxious, tired or foggy. Researchers call this two-way link the gut-brain axis, and it is an active area of study. Dr Fouzia is a consultant family physician who offers a gut brain health programme in Dubai. It joins a careful medical review of your digestive symptoms with nutrition support and CBT skills for stress and worry, in one plan."
+      description="When digestion and stress affect each other. Many people notice that stress upsets their stomach, and that a troubled gut can leave them anxious, tired or foggy. Researchers call this two-way link the gut-brain axis, and it is an active area of study. Dr Fouzia is a consultant family physician who offers a gut brain health programme in Dubai. It joins a careful medical review of your digestive symptoms with nutrition support and Calm Mind Sessions skills for stress and worry, in one plan."
       highlightsTitle="Who it"
       highlightsAccent="suits."
       highlights={[
@@ -54,7 +54,7 @@ export default function GutBrainHealthProgramPage() {
             "A first consultation covering digestive symptoms, stress, sleep, mood and routine",
             "A medical review, with tests only where there is a reason",
             "Nutrition support: regular meal patterns, food diary review and gradual changes, not extreme diets",
-            "CBT skills for stress, worry and gut-related anxiety",
+            "Calm Mind Sessions skills for stress, worry and gut-related anxiety",
             "Follow-up reviews to see what is helping and adjust",
           ],
         },
@@ -99,9 +99,9 @@ export default function GutBrainHealthProgramPage() {
         },
         {
           question:
-            "What are Calm mind sessions in the gut-brain health programme?",
+            "How do Calm Mind Sessions fit into the gut-brain health programme?",
           answer:
-            "Calm mind sessions provide practical support for managing stress, worry and emotional responses that may affect digestive well-being. They complement medical assessment and nutrition guidance as part of an individualised gut-brain health programme.",
+            "Calm Mind Sessions provide practical support for managing stress, worry and emotional responses that may affect digestive well-being. They complement medical assessment and nutrition guidance as part of an individualised gut-brain health programme.",
         },
       ]}
       safety={{

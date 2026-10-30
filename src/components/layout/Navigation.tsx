@@ -8,9 +8,9 @@ const mainNav = [
   { label: "Home", href: "/" },
   { label: "About Dr. Fouzia", href: "/about-dr-fouzia" },
   { label: "Services", href: "/services" },
-  { label: "Programs", href: "/integrated-functional-medicine-cbt" },
+  { label: "Programs", href: "/integrated-functional-medicine-calm-mind-sessions" },
   { label: "Aesthetic Medicine", href: "/aesthetic-medicine" },
-  { label: "CBT", href: "/cbt" },
+  { label: "Calm Mind Sessions", href: "/calm-mind-sessions" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
@@ -22,7 +22,7 @@ const concerns = [
   { label: "Metabolic Health", href: "/metabolic-health-weight-management" },
   { label: "Healthy Aging", href: "/healthy-aging-longevity" },
   { label: "Skin & Hair", href: "/skin-hair-health" },
-  { label: "Emotional Wellbeing", href: "/cbt" },
+  { label: "Emotional Wellbeing", href: "/calm-mind-sessions" },
 ];
 
 export function Navigation() {

@@ -26,7 +26,7 @@ export interface VideoItem {
   id: string;
   code: string;
   title: string;
-  category: "gut" | "womens" | "cbt" | "functional" | null;
+  category: "gut" | "womens" | "calm-mind-sessions" | "functional" | null;
   /** TODO(clinic): self-hosted vertical MP4. Null → placeholder tile. */
   src: string | null;
   /** TODO(clinic): poster still. Null → brand placeholder. */
@@ -45,7 +45,7 @@ const en = {
     headline2: "",
     // Held for A/B testing — brief lists it as the alternative headline.
     altHeadline: "Conventional or functional medicine? You don't have to choose.",
-    sub: "Personalized care for gut health, women's health, fatigue and stress, plus one-to-one CBT for women in Arabic.",
+    sub: "Personalized care for gut health, women's health, fatigue and stress, plus one-to-one Calm Mind Sessions for women in Arabic.",
     trust: [
       "Dr. Fouzia Al Ali, Consultant Family Physician",
       "Al Borj Medical Center, Dubai",
@@ -114,11 +114,11 @@ const en = {
       },
       {
         num: "03",
-        title: "CBT for women (in Arabic)",
+        title: "Calm Mind Sessions for women (in Arabic)",
         who: "Overthinking, anxiety, chronic stress, poor sleep, low mood, emotional overwhelm",
         approach:
           "One-to-one, structured and practical sessions, delivered personally by Dr. Fouzia. Confidential, online or in person.",
-        waService: "CBT for women (in Arabic)",
+        waService: "Calm Mind Sessions for women (in Arabic)",
       },
       {
         num: "04",
@@ -158,7 +158,7 @@ const en = {
         lead: "No automatic testing or supplements",
         rest: ", only what's clinically appropriate",
       },
-      { lead: "CBT in Arabic, for women", rest: ", confidential and without judgement" },
+      { lead: "Calm Mind Sessions in Arabic, for women", rest: ", confidential and without judgement" },
       { lead: "In person in Dubai or online", rest: ", wherever suits you" },
     ],
   },
@@ -191,7 +191,7 @@ const en = {
       { id: "all", label: "All" },
       { id: "gut", label: "Gut health" },
       { id: "womens", label: "Women's health" },
-      { id: "cbt", label: "CBT" },
+      { id: "calm-mind-sessions", label: "Calm Mind Sessions" },
       { id: "functional", label: "Functional medicine" },
     ],
     cta: "Have a question of your own?",
@@ -203,7 +203,7 @@ const en = {
     videos: [
       { id: "s1", code: "S1", title: "Why am I bloated after everything I eat?", category: "gut", src: null, poster: null },
       { id: "s2", code: "S2", title: "Normal tests, still exhausted", category: "functional", src: null, poster: null },
-      { id: "s3", code: "S3", title: "Overthinking isn't just your personality", category: "cbt", src: null, poster: null },
+      { id: "s3", code: "S3", title: "Overthinking isn't just your personality", category: "calm-mind-sessions", src: null, poster: null },
       { id: "l1", code: "L1", title: "Since turning 40, I don't feel like myself", category: "womens", src: null, poster: null },
       { id: "l4", code: "L4", title: "Functional or conventional medicine?", category: "functional", src: null, poster: null },
       // TODO(clinic): brief item 6 — "her best-performing Instagram reel on
@@ -217,7 +217,7 @@ const en = {
      * TODO(clinic): 4–6 real reviews from Google or Instagram, used with the
      * patient's consent (brief §I PLACEHOLDER). Rules: experience-focused
      * only (feeling listened to, clear explanations, realistic plan).
-     * No cure/results/before-after claims. CBT reviews anonymous.
+     * No cure/results/before-after claims. Reviews of Calm Mind Sessions are anonymised.
      * Section renders nothing until reviews are added here.
      */
     reviews: [] as Review[],
@@ -228,7 +228,7 @@ const en = {
   doctor: {
     heading: "Meet Dr. Fouzia",
     title: "Dr. Fouzia Al Ali, Consultant Family Physician",
-    bio: "Dr. Fouzia is a DHA-licensed Consultant Family Physician with a diploma and additional training in Cognitive Behavioral Therapy. She combines evidence-based medical care with a personalized, functional medicine approach, looking at nutrition, sleep, stress, lifestyle and medical history together. She sees patients at Al Borj Medical Center in Dubai and online, and delivers one-to-one CBT sessions for women in Arabic.",
+    bio: "Dr. Fouzia is a DHA-licensed Consultant Family Physician with a diploma and additional training in Cognitive Behavioral Therapy. She combines evidence-based medical care with a personalized, functional medicine approach, looking at nutrition, sleep, stress, lifestyle and medical history together. She sees patients at Al Borj Medical Center in Dubai and online, and delivers one-to-one Calm Mind Sessions for women in Arabic.",
     // TODO(clinic): brief §J — "Dr. Fouzia to add: qualifications, years of
     // experience, languages, and a personal line on why she practises this way."
   },
@@ -248,12 +248,12 @@ const en = {
         a: "Only if there's a clear reason. Nutrition, sleep, movement and stress often matter more.",
       },
       {
-        q: "Who are the CBT sessions for?",
+        q: "Who are the Calm Mind Sessions for?",
         a: "Women looking for one-to-one support, in Arabic, for overthinking, anxiety, stress, sleep or low mood. Sessions are confidential, online or in person.",
       },
       {
         q: "Can I have my consultation online?",
-        a: "Yes, both functional medicine consultations and CBT sessions are available online.",
+        a: "Yes, both functional medicine consultations and Calm Mind Sessions are available online.",
       },
       {
         q: "How much does a consultation cost?",
@@ -308,7 +308,7 @@ const en = {
     f1Submit: "Send my enquiry",
     f2Submit: "Send to Dr. Fouzia's team",
     f1Micro: "Our team will reply on WhatsApp the same working day.",
-    cbtNote: "CBT sessions are one-to-one, in Arabic, for women.",
+    calmMindSessionsNote: "Calm Mind Sessions is one-to-one, in Arabic, for women.",
     success:
       "Thank you. Our team will contact you on WhatsApp the same working day.",
     successCta: "Chat with us on WhatsApp",
