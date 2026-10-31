@@ -315,7 +315,7 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/contact" className="btn btn-primary">Book a consultation</Link>
-                <Link href="/contact" className="btn btn-ghost">Get in touch</Link>
+                <Link href="/functional-medicine" className="btn btn-ghost">Explore functional medicine</Link>
               </div>
             </div>
           </Reveal>

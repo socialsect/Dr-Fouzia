@@ -144,10 +144,10 @@ export function Footer() {
                 Book free consult
               </Link>
               <Link
-                href="/contact"
+                href="/services"
                 className="btn btn-ghost"
               >
-                Get in touch
+                Explore services
               </Link>
             </div>
           </div>

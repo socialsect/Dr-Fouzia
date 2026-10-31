@@ -225,7 +225,7 @@ export default function FunctionalMedicineConsultationPage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/contact" className="btn btn-primary">Book a consultation</Link>
-                <Link href="/contact" className="btn btn-ghost">Get in touch</Link>
+                <Link href="/services" className="btn btn-ghost">Explore services</Link>
               </div>
             </div>
           </Reveal>

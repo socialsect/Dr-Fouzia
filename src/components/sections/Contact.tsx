@@ -29,8 +29,8 @@ export function Contact() {
             <Link href="/contact" className="btn btn-primary">
               Book free consult
             </Link>
-            <Link href="/contact" className="btn btn-ghost">
-              Get in touch
+            <Link href="/services" className="btn btn-ghost">
+              Explore services
             </Link>
           </div>
         </Reveal>

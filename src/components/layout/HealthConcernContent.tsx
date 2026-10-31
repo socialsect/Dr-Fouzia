@@ -255,8 +255,8 @@ export function HealthConcernContent({
                 <Link href="/contact" className="btn btn-primary">
                   Book a consultation
                 </Link>
-                <Link href="/contact" className="btn btn-ghost">
-                  Get in touch
+                <Link href="/services" className="btn btn-ghost">
+                  Explore services
                 </Link>
               </div>
             </div>
