@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -157,9 +158,13 @@ export function Footer() {
           {/* Brand */}
           <Reveal delay={100}>
             <div>
-              <div className="mb-4 text-[11px] font-semibold tracking-[0.08em] uppercase text-ink">
-                Dr. Fouzia Al Ali
-              </div>
+              <Image
+                src="/images/dr-fouzia-logo.png"
+                alt="Dr. Fouzia Al Ali"
+                width={180}
+                height={80}
+                className="mb-4 h-auto w-[180px]"
+              />
               <p className="max-w-[300px] text-[14px] leading-[1.7] text-ink-soft">
                 Holistic, root-cause care for health and wellbeing. Consultant
                 Family Physician. Dubai, UAE.
