@@ -75,54 +75,33 @@ export default function PersonalisedNutritionPage() {
       ]}
       faqs={[
         {
-          question: "Do I need a food intolerance test?",
-          answer:
-            "Not by default. Your doctor can first review your symptoms and decide whether a test is relevant, what it can show and whether the result would change your care.",
+          question: "What is personalised nutrition and how does it work?",
+          answer: "Personalised nutrition involves developing dietary recommendations based on an individual's medical history, health concerns, nutritional needs, food preferences and lifestyle. Dr.Fawezya Al ALi creates practical nutrition guidance rather than recommending the same diet to everyone.",
         },
         {
-          question: "Will I have to follow a strict diet?",
-          answer:
-            "The focus is on practical, sustainable changes that fit your health and routine, rather than a fixed or extreme menu.",
+          question: "Who should consider a personalised nutrition consultation in Dubai?",
+          answer: "People with digestive symptoms, metabolic health concerns, hormonal changes, nutritional deficiencies or specific dietary requirements may benefit from personalised nutrition guidance. It can also help individuals looking to develop sustainable eating habits.",
         },
         {
-          question: "Are supplements included in a nutrition plan?",
-          answer:
-            "Only when your history or test results give a clear reason to discuss them. Food-based advice remains central to the nutrition consultation.",
+          question: "Can personalised nutrition help improve digestive health?",
+          answer: "Yes. Appropriate dietary adjustments may help manage certain digestive symptoms, depending on their cause. Nutrition recommendations can consider food triggers, meal timing, dietary patterns and relevant medical conditions.",
         },
         {
-          question: "How many visits will I need?",
-          answer:
-            "That depends on your goals and whether follow-up would be useful. Contact the clinic for current visit options and fees.",
+          question: "Does personalised nutrition consider blood test results?",
+          answer: "Yes. Relevant blood test results may be considered when developing a nutrition plan. Depending on your health history, this could include glucose, iron, vitamin levels, cholesterol or thyroid markers.",
         },
         {
-          question: "Can children or pregnant patients book?",
-          answer:
-            "Please contact the clinic first so the team can confirm whether this consultation is suitable for your circumstances.",
+          question: "Can I receive a personalised diet plan for hormonal health?",
+          answer: "Nutrition guidance can support overall health during hormonal changes, including perimenopause and menopause. Recommendations may consider protein intake, fibre, calcium, vitamin D, metabolic health and individual dietary requirements.",
         },
         {
-          question:
-            "Where can I get personalised nutrition advice from a doctor in Dubai?",
-          answer:
-            "Dr Fouzia Al Ali provides personalised nutrition guidance in Dubai based on medical history, dietary habits, symptoms, relevant laboratory results and individual health goals.",
+          question: "How is personalised nutrition different from a general diet plan?",
+          answer: "A general diet plan often follows standard calorie or food recommendations, whereas personalised nutrition considers medical history, medications, digestive health, lifestyle and individual preferences. This helps make dietary guidance more relevant and practical.",
         },
         {
-          question:
-            "How is personalised nutrition different from a regular diet plan?",
-          answer:
-            "Personalised nutrition considers individual medical conditions, nutritional requirements, food preferences, lifestyle and health goals rather than following a standard diet. This helps make dietary recommendations more relevant and practical.",
-        },
-        {
-          question:
-            "Can personalised nutrition help with digestive problems and hormonal health?",
-          answer:
-            "Nutrition can influence digestive function, metabolic health and overall well-being. A personalised assessment can identify relevant dietary considerations and help develop an eating plan that supports individual digestive and hormonal health needs.",
-        },
-        {
-          question:
-            "Do I need blood tests before starting a personalised nutrition programme?",
-          answer:
-            "Blood tests are not always necessary. Dr Fouzia Al Ali reviews your symptoms, medical history and existing reports before deciding whether nutritional or metabolic investigations would be useful.",
-        },
+          question: "How can I book a personalised nutrition consultation with Dr.Fawezya Al ALi?",
+          answer: "Contact Dr.Fawezya Al ALi through the official website to arrange a nutrition consultation in Dubai. You can discuss your dietary concerns, medical conditions and wellness goals during your appointment.",
+        }
       ]}
       safety={{
         text: "A nutrition plan is not a substitute for medical assessment. Seek prompt medical care for severe abdominal pain, black stools, vomiting blood or unexplained weight loss.",

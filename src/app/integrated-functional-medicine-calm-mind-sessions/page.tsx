@@ -62,48 +62,33 @@ export default function IntegratedFunctionalMedicineCalmMindSessionsPage() {
       ]}
       faqs={[
         {
-          question: "How long does the programme last?",
-          answer:
-            "This is confirmed during your first consultation, based on your needs and goals.",
+          question: "What is an integrated functional medicine programme?",
+          answer: "An integrated functional medicine programme combines medical assessment with personalised lifestyle guidance and practical emotional wellbeing support. Dr.Fawezya Al ALi considers how physical symptoms, sleep, stress, nutrition and daily habits may influence one another.",
         },
         {
-          question: "Can I do Calm Mind Sessions alone or functional medicine alone?",
-          answer:
-            "Yes. See the separate pages for each. Both are available as standalone consultations.",
+          question: "Who can benefit from an integrated functional medicine programme?",
+          answer: "Individuals experiencing ongoing stress alongside physical concerns such as digestive discomfort, fatigue, sleep difficulties or low mood may benefit from an integrated assessment. The programme is tailored to individual health needs and clinical suitability.",
         },
         {
-          question: "What does it cost?",
-          answer:
-            "Fees are confirmed at your first consultation. Message us for current information.",
+          question: "How does an integrated approach address physical and emotional health?",
+          answer: "An integrated approach recognises that physical health and emotional wellbeing can influence one another. It combines medical evaluation, lifestyle recommendations and practical strategies for managing stress and unhelpful thinking patterns.",
         },
         {
-          question: "Do you offer it online?",
-          answer:
-            "Yes, both parts of the programme are available online as well as in person in Dubai.",
+          question: "What are Calm mind sessions and how do they support wellbeing?",
+          answer: "Calm mind sessions provide practical support for recognising stress triggers, managing worry and developing healthier responses to challenging situations. They complement medical care when stress-related factors are relevant to a patient's overall wellbeing.",
         },
         {
-          question:
-            "What is integrated functional medicine and mind wellness?",
-          answer:
-            "Integrated functional medicine and mind wellness combines medical assessment with practical support for stress, emotional well-being and lifestyle habits. It considers how physical symptoms and emotional health may influence each other.",
+          question: "Does the programme include functional medicine and nutrition guidance?",
+          answer: "Yes. Depending on individual requirements, the programme may include medical assessment, relevant laboratory investigations, personalised nutrition recommendations, lifestyle modifications and follow-up reviews.",
         },
         {
-          question:
-            "Who can benefit from an integrated functional medicine programme in Dubai?",
-          answer:
-            "Individuals experiencing ongoing stress alongside sleep difficulties, digestive discomfort, fatigue, low mood or lifestyle-related health concerns may benefit from an integrated assessment and personalised support programme.",
+          question: "Can an integrated health programme help with sleep problems and chronic stress?",
+          answer: "The programme can address lifestyle and emotional factors that may contribute to poor sleep and ongoing stress. However, medical causes of sleep disturbance should also be evaluated before deciding on appropriate management.",
         },
         {
-          question: "How do Calm Mind Sessions support emotional well-being?",
-          answer:
-            "Calm Mind Sessions focus on practical approaches to managing worry, stress responses and unhelpful thought patterns. They complement medical assessment and lifestyle guidance to support emotional well-being.",
-        },
-        {
-          question:
-            "Does integrated functional medicine address both physical and emotional health?",
-          answer:
-            "Yes. This approach considers medical factors alongside stress, sleep, nutrition and daily habits. Dr Fouzia Al Ali reviews these areas together to develop a healthcare plan that addresses relevant individual needs.",
-        },
+          question: "How can I book an integrated functional medicine consultation in Dubai?",
+          answer: "You can contact Dr.Fawezya Al ALi through the clinic's official website to discuss programme suitability. An initial consultation helps establish your health priorities and the most appropriate combination of medical and wellbeing support.",
+        }
       ]}
       safety={{
         text: "If you have thoughts of harming yourself, or feel unable to keep yourself safe, get urgent help now. Chest pain, fainting or severe breathlessness also need urgent medical care. In the UAE, call",

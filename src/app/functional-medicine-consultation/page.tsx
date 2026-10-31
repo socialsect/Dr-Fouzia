@@ -28,42 +28,33 @@ const consultationTopics = [
 
 const faqs = [
   {
-    question: "Do I need tests before I come?",
-    answer: "No. Bring any you already have.",
+    question: "What happens during a functional medicine consultation in Dubai?",
+    answer: "A functional medicine consultation involves discussing your symptoms, medical history, medications, nutrition, sleep, stress and lifestyle. Dr.Fawezya Al ALi uses this information to understand your health concerns and determine whether further investigations or personalised recommendations are needed.",
   },
   {
-    question: "What happens after the consultation?",
-    answer:
-      "You and Dr Fouzia will discuss a plan and, if needed, tests and a follow-up visit.",
+    question: "How long does a functional medicine consultation take?",
+    answer: "Functional medicine consultations are generally more detailed than brief routine appointments because they involve reviewing multiple aspects of health. The exact appointment duration depends on the consultation type and clinic schedule. Contact the clinic for current timings.",
   },
   {
-    question: "Do I have to commit to treatment?",
-    answer: "No. The decision is yours.",
+    question: "What should I bring to my first functional medicine appointment?",
+    answer: "Bring previous blood test reports, medical records, a list of medications and supplements, and details about your current symptoms. It is also useful to note your sleep patterns, dietary habits and primary health goals.",
   },
   {
-    question:
-      "What happens during a functional medicine consultation in Dubai?",
-    answer:
-      "A functional medicine consultation with Dr Fouzia Al Ali involves reviewing your symptoms, medical history, medications, lifestyle, nutrition, sleep and health goals. Relevant investigations may be recommended before developing a personalised care plan.",
+    question: "Do I need blood tests before my functional medicine consultation?",
+    answer: "No. You do not necessarily need to complete blood tests before your first appointment. Dr.Fawezya Al ALi reviews your medical history and symptoms first and recommends investigations only when they may provide clinically useful information.",
   },
   {
-    question:
-      "How much does a functional medicine consultation cost in Dubai?",
-    answer:
-      "Consultation fees depend on the appointment type and services required. Contact Dr Fouzia Al Ali's clinic directly to confirm the current consultation charges and available appointment options.",
+    question: "Can a functional medicine consultation help with multiple health concerns?",
+    answer: "Yes. A comprehensive consultation can review several connected concerns, such as fatigue, digestive discomfort, poor sleep and hormonal changes. The doctor prioritises the most relevant issues and develops an appropriate plan based on clinical findings.",
   },
   {
-    question:
-      "Do I need blood tests before my functional medicine consultation?",
-    answer:
-      "No, you do not necessarily need blood tests before your first appointment. Dr Fouzia Al Ali reviews your medical history and symptoms before deciding whether specific blood tests or investigations would provide useful information.",
+    question: "Will I receive a personalised health plan after my consultation?",
+    answer: "The consultation helps establish an individualised plan based on your medical assessment. Depending on your needs, it may include nutrition recommendations, lifestyle adjustments, further investigations, medical management and follow-up appointments.",
   },
   {
-    question:
-      "What should I bring to my first functional medicine appointment?",
-    answer:
-      "Bring previous laboratory reports, medical records, a list of medications and supplements, and details of your current symptoms. Information about your sleep, diet and lifestyle can also help make the consultation more productive.",
-  },
+    question: "How do I book a functional medicine consultation with Dr.Fawezya Al ALi in Dubai?",
+    answer: "Visit the official website or contact the clinic directly to enquire about appointment availability. Share your primary symptoms and previous medical history so the clinic can guide you through the booking process.",
+  }
 ];
 
 export default function FunctionalMedicineConsultationPage() {

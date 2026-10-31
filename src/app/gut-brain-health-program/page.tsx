@@ -61,48 +61,33 @@ export default function GutBrainHealthProgramPage() {
       ]}
       faqs={[
         {
-          question: "Is IBS caused by stress?",
-          answer:
-            "Stress does not cause IBS on its own, but it can make symptoms worse in many people. A doctor should confirm the diagnosis first.",
+          question: "What is the gut-brain connection?",
+          answer: "The gut-brain connection refers to the two-way communication between the digestive system and the brain through nerves, hormones, immune signals and other biological pathways. It helps explain why stress can affect digestion and why digestive discomfort may influence mood and wellbeing.",
         },
         {
-          question: "Will I have to follow a restrictive diet?",
-          answer:
-            "No. Any dietary changes are agreed with you and reviewed.",
+          question: "What is included in the Gut-Brain Health Programme in Dubai?",
+          answer: "The programme offered by Dr.Fawezya Al ALi combines a medical review of digestive symptoms with personalised nutrition support and Calm mind sessions. It considers the relationship between digestive health, stress and emotional wellbeing while addressing relevant medical concerns.",
         },
         {
-          question: "Can I do the programme online?",
-          answer:
-            "Yes, the programme is available online as well as in person in Dubai.",
+          question: "Who can benefit from a gut-brain health programme?",
+          answer: "People experiencing digestive symptoms that worsen during stressful periods may benefit from a gut-brain health assessment. This includes individuals with bloating, abdominal discomfort, constipation, loose stools or irritable bowel symptoms alongside sleep or stress concerns.",
         },
         {
-          question: "How long does it last?",
-          answer:
-            "This is confirmed at your first consultation, based on your symptoms and goals.",
+          question: "Can stress cause bloating and stomach discomfort?",
+          answer: "Yes. Stress can influence digestive movement, gut sensitivity and communication between the brain and digestive system. This may contribute to bloating, abdominal discomfort or changes in bowel habits, although other medical causes should also be considered.",
         },
         {
-          question:
-            "What is the gut-brain connection and how does it affect health?",
-          answer:
-            "The gut-brain connection refers to the two-way communication between the digestive system and the brain. It involves nerve signalling, hormones and other biological pathways that can influence digestion, mood, stress responses and overall well-being.",
+          question: "How do Calm mind sessions support gut-brain health?",
+          answer: "Calm mind sessions focus on practical techniques for recognising stress patterns, managing unhelpful thought processes and developing healthier responses to discomfort and worry. They complement medical assessment and nutrition guidance as part of a broader care plan.",
         },
         {
-          question:
-            "Who can benefit from a gut-brain health programme in Dubai?",
-          answer:
-            "People experiencing digestive symptoms that worsen during stressful periods, including bloating, abdominal discomfort and changes in bowel habits, may benefit from an assessment. It may also suit individuals whose digestive symptoms occur alongside sleep, mood or concentration difficulties.",
+          question: "Does the gut-brain health programme include dietary recommendations?",
+          answer: "Yes. The programme may include personalised nutrition guidance based on digestive symptoms, eating patterns and medical history. Dietary recommendations are tailored to individual needs, with unnecessary food restrictions avoided.",
         },
         {
-          question: "Can stress and anxiety make digestive problems worse?",
-          answer:
-            "Yes. Stress and anxiety can affect gut movement, sensitivity and digestive function. A combined approach that considers medical causes, nutrition and stress management may help address the factors contributing to recurring symptoms.",
-        },
-        {
-          question:
-            "How do Calm Mind Sessions fit into the gut-brain health programme?",
-          answer:
-            "Calm Mind Sessions provide practical support for managing stress, worry and emotional responses that may affect digestive well-being. They complement medical assessment and nutrition guidance as part of an individualised gut-brain health programme.",
-        },
+          question: "How can I enrol in the Gut-Brain Health Programme with Dr.Fawezya Al ALi?",
+          answer: "You can contact Dr.Fawezya Al ALi through the official website to enquire about programme suitability and appointments. A medical consultation helps determine whether the programme is appropriate for your digestive and wellbeing concerns.",
+        }
       ]}
       safety={{
         text: "See a doctor urgently for blood in stool, black stools, unexplained weight loss, persistent vomiting, severe or worsening abdominal pain, trouble swallowing or a family history of bowel cancer. In the UAE, call",

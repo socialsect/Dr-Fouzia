@@ -70,49 +70,33 @@ export default function HealthMarkerReviewPage() {
       ]}
       faqs={[
         {
-          question: "Do I need to fast before testing?",
-          answer:
-            "It depends on the tests being considered. The clinic will tell you about any preparation when your appointment and tests are arranged.",
+          question: "What is a health marker review?",
+          answer: "A health marker review involves interpreting laboratory results alongside your symptoms, medical history, medications and lifestyle. Dr.Fawezya Al ALi explains what relevant results may indicate and whether further assessment or follow-up is appropriate.",
         },
         {
-          question: "Can you review results from another clinic?",
-          answer:
-            "Yes. Bring a copy of the report and its reference ranges so the results can be discussed in context.",
+          question: "Can a doctor review my existing blood test reports in Dubai?",
+          answer: "Yes. Dr.Fawezya Al ALi can review reports from other laboratories and explain relevant findings in the context of your health history. You should bring your available laboratory reports and medication list to the consultation.",
         },
         {
-          question: "Will I be sent for lots of tests?",
-          answer:
-            "Tests are selected for a reason. Your doctor can explain what each test may help answer before it is arranged.",
+          question: "Which blood test markers are important for overall health?",
+          answer: "Commonly reviewed markers may include blood glucose, cholesterol, thyroid function, complete blood count, iron status and selected vitamin levels. The appropriate markers depend on your age, symptoms, medical history and individual risk factors.",
         },
         {
-          question: "How soon will I get results?",
-          answer:
-            "Turnaround times depend on the tests and laboratory. Contact the clinic for current timing and fees.",
+          question: "What does it mean if my blood test results are normal but I still feel unwell?",
+          answer: "Normal laboratory results do not always explain persistent symptoms. Some conditions require additional clinical assessment, while certain symptoms may not be reflected in routine blood tests. Dr.Fawezya Al ALi reviews results alongside your medical history to determine appropriate next steps.",
         },
         {
-          question:
-            "Where can I get my blood test results reviewed by a doctor in Dubai?",
-          answer:
-            "Dr Fouzia Al Ali offers health marker reviews in Dubai, where laboratory results are interpreted alongside your medical history, symptoms, medications and relevant health concerns.",
+          question: "Should I repeat my blood tests if my results are borderline?",
+          answer: "Not necessarily. Whether repeat testing is appropriate depends on the specific marker, the degree of variation, your symptoms and relevant medical risks. Your doctor can explain whether monitoring, further investigation or no immediate action is needed.",
         },
         {
-          question:
-            "Can a doctor explain normal blood test results if I still feel unwell?",
-          answer:
-            "Yes. A result within a laboratory's reference range does not always explain how you feel. A doctor can review the complete report alongside your symptoms, medical history and other relevant health factors.",
+          question: "Can a health marker review help identify nutritional deficiencies?",
+          answer: "A health marker review may help identify possible deficiencies when relevant tests are available. Depending on your symptoms, the doctor may assess iron, vitamin B12, vitamin D or other nutritional markers and recommend appropriate follow-up.",
         },
         {
-          question:
-            "Which blood markers should be checked during a health assessment?",
-          answer:
-            "Depending on your medical history and symptoms, a health assessment may consider blood count, iron, thyroid function, vitamin levels, blood glucose, cholesterol and other relevant markers. Not everyone requires every test.",
-        },
-        {
-          question:
-            "Do I need to repeat blood tests if my previous results are normal?",
-          answer:
-            "Not necessarily. Repeat testing depends on your symptoms, medical history, previous results and whether new information would influence your healthcare plan. Dr Fouzia Al Ali recommends further testing when clinically justified.",
-        },
+          question: "How do I book a health marker review with Dr.Fawezya Al ALi in Dubai?",
+          answer: "Contact Dr.Fawezya Al ALi through the official website to arrange a health marker review. Bring recent laboratory reports, your medication and supplement list, and a summary of any symptoms you are experiencing.",
+        }
       ]}
       safety={{
         text: "If a report is marked urgent or critical, contact the clinician who ordered it promptly. Chest pain, severe shortness of breath or fainting needs emergency medical care. Call",

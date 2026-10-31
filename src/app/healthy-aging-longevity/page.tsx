@@ -28,48 +28,33 @@ const priorities = [
 
 const faqs = [
   {
-    question: "What does longevity medicine mean?",
-    answer:
-      "It can mean different things in different clinics. Here, the focus is preventive health: reviewing established medical risks and supporting function and wellbeing over time.",
+    question: "What is healthy ageing and longevity medicine?",
+    answer: "Healthy ageing and longevity medicine focus on maintaining physical function, metabolic health, cardiovascular wellness, cognitive function and quality of life as people grow older. The approach prioritises evidence-based prevention and individual health risk assessment.",
   },
   {
-    question: "Does longevity medicine mean anti-aging pills?",
-    answer:
-      "No. The emphasis is on risk assessment, everyday health habits and evidence-based prevention. Supplements are discussed only when there is a clear reason.",
+    question: "Who should consult a healthy ageing doctor in Dubai?",
+    answer: "Adults interested in maintaining long-term health, assessing age-related risk factors or improving lifestyle habits may benefit from a healthy ageing consultation. It can also help individuals with a family history of cardiovascular disease, diabetes or other chronic conditions.",
   },
   {
-    question: "At what age should I start?",
-    answer:
-      "There is no fixed age. A preventive review may be useful at different points in adult life, depending on your health, history and priorities.",
+    question: "What does a healthy ageing assessment include?",
+    answer: "A healthy ageing assessment may include reviewing blood pressure, cholesterol, blood glucose, bone health, muscle strength, nutrition, sleep, stress and age-appropriate screening. Dr.Fawezya Al ALi tailors the assessment according to your medical history and health priorities.",
   },
   {
-    question: "Will this extend my life?",
-    answer:
-      "No outcome can be promised. The aim is to identify risks that can be addressed and support your health and function over time.",
+    question: "Can lifestyle changes improve healthy ageing and longevity?",
+    answer: "Yes. Regular exercise, strength training, balanced nutrition, adequate protein intake, good sleep and avoidance of tobacco support healthy ageing. These habits can help maintain muscle strength, cardiovascular health, metabolic function and independence.",
   },
   {
-    question:
-      "Where can I consult a healthy aging and longevity doctor in Dubai?",
-    answer:
-      "Dr Fouzia Al Ali offers healthy aging and preventive healthcare assessments in Dubai, focusing on cardiovascular health, metabolic function, muscle strength, bone health, sleep and age-related health risks.",
+    question: "Which health markers are important for longevity?",
+    answer: "Important health markers may include blood pressure, cholesterol, blood glucose, kidney function and other tests selected according to individual risk factors. Bone health, muscle function and age-appropriate screening are also important parts of preventive care.",
   },
   {
-    question:
-      "What is longevity medicine and how does it support healthy aging?",
-    answer:
-      "Longevity medicine focuses on maintaining health and function as people age. It considers cardiovascular and metabolic health, nutrition, physical activity, sleep, muscle strength and appropriate preventive screening.",
+    question: "Can functional medicine support healthy ageing?",
+    answer: "Functional medicine can provide a broader assessment of factors influencing long-term health, including nutrition, metabolism, sleep, stress and lifestyle. Dr.Fawezya Al ALi combines this approach with preventive medical care to support individual health goals.",
   },
   {
-    question: "Which health markers are important for healthy aging?",
-    answer:
-      "Important health markers may include blood pressure, cholesterol, blood glucose, kidney function and other indicators selected according to individual medical history and risk factors. Bone and muscle health should also be considered.",
-  },
-  {
-    question:
-      "How can I maintain energy, memory and physical strength as I age?",
-    answer:
-      "Healthy aging involves regular exercise, strength training, balanced nutrition, adequate protein, quality sleep, social engagement and appropriate preventive healthcare. A personalised medical assessment can help identify areas requiring additional attention.",
-  },
+    question: "How can I book a healthy ageing and longevity consultation in Dubai?",
+    answer: "You can contact Dr.Fawezya Al ALi through the official website to arrange a healthy ageing assessment. Bring your recent health reports, medication list and information about your lifestyle and family medical history.",
+  }
 ];
 
 export default function HealthyAgingLongevityPage() {

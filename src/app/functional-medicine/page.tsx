@@ -37,49 +37,33 @@ const steps = [
 
 const faqs = [
   {
-    question: "What is functional medicine?",
-    answer:
-      "A personalised approach that looks for the factors behind symptoms, used alongside conventional medicine.",
-  },
-  {
-    question: "Is functional medicine evidence-based?",
-    answer:
-      "Parts of it are well supported, such as nutrition, sleep and lifestyle. Some tests and supplements have limited evidence, and Dr Fouzia explains this.",
-  },
-  {
-    question: "How is it different from a regular GP visit?",
-    answer:
-      "Visits are longer, the history is broader and the plan puts lifestyle first.",
-  },
-  {
-    question: "Will I need lots of tests?",
-    answer: "No. Only the ones likely to help.",
-  },
-  {
-    question: "How long until I notice a change?",
-    answer: "It varies, and no outcome can be guaranteed.",
-  },
-  {
     question: "What is functional medicine and how does it work?",
-    answer:
-      "Functional medicine is an approach to healthcare that considers how nutrition, sleep, stress, hormones, digestion and lifestyle may contribute to health concerns. Dr Fouzia Al Ali uses medical assessments and relevant investigations to develop personalised healthcare recommendations.",
+    answer: "Functional medicine is a personalised approach to healthcare that examines how nutrition, lifestyle, sleep, stress, hormones, digestion and metabolism may influence health. Dr.Fawezya Al ALi combines this broader assessment with conventional medical principles to guide appropriate care.",
   },
   {
-    question: "Who should consider functional medicine in Dubai?",
-    answer:
-      "People experiencing persistent fatigue, digestive problems, hormonal changes, recurring health concerns or unexplained symptoms may benefit from a functional medicine assessment. It can also support individuals interested in preventive health and long-term wellness.",
+    question: "Who should consult a functional medicine doctor in Dubai?",
+    answer: "People experiencing persistent fatigue, digestive problems, hormonal concerns, poor sleep, metabolic health issues or multiple ongoing symptoms may benefit from a functional medicine assessment. It is also suitable for individuals seeking a more comprehensive review of their health.",
   },
   {
-    question:
-      "Does functional medicine help identify the underlying causes of chronic symptoms?",
-    answer:
-      "Functional medicine aims to investigate potential contributors to ongoing symptoms by reviewing medical history, lifestyle, relevant laboratory results and associated health factors. Further investigations are recommended when clinically appropriate.",
+    question: "Can functional medicine help identify the causes of persistent symptoms?",
+    answer: "Functional medicine can help investigate potential contributors to persistent symptoms by reviewing medical history, lifestyle patterns and relevant clinical findings. It does not guarantee that every underlying cause will be identified, but it can support a structured and personalised assessment.",
   },
   {
-    question: "How long does it take to see results from functional medicine?",
-    answer:
-      "The timeline depends on the underlying health concern, individual circumstances and recommended interventions. Some changes may be noticed relatively quickly, while longer-standing health concerns may require ongoing assessment and follow-up.",
+    question: "What tests are included in a functional medicine assessment?",
+    answer: "Depending on your symptoms, a doctor may recommend blood tests for thyroid function, iron status, vitamin levels, blood sugar, cholesterol or other relevant health markers. Dr.Fawezya Al ALi recommends investigations based on clinical needs rather than ordering unnecessary tests.",
   },
+  {
+    question: "Does functional medicine include dietary and lifestyle changes?",
+    answer: "Yes. A personalised plan may include nutritional improvements, physical activity, sleep routines, stress management and other sustainable lifestyle modifications. Recommendations are adapted to your medical needs and daily routine.",
+  },
+  {
+    question: "Can functional medicine support gut health and hormonal balance?",
+    answer: "Functional medicine can assess digestive symptoms and hormonal concerns together with other relevant health factors. Dr.Fawezya Al ALi considers medical history, symptoms and appropriate investigations before recommending individualised management.",
+  },
+  {
+    question: "How can I book a functional medicine consultation in Dubai?",
+    answer: "You can contact Dr.Fawezya Al ALi through the clinic's website to arrange a functional medicine consultation. Bring your previous medical reports, medication list and details of your ongoing symptoms to help make the assessment more informative.",
+  }
 ];
 
 export default function FunctionalMedicinePage() {

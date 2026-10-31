@@ -35,53 +35,33 @@ const assessmentSteps = [
 
 const faqs = [
   {
-    question: "What can a women’s health doctor help with?",
-    answer:
-      "A women’s health consultation can cover cycle changes, PMS, possible PCOS, perimenopause and menopause symptoms, as well as relevant general health concerns.",
+    question: "When should I consult a women's hormonal health doctor in Dubai?",
+    answer: "Consider a women's health consultation if you experience irregular periods, heavy menstrual bleeding, PMS, unexplained fatigue, mood changes, sleep difficulties or symptoms associated with perimenopause and menopause. A medical assessment helps identify possible hormonal and non-hormonal causes.",
   },
   {
-    question: "Do I need hormone tests?",
-    answer:
-      "Not always. Your symptoms and medical history guide whether tests may help. If a hormone test is useful, its timing may be planned around your cycle.",
+    question: "What are the common symptoms of hormonal imbalance in women?",
+    answer: "Possible symptoms include irregular menstrual cycles, heavy periods, acne, mood changes, fatigue, sleep disturbances, weight changes and hot flushes. These symptoms can have several causes, so an appropriate medical assessment is important.",
   },
   {
-    question: "How is PCOS assessed?",
-    answer:
-      "PCOS is assessed using recognised clinical criteria. Dr Fouzia can review your symptoms and discuss which examination or tests may be appropriate.",
+    question: "Can hormonal changes cause fatigue, brain fog and mood swings?",
+    answer: "Yes. Hormonal changes during different stages of a woman's life may affect sleep, mood, concentration and energy levels. However, thyroid conditions, nutritional deficiencies and other medical factors can cause similar symptoms and should also be considered.",
   },
   {
-    question: "Can stress affect my cycle?",
-    answer:
-      "Stress and anxiety can be among the factors associated with irregular periods. A change in your usual pattern is still worth discussing with a clinician.",
+    question: "Can Dr.Fawezya Al ALi help with PCOS and irregular periods?",
+    answer: "Dr.Fawezya Al ALi offers women's health assessments for menstrual irregularities and possible PCOS. The evaluation considers symptoms, medical history and recognised diagnostic criteria before discussing appropriate management options.",
   },
   {
-    question: "Will every concern need medication?",
-    answer:
-      "No. Depending on the assessment, support may include lifestyle and nutrition guidance, Calm Mind Sessions for mood or sleep, or medical treatment when indicated.",
+    question: "What tests are recommended for women's hormonal health?",
+    answer: "Depending on symptoms, a doctor may recommend thyroid function tests, blood glucose assessment, selected reproductive hormone tests, iron studies or other investigations. Not every woman requires the same tests, and testing should be guided by clinical findings.",
   },
   {
-    question:
-      "Where can I consult a women's hormonal health doctor in Dubai?",
-    answer:
-      "Dr Fouzia Al Ali provides women's hormonal health consultations in Dubai, addressing menstrual irregularities, PMS, PCOS, thyroid-related concerns, perimenopause and menopause symptoms.",
+    question: "How can functional medicine support women's hormonal health?",
+    answer: "Functional medicine considers hormonal concerns alongside nutrition, sleep, stress, metabolism and overall medical history. Dr.Fawezya Al ALi uses this broader perspective to develop personalised recommendations while maintaining appropriate conventional medical assessment.",
   },
   {
-    question: "What are the common signs of hormonal imbalance in women?",
-    answer:
-      "Common symptoms may include irregular periods, heavy menstruation, mood changes, acne, sleep difficulties, unexplained fatigue, weight changes and hot flushes. These symptoms can have different medical causes and require appropriate assessment.",
-  },
-  {
-    question:
-      "Can hormonal changes cause fatigue, mood swings and poor sleep?",
-    answer:
-      "Yes. Hormonal fluctuations during the menstrual cycle, perimenopause and menopause can influence energy levels, mood and sleep. Other causes, including thyroid conditions and anaemia, may also contribute.",
-  },
-  {
-    question:
-      "When should I see a doctor for irregular periods or suspected PCOS?",
-    answer:
-      "Consult a doctor if periods are consistently irregular, unusually heavy or painful, or accompanied by other concerning symptoms. A medical assessment can help investigate PCOS, thyroid conditions and other possible causes.",
-  },
+    question: "How can I book a women's hormonal health consultation in Dubai?",
+    answer: "You can contact Dr.Fawezya Al ALi through the official website to arrange a women's hormonal health consultation. Mention your primary concerns, menstrual history and any previous investigation reports when booking.",
+  }
 ];
 
 export default function WomensHormonalHealthPage() {

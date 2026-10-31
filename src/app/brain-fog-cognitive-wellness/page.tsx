@@ -67,46 +67,33 @@ export default function BrainFogCognitiveWellnessPage() {
       ]}
       faqs={[
         {
-          question: "How is this different from the Brain and Cognitive Wellness page?",
-          answer:
-            "That page explains the concern and a consultation. This page describes the multi-visit programme.",
+          question: "What is brain fog and what causes it?",
+          answer: "Brain fog describes difficulties with concentration, memory, mental clarity or information processing. It is not a medical diagnosis and may be associated with poor sleep, stress, hormonal changes, thyroid problems, nutritional deficiencies, medications or other health conditions.",
         },
         {
-          question: "Do I need brain scans?",
-          answer:
-            "Not usually. They are arranged only if your symptoms suggest a reason.",
+          question: "When should I seek medical help for brain fog in Dubai?",
+          answer: "Consider a medical assessment if brain fog persists for several weeks, interferes with work or daily activities, or occurs alongside fatigue, sleep difficulties or memory concerns. Sudden confusion or a sudden change in mental function requires urgent medical assessment.",
         },
         {
-          question: "Will I need supplements?",
-          answer:
-            "Only where a test or your history shows a clear need.",
+          question: "What does the Brain Fog Cognitive Wellness Programme include?",
+          answer: "The programme offered by Dr.Fawezya Al ALi involves a structured medical review, assessment of possible contributing factors, relevant investigations where indicated, lifestyle recommendations and follow-up. It also includes practical support for managing mental tiredness and improving daily routines.",
         },
         {
-          question: "Can I do it online?",
-          answer:
-            "Yes, the programme is available online as well as in person in Dubai.",
+          question: "Can nutritional deficiencies cause brain fog?",
+          answer: "Yes. Certain nutritional deficiencies, including low vitamin B12 or iron, may contribute to fatigue and cognitive difficulties. A doctor can review your symptoms and determine whether blood tests or nutritional interventions are appropriate.",
         },
         {
-          question: "What causes brain fog and difficulty concentrating?",
-          answer:
-            "Brain fog can be associated with poor sleep, prolonged stress, nutritional deficiencies, thyroid problems, hormonal changes, low mood and certain medications. It is a symptom rather than a medical diagnosis and should be assessed when persistent.",
+          question: "Can stress and poor sleep affect concentration and memory?",
+          answer: "Yes. Ongoing stress and inadequate sleep can affect attention, memory, mental performance and emotional wellbeing. Addressing sleep habits, stress management and relevant medical concerns may help improve these difficulties.",
         },
         {
-          question: "How can I improve mental clarity and concentration?",
-          answer:
-            "Improving mental clarity may involve addressing sleep problems, reviewing nutrition, managing stress, maintaining physical activity and investigating relevant medical causes. Dr Fouzia Al Ali develops recommendations based on individual assessment.",
+          question: "How do Clear mind sessions help with brain fog management?",
+          answer: "Clear mind sessions focus on practical strategies for managing mental overload, unhelpful thinking patterns and stress-related difficulties. They can complement medical assessment and lifestyle recommendations when emotional or behavioural factors contribute to cognitive complaints.",
         },
         {
-          question:
-            "What is included in a brain fog wellness programme in Dubai?",
-          answer:
-            "The programme involves reviewing medical history, sleep, mood, medications, nutrition and relevant health markers. It may also include lifestyle recommendations, follow-up assessments and Clear mind sessions to support concentration and mental wellness.",
-        },
-        {
-          question: "When should I see a doctor for persistent brain fog?",
-          answer:
-            "Seek medical advice if brain fog continues for weeks, affects work or daily activities, or occurs alongside fatigue, sleep difficulties or memory problems. Sudden confusion or sudden neurological symptoms require urgent medical attention.",
-        },
+          question: "How can I book a brain fog assessment in Dubai?",
+          answer: "You can contact Dr.Fawezya Al ALi through the official website to enquire about the Brain Fog Cognitive Wellness Programme. Share your symptoms, how long they have been present and any relevant medical reports when arranging your consultation.",
+        }
       ]}
       safety={{
         text: "Sudden confusion, severe headache, weakness on one side, difficulty speaking or a head injury need emergency care now. In the UAE, call",

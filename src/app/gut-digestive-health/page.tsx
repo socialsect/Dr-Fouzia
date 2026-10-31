@@ -34,54 +34,33 @@ const consultationIncludes = [
 
 const faqs = [
   {
-    question: "When should I see a doctor about bloating?",
-    answer:
-      "If it is persistent, getting worse, or comes with weight loss, bleeding or pain.",
+    question: "When should I consult a gut health doctor in Dubai?",
+    answer: "You should consider consulting a gut health doctor if you experience persistent bloating, constipation, diarrhoea, acid reflux, indigestion or recurring abdominal discomfort. Dr.Fawezya Al ALi evaluates digestive symptoms, medical history and possible warning signs before recommending appropriate investigations or management.",
   },
   {
-    question: "Do I need a stool test?",
-    answer: "Not always. Tests are chosen from your history.",
+    question: "What are the common causes of bloating and digestive problems?",
+    answer: "Bloating and digestive discomfort can be associated with food intolerances, constipation, irritable bowel syndrome, gastrointestinal conditions, dietary habits and stress. A medical assessment helps identify possible contributors and determine whether further investigations are needed.",
   },
   {
-    question: "Is leaky gut real?",
-    answer:
-      "The term is used loosely, and evidence for treating it is limited. Dr Fouzia explains what is and is not supported.",
-  },
-  {
-    question: "Can stress cause gut symptoms?",
-    answer: "It can make them worse.",
-  },
-  {
-    question: "Will I need a special diet?",
-    answer: "Not necessarily.",
-  },
-  {
-    question: "Do you treat IBS?",
-    answer:
-      "Dr Fouzia assesses you and supports management once other causes have been excluded.",
-  },
-  {
-    question:
-      "When should I consult a gut health doctor in Dubai for persistent bloating?",
-    answer:
-      "Consult a doctor if bloating is persistent, recurrent, worsening or affecting your daily activities. Dr Fouzia Al Ali can review your digestive symptoms, eating habits, medical history and possible underlying causes to determine the appropriate next steps.",
-  },
-  {
-    question:
-      "What digestive problems can a functional medicine doctor help assess?",
-    answer:
-      "A functional medicine assessment can help investigate bloating, constipation, diarrhoea, reflux, indigestion and recurring abdominal discomfort. Depending on your symptoms, conditions such as irritable bowel syndrome, coeliac disease and bacterial overgrowth may also be considered.",
+    question: "Can functional medicine help with chronic digestive problems?",
+    answer: "A functional medicine approach can help assess ongoing digestive symptoms by considering diet, lifestyle, medications, stress and relevant medical conditions. Dr.Fawezya Al ALi uses this information alongside conventional medical assessment to develop an appropriate digestive health plan.",
   },
   {
     question: "Can stress affect gut health and digestion?",
-    answer:
-      "Yes. Stress can influence digestive activity and may worsen symptoms such as abdominal discomfort, bloating and changes in bowel habits. Dr Fouzia Al Ali considers the relationship between digestive health, stress, sleep and lifestyle when developing an appropriate care plan.",
+    answer: "Yes. The digestive system and brain communicate through the gut-brain axis. Stress can influence gut movement, digestive sensitivity and symptom perception, potentially contributing to bloating, abdominal discomfort and changes in bowel habits.",
   },
   {
-    question: "How can I improve my gut health naturally?",
-    answer:
-      "Supporting digestive health may involve balanced nutrition, adequate hydration, regular physical activity, sufficient sleep and identifying individual food triggers. Persistent symptoms should be medically assessed rather than managed through dietary changes alone.",
+    question: "What tests may be recommended for digestive health problems?",
+    answer: "Depending on your symptoms, a doctor may recommend blood tests, coeliac screening, stool investigations or other gastrointestinal assessments. The choice of testing depends on your medical history, examination and any warning signs.",
   },
+  {
+    question: "Can dietary changes improve digestive health?",
+    answer: "Dietary changes may help manage certain digestive symptoms, depending on their underlying cause. Dr.Fawezya Al ALi may recommend personalised dietary adjustments, appropriate meal patterns and symptom tracking rather than unnecessary food restrictions.",
+  },
+  {
+    question: "How can I book a gut health consultation with Dr.Fawezya Al ALi in Dubai?",
+    answer: "You can contact Dr.Fawezya Al ALi through the official website to arrange a digestive health consultation. Explain your symptoms, how long you have experienced them and any previous investigations to help guide your assessment.",
+  }
 ];
 
 export default function GutDigestiveHealthPage() {

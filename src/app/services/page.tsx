@@ -103,35 +103,33 @@ const steps = [
 
 const faqs = [
   {
-    question: "Which service should I book first?",
-    answer: "A consultation is the best start. Dr Fouzia will advise on the right path.",
+    question: "What healthcare services does Dr.Fawezya Al ALi offer in Dubai?",
+    answer: "Dr.Fawezya Al ALi offers functional medicine consultations, digestive health assessments, gut-brain health programmes, personalised nutrition, supplement reviews, women's hormonal health support, brain health assessments, fatigue evaluations and preventive healthcare services.",
   },
   {
-    question: "Can I combine services?",
-    answer: "Yes. Many plans combine medical care with therapy or lifestyle support.",
+    question: "How can I find the right medical service for my symptoms?",
+    answer: "Start by identifying your main concern. Persistent fatigue may require an energy and fatigue assessment, digestive discomfort may benefit from a gut health consultation, and hormonal changes may require a women's health evaluation. A general functional medicine consultation can help determine the appropriate next step.",
   },
   {
-    question: "What healthcare services does Dr Fouzia Al Ali offer in Dubai?",
-    answer:
-      "Dr Fouzia Al Ali offers functional medicine consultations, digestive health assessments, women's hormonal health support, personalised nutrition, supplement reviews, fatigue assessments, cognitive wellness and preventive healthcare services in Dubai.",
+    question: "Does Dr.Fawezya Al ALi offer functional medicine consultations in Dubai?",
+    answer: "Yes. Functional medicine consultations involve a detailed review of your symptoms, medical history, lifestyle, nutrition and relevant health markers to develop an individualised care plan.",
   },
   {
-    question:
-      "Which service should I choose for ongoing fatigue, digestive issues or hormonal problems?",
-    answer:
-      "The most appropriate service depends on your symptoms and medical history. A functional medicine consultation can help identify the right starting point and determine whether a specialised digestive, hormonal, nutritional or metabolic assessment is needed.",
+    question: "Can I receive personalised nutrition and supplement guidance?",
+    answer: "Yes. Nutrition and supplement services assess your dietary habits, medical conditions, medications and relevant test results. Recommendations are designed to support nutritional needs while considering safety and potential interactions.",
   },
   {
-    question:
-      "Does Dr Fouzia Al Ali offer personalised healthcare programmes?",
-    answer:
-      "Yes. Her healthcare programmes are structured around individual health concerns and may combine medical assessment, lifestyle guidance, nutrition support and follow-up consultations, depending on the programme.",
+    question: "Are women's hormonal health and menopause consultations available?",
+    answer: "Yes. Women's health services include assessments for menstrual irregularities, PMS, possible PCOS, perimenopause and menopause-related concerns. Recommendations depend on the patient's symptoms, medical history and clinical findings.",
   },
   {
-    question: "How do I choose the right functional medicine service in Dubai?",
-    answer:
-      "Start by identifying your primary health concern, such as digestion, hormonal health, fatigue or cognitive difficulties. Dr Fouzia Al Ali can review your symptoms and recommend an appropriate consultation or programme.",
+    question: "Does the clinic provide support for brain fog and low energy?",
+    answer: "Yes. Dr.Fawezya Al ALi offers assessments for persistent fatigue, low energy, concentration difficulties and brain fog. These concerns may require reviewing sleep, thyroid function, iron levels, vitamin status, blood sugar, mood and other relevant factors.",
   },
+  {
+    question: "How can I book a healthcare consultation in Dubai?",
+    answer: "You can contact Dr.Fawezya Al ALi through the official website to discuss your symptoms and request an appointment. The clinic team can help identify the relevant service and explain the consultation process.",
+  }
 ];
 
 export default function ServicesPage() {

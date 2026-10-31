@@ -70,48 +70,33 @@ export default function SupplementReviewPage() {
       ]}
       faqs={[
         {
-          question: "Do I need blood tests first?",
-          answer:
-            "Not always. Dr Fouzia can review your history first and discuss whether any test would be useful before it is ordered.",
+          question: "What is a medical supplement review?",
+          answer: "A medical supplement review evaluates the vitamins, minerals, herbal products and other supplements you currently take. Dr.Fawezya Al ALi considers their purpose, dosage, ingredients, potential interactions, medical conditions and relevant test results.",
         },
         {
-          question: "Will the clinic sell me supplements?",
-          answer:
-            "Ask the clinic about its current product policy. The purpose of a review is to explain recommendations and their reasons clearly.",
+          question: "When should I consult a doctor for a supplement review in Dubai?",
+          answer: "Consider a supplement review if you take multiple vitamins, minerals or herbal products, are unsure about appropriate dosages, experience possible side effects or take supplements alongside prescription medications. A medical review helps assess whether your current routine is appropriate.",
         },
         {
-          question: "Should I keep taking my supplements before the appointment?",
-          answer:
-            "Do not start anything new just for the visit, and bring a list of everything you take. If you are concerned about a product or a possible reaction, contact a clinician or pharmacist for advice.",
+          question: "Can taking multiple supplements cause side effects?",
+          answer: "Yes. Taking multiple supplements may lead to excessive nutrient intake, overlapping ingredients or interactions with medications. Some supplements can also affect existing medical conditions. A doctor can review your complete supplement list and identify potential safety concerns.",
         },
         {
-          question: "Is this the same as a nutrition consultation?",
-          answer:
-            "No. A supplement review focuses on products you take or are considering. Food-based guidance is covered in a personalised nutrition consultation.",
+          question: "How do I know which vitamins and supplements my body needs?",
+          answer: "Your nutritional requirements depend on your diet, medical history, symptoms and individual health circumstances. A doctor may recommend selected blood tests when clinically appropriate rather than suggesting supplements without assessing your needs.",
         },
         {
-          question:
-            "Where can I get my vitamins and supplements reviewed by a doctor in Dubai?",
-          answer:
-            "Dr Fouzia Al Ali offers medical supplement reviews in Dubai, assessing your current vitamins, minerals and other supplements alongside your medications, health conditions and relevant laboratory results.",
+          question: "Can supplements interact with prescription medications?",
+          answer: "Yes. Certain vitamins, minerals and herbal products can affect how prescription medications work or increase the risk of side effects. Dr.Fawezya Al ALi reviews supplement ingredients alongside your medication list to identify possible interactions.",
         },
         {
-          question:
-            "How do I know which supplements my body actually needs?",
-          answer:
-            "Supplement requirements depend on dietary intake, medical history, symptoms and nutritional status. A doctor can assess whether supplementation is appropriate and whether relevant tests are needed before recommending specific products.",
+          question: "Should I stop taking unnecessary supplements after a medical review?",
+          answer: "Your doctor can help determine which supplements may be unnecessary, unsuitable or worth continuing based on your health needs. Do not discontinue prescribed medication or medically recommended treatment without discussing it with the relevant healthcare professional.",
         },
         {
-          question: "Can taking too many supplements affect my health?",
-          answer:
-            "Yes. Taking excessive amounts of certain vitamins and minerals can cause adverse effects. Some supplements may also interact with prescription medications or overlap with other products. A medical review helps assess these risks.",
-        },
-        {
-          question:
-            "Should I take vitamin D, B12 or iron supplements without a blood test?",
-          answer:
-            "Not everyone requires these supplements. The decision depends on individual risk factors, dietary intake, symptoms and medical history. Testing may be appropriate when a deficiency is suspected.",
-        },
+          question: "How can I book a supplement review with Dr.Fawezya Al ALi in Dubai?",
+          answer: "You can contact Dr.Fawezya Al ALi through the official website to arrange a supplement assessment. Bring your supplement containers or a list showing product names, ingredients, dosages and frequency of use.",
+        }
       ]}
       safety={{
         text: "Do not stop a prescribed medicine because of a supplement review without speaking with your prescriber. Swelling of the face or throat, breathing difficulty or a widespread rash can be an emergency. Call",

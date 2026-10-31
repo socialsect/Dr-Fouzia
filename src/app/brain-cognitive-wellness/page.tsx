@@ -74,49 +74,33 @@ export default function BrainCognitiveWellnessPage() {
       ]}
       faqs={[
         {
-          question: "Is brain fog a sign of dementia?",
-          answer:
-            "Brain fog has many possible causes and does not by itself mean dementia. Ongoing or noticeable changes in memory or thinking should be discussed with a doctor.",
+          question: "What is cognitive wellness and why is it important?",
+          answer: "Cognitive wellness refers to maintaining functions such as memory, attention, concentration, learning and problem-solving. It is influenced by sleep, nutrition, physical activity, cardiovascular health, stress and underlying medical conditions.",
         },
         {
-          question: "Which tests might I need?",
-          answer:
-            "It depends on your symptoms and history. A clinician may consider tests such as iron, B12, thyroid function or blood sugar when relevant, and explain why each is being considered.",
+          question: "When should I consult a brain health doctor in Dubai?",
+          answer: "Consider consulting a doctor if you experience persistent memory difficulties, reduced concentration, mental fatigue or changes in cognitive performance. A medical assessment can help identify possible contributing factors and determine whether specialist evaluation is needed.",
         },
         {
-          question: "Can supplements fix brain fog?",
-          answer:
-            "Only take a supplement when there is a clear reason for it. A clinician can review your diet, medicines and test results before discussing whether one is appropriate.",
+          question: "What causes poor concentration and memory problems?",
+          answer: "Poor concentration and memory difficulties can be associated with sleep deprivation, chronic stress, low iron, vitamin B12 deficiency, thyroid disorders, hormonal changes, mood conditions and certain medications. The underlying cause varies between individuals.",
         },
         {
-          question: "How long will it take to improve?",
-          answer:
-            "That varies with the cause. Your doctor can discuss reasonable expectations after reviewing your symptoms and health history.",
+          question: "Can functional medicine support cognitive health?",
+          answer: "A functional medicine approach can assess factors that may influence cognitive wellbeing, including nutrition, metabolic health, sleep, stress and hormonal changes. Dr.Fawezya Al ALi combines this assessment with conventional medical principles to guide appropriate recommendations.",
         },
         {
-          question:
-            "How can I improve brain health and cognitive function naturally?",
-          answer:
-            "Brain health can be supported through regular physical activity, adequate sleep, balanced nutrition, social engagement and effective stress management. Medical assessment is important when memory or concentration difficulties are persistent.",
+          question: "Which health markers are important for brain health?",
+          answer: "Depending on your symptoms and medical history, relevant markers may include blood glucose, thyroid function, iron status, vitamin B12, blood pressure and cholesterol. A doctor determines which investigations are appropriate for your individual circumstances.",
         },
         {
-          question:
-            "What causes memory problems and poor concentration in adults?",
-          answer:
-            "Memory and concentration difficulties can be associated with sleep disorders, stress, hormonal changes, thyroid conditions, low iron, vitamin B12 deficiency, low mood and medication effects. A medical assessment helps identify potential contributors.",
+          question: "Can lifestyle changes help maintain cognitive wellness?",
+          answer: "Yes. Regular physical activity, balanced nutrition, sufficient sleep, social engagement and management of cardiovascular risk factors support overall brain health. These habits form an important part of a long-term cognitive wellness plan.",
         },
         {
-          question:
-            "What does a cognitive wellness assessment in Dubai include?",
-          answer:
-            "A cognitive wellness assessment may include a review of memory, concentration, sleep, mood, nutrition, medical history and medications. Dr Fouzia Al Ali may recommend relevant investigations or further evaluation depending on the findings.",
-        },
-        {
-          question:
-            "Are Clear mind sessions suitable for people experiencing mental fatigue?",
-          answer:
-            "Clear mind sessions are intended to provide practical support for concentration, mental clarity and managing cognitive fatigue. Suitability depends on individual needs, and persistent or worsening cognitive symptoms should first receive appropriate medical assessment.",
-        },
+          question: "How can I arrange a cognitive health assessment with Dr.Fawezya Al ALi?",
+          answer: "You can contact Dr.Fawezya Al ALi in Dubai to discuss memory, concentration or other cognitive concerns. Your consultation can include a review of symptoms, medical history, lifestyle and relevant investigations.",
+        }
       ]}
       safety={{
         text: "Sudden confusion, a severe headache, weakness on one side, difficulty speaking or a fall with head injury needs emergency care in the UAE. Call",

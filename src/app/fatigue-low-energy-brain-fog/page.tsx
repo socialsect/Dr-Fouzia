@@ -29,63 +29,33 @@ const assessmentItems = [
 
 const faqs = [
   {
-    question: "Why am I always tired?",
-    answer:
-      "There are many possible causes, and often several contribute at once. A medical assessment can help identify what may be affecting your energy.",
+    question: "Why do I feel tired all the time even after sleeping?",
+    answer: "Persistent tiredness despite adequate sleep can have several causes, including iron deficiency, anaemia, thyroid disorders, vitamin deficiencies, sleep disorders, hormonal changes, medication effects and ongoing stress. Dr.Fawezya Al ALi assesses possible contributors before recommending appropriate management.",
   },
   {
-    question: "Which blood tests can check for fatigue?",
-    answer:
-      "Depending on your symptoms and history, a clinician may consider a full blood count, ferritin, thyroid function, vitamin D, B12 and blood sugar.",
+    question: "When should I see a doctor for persistent fatigue in Dubai?",
+    answer: "Consult a doctor if fatigue lasts several weeks, affects your daily activities or occurs alongside symptoms such as dizziness, unexplained weight changes, breathlessness or difficulty concentrating. A medical evaluation can help identify possible causes and determine the appropriate next steps.",
   },
   {
-    question: "Could burnout be causing my tiredness?",
-    answer: (
-      <>
-        It could contribute, though other causes may also need checking. You can read about the{" "}
-        <Link href="/calm-mind-sessions-burnout-work-stress" className="text-blue underline underline-offset-4">
-          Calm Mind Sessions for burnout and work stress
-        </Link>
-        .
-      </>
-    ),
+    question: "What blood tests can help identify the causes of low energy?",
+    answer: "Depending on your symptoms, a doctor may recommend a complete blood count, iron studies, thyroid function, vitamin B12, vitamin D or blood glucose testing. Not everyone needs every test; investigations should be selected according to clinical findings.",
   },
   {
-    question: "Is brain fog serious?",
-    answer:
-      "Brain fog is a symptom rather than a diagnosis and has many possible causes. Sudden confusion or a sudden change in thinking needs urgent medical attention.",
+    question: "Can hormonal imbalance cause fatigue and low energy?",
+    answer: "Yes. Hormonal conditions involving the thyroid, reproductive hormones or other endocrine systems can contribute to fatigue. Perimenopause and menopause may also affect energy and sleep. A medical assessment helps determine whether hormonal changes are contributing to your symptoms.",
   },
   {
-    question: "Will supplements fix my fatigue?",
-    answer:
-      "Supplements are useful when there is a reason to take them, such as a confirmed deficiency. They do not address every cause of fatigue, so it is best to discuss them with a clinician.",
+    question: "Can poor gut health contribute to fatigue and brain fog?",
+    answer: "Digestive problems may contribute to fatigue through factors such as inadequate nutrient absorption, dietary limitations, disrupted sleep or ongoing discomfort. However, fatigue and brain fog have many possible causes, so a broader medical assessment is important.",
   },
   {
-    question: "Can Dr Fouzia assess brain fog?",
-    answer:
-      "Yes. Concentration or memory changes can be discussed as part of a fatigue assessment. If your symptoms need specialist review, Dr Fouzia can refer you to neurology.",
+    question: "How does Dr.Fawezya Al ALi assess chronic fatigue?",
+    answer: "Dr.Fawezya Al ALi reviews your medical history, sleep patterns, nutrition, medications, stress levels and associated symptoms. Depending on the findings, she may recommend selected investigations and develop a personalised plan addressing identified contributing factors.",
   },
   {
-    question: "Why am I always tired even after getting enough sleep?",
-    answer:
-      "Persistent tiredness can have several causes, including anaemia, thyroid problems, nutritional deficiencies, sleep disorders, hormonal changes, medication effects and prolonged stress. Dr Fouzia Al Ali can assess potential contributors through a medical consultation.",
-  },
-  {
-    question:
-      "Which doctor should I consult for constant fatigue and low energy in Dubai?",
-    answer:
-      "A family physician or doctor experienced in fatigue assessment can help investigate persistent low energy. Dr Fouzia Al Ali reviews medical history, sleep, nutrition, hormonal health and relevant blood markers to guide further assessment.",
-  },
-  {
-    question: "Can vitamin deficiencies cause fatigue and brain fog?",
-    answer:
-      "Yes. Low levels of certain nutrients, including iron, vitamin B12 and vitamin D, may contribute to tiredness and cognitive difficulties. Testing may be recommended when symptoms and medical history indicate a possible deficiency.",
-  },
-  {
-    question: "How can I improve my energy levels naturally?",
-    answer:
-      "Consistent sleep, balanced meals, regular movement, adequate hydration and stress management can support energy levels. However, persistent fatigue requires medical assessment to identify and address possible underlying causes.",
-  },
+    question: "Can I book a fatigue and low energy consultation in Dubai?",
+    answer: "Yes. You can contact Dr.Fawezya Al ALi to arrange an assessment for persistent fatigue, low energy or associated brain fog. Sharing previous blood test results and a history of your symptoms can help make the consultation more productive.",
+  }
 ];
 
 export default function FatigueLowEnergyBrainFogPage() {

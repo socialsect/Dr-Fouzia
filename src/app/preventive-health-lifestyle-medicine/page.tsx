@@ -30,28 +30,33 @@ export default function PreventiveHealthLifestyleMedicinePage() {
       ]}
       faqs={[
         {
-          question: "What is preventive medicine and why is it important?",
-          answer:
-            "Preventive medicine focuses on identifying health risks early and supporting long-term health through appropriate screening, nutrition, physical activity, sleep and lifestyle changes. It aims to reduce the risk of preventable health complications.",
+          question: "What is preventive health and lifestyle medicine?",
+          answer: "Preventive health and lifestyle medicine focus on reducing the risk of chronic diseases through early risk assessment and sustainable lifestyle habits. This includes nutrition, physical activity, sleep, stress management and appropriate medical screening.",
         },
         {
-          question:
-            "Where can I get a preventive health assessment in Dubai?",
-          answer:
-            "Dr Fouzia Al Ali offers preventive health assessments in Dubai, considering medical history, cardiovascular risk, metabolic health, lifestyle habits and screening requirements to develop an individualised prevention plan.",
+          question: "Who should consider a preventive health consultation in Dubai?",
+          answer: "Adults who want to understand their health risks, monitor existing conditions or improve long-term wellbeing may benefit from preventive healthcare. It can be particularly useful for people with a family history of diabetes, cardiovascular disease or metabolic conditions.",
         },
         {
-          question:
-            "Which health checks should adults consider for disease prevention?",
-          answer:
-            "Appropriate health checks depend on age, sex, family history and individual risk factors. They may include blood pressure, cholesterol, blood glucose and recommended age-appropriate screening tests.",
+          question: "What is included in a preventive health assessment?",
+          answer: "A preventive health assessment may include a review of blood pressure, cholesterol, blood glucose, medical history, family history, lifestyle habits and age-appropriate screening requirements. Dr.Fawezya Al ALi recommends investigations according to individual risk factors.",
         },
         {
-          question:
-            "Can lifestyle medicine help reduce the risk of diabetes and heart disease?",
-          answer:
-            "Lifestyle medicine supports cardiovascular and metabolic health through balanced nutrition, regular physical activity, healthy weight management, adequate sleep and stress management. These measures can help reduce risk, although individual outcomes vary.",
+          question: "Can lifestyle medicine help reduce the risk of chronic diseases?",
+          answer: "Healthy lifestyle habits can help reduce the risk of several chronic conditions. Balanced nutrition, regular exercise, adequate sleep, avoiding tobacco and maintaining a healthy weight can support cardiovascular and metabolic health.",
         },
+        {
+          question: "How often should I have a preventive health check-up?",
+          answer: "The frequency of health check-ups depends on your age, medical history, risk factors and previous results. Some people may need annual reviews, while others require more frequent monitoring based on existing health conditions.",
+        },
+        {
+          question: "Does preventive healthcare include nutrition and exercise guidance?",
+          answer: "Yes. Lifestyle medicine may include personalised nutrition recommendations, physical activity planning, sleep improvement and stress management strategies. These recommendations are adapted to your medical needs, fitness level and daily routine.",
+        },
+        {
+          question: "Where can I book a preventive health consultation in Dubai?",
+          answer: "You can contact Dr.Fawezya Al ALi through the official website to arrange a preventive health consultation. Discuss your family medical history, lifestyle habits and health goals to help guide your assessment.",
+        }
       ]}
     />
   );

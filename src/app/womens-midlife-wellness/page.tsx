@@ -67,49 +67,33 @@ export default function WomensMidlifeWellnessPage() {
       ]}
       faqs={[
         {
-          question: "When does perimenopause start?",
-          answer:
-            "It often begins in the mid-forties, but can start earlier or later. Periods may change years before they stop.",
+          question: "What is a women's midlife wellness programme?",
+          answer: "A women's midlife wellness programme provides structured support for health changes associated with perimenopause and menopause. Dr.Fawezya Al ALi combines medical assessment, lifestyle guidance and Clear mind sessions to address physical and emotional wellbeing.",
         },
         {
-          question: "Do I need hormone tests?",
-          answer:
-            "Not always. Symptoms and age are often enough, and tests can be misleading during perimenopause. Dr Fouzia advises on whether any are useful.",
+          question: "Who should consider a midlife wellness programme in Dubai?",
+          answer: "Women experiencing perimenopause or menopause-related changes, including hot flushes, night sweats, sleep disturbances, mood changes, fatigue, weight changes or concentration difficulties, may benefit from a medical assessment and personalised wellness support.",
         },
         {
-          question: "Can I do the programme online?",
-          answer:
-            "Yes, the programme is available online as well as in person in Dubai.",
+          question: "What are the common symptoms of perimenopause and menopause?",
+          answer: "Common symptoms include irregular periods, hot flushes, night sweats, poor sleep, mood changes, vaginal dryness, reduced energy and brain fog. Symptoms vary between individuals and can occur at different stages of the menopausal transition.",
         },
         {
-          question: "What does it cost?",
-          answer:
-            "Fees are confirmed at your first consultation. Message us for current information.",
+          question: "How can lifestyle changes support women during menopause?",
+          answer: "Balanced nutrition, regular strength training, physical activity, adequate sleep and stress management can support overall health during menopause. Individual recommendations may also consider bone health, cardiovascular risk and metabolic changes.",
         },
         {
-          question:
-            "What is included in a women's midlife wellness programme in Dubai?",
-          answer:
-            "Dr Fouzia Al Ali's women's midlife wellness programme combines medical assessment, lifestyle guidance and practical emotional well-being support. It addresses concerns such as sleep changes, hot flushes, mood changes, fatigue and cognitive difficulties.",
+          question: "What are Clear mind sessions in the women's midlife wellness programme?",
+          answer: "Clear mind sessions provide practical strategies for managing stress, worry, emotional changes and unhelpful thought patterns. They complement medical assessment and lifestyle guidance as part of a broader approach to midlife wellbeing.",
         },
         {
-          question:
-            "What are the common symptoms of perimenopause and menopause?",
-          answer:
-            "Common symptoms include irregular periods, hot flushes, night sweats, poor sleep, mood changes, reduced energy, weight changes, vaginal dryness and difficulty concentrating. Symptoms vary between individuals.",
+          question: "Does the women's midlife wellness programme include hormonal assessment?",
+          answer: "Yes. The programme begins with a medical review of symptoms and health history. Dr.Fawezya Al ALi may recommend selected investigations to assess possible thyroid, nutritional or other medical contributors and discusses appropriate menopause management options based on individual circumstances.",
         },
         {
-          question:
-            "How can I manage menopause-related mood swings, anxiety and sleep problems?",
-          answer:
-            "Management may involve reviewing hormonal changes, sleep habits, nutrition, physical activity and emotional well-being. Calm Mind Sessions can provide additional practical support for managing stress and emotional changes during midlife.",
-        },
-        {
-          question:
-            "When should I start a menopause or perimenopause wellness programme?",
-          answer:
-            "Consider seeking medical advice when hormonal changes begin affecting your sleep, mood, energy, periods or daily activities. Early assessment can help identify contributing factors and discuss suitable management options.",
-        },
+          question: "How can I book a women's midlife wellness consultation in Dubai?",
+          answer: "You can contact Dr.Fawezya Al ALi through the official website to enquire about the Women's Wellness Programme. Share your current symptoms and any previous medical reports to help establish whether the programme is suitable.",
+        }
       ]}
       safety={{
         text: "See a doctor promptly for bleeding after menopause, very heavy bleeding, bleeding between periods, a breast lump, chest pain or severe pelvic pain. If you have thoughts of harming yourself or cannot keep yourself safe, get urgent help now. In the UAE, call",

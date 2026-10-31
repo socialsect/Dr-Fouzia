@@ -27,31 +27,33 @@ const approach = [
 
 const faqs = [
   {
-    question: "Who is Dr Fouzia Al Ali?",
-    answer:
-      "A consultant family physician in Dubai who practises functional medicine, Calm Mind Sessions and aesthetic medicine.",
+    question: "Who is Dr.Fawezya Al ALi?",
+    answer: "Dr.Fawezya Al ALi is a consultant family physician based in Dubai who provides personalised medical care with an emphasis on functional medicine, women's health, digestive health, metabolic wellness and preventive healthcare. Her approach considers medical history, lifestyle and individual health concerns.",
   },
   {
-    question: "What conditions does she see patients for?",
-    answer:
-      "Common reasons include fatigue, gut and digestive symptoms, hormonal changes, stress and sleep problems, weight and metabolic concerns, and aesthetic goals. She does not treat emergencies.",
+    question: "Where does Dr.Fawezya Al ALi practise in Dubai?",
+    answer: "Dr.Fawezya Al ALi provides consultations in Dubai. Patients can contact the clinic through the official website to enquire about appointment availability, consultation arrangements and location details.",
   },
   {
-    question: "What makes Dr Fouzia Al Ali's healthcare approach different?",
-    answer:
-      "Dr Fouzia Al Ali takes a whole-person approach by considering medical history, symptoms, lifestyle, nutrition, sleep and emotional well-being. Recommendations are based on individual health needs rather than a standard treatment template.",
+    question: "What is Dr.Fawezya Al ALi's approach to functional medicine?",
+    answer: "Her approach focuses on understanding the wider factors that may contribute to a patient's symptoms. This includes reviewing nutrition, sleep, digestion, hormonal health, stress, medical history and relevant laboratory results before recommending a personalised care plan.",
   },
   {
-    question:
-      "Which conditions and health concerns does Dr Fouzia Al Ali address?",
-    answer:
-      "Her areas of care include digestive discomfort, hormonal changes, fatigue, brain fog, metabolic health, sleep-related concerns, nutritional requirements and healthy ageing.",
+    question: "Which health concerns can I discuss with Dr.Fawezya Al ALi?",
+    answer: "You can discuss persistent tiredness, digestive discomfort, hormonal changes, menopause symptoms, brain fog, sleep difficulties, nutritional concerns and preventive health goals. The consultation helps establish whether medical assessment, investigations or additional support may be appropriate.",
   },
   {
-    question: "How can I consult Dr Fouzia Al Ali in Dubai?",
-    answer:
-      "You can contact her clinic through the official website to enquire about appointment availability, consultation options and the service most appropriate for your health concerns.",
+    question: "Does Dr.Fawezya Al ALi provide personalised treatment plans?",
+    answer: "Yes. Recommendations are tailored to each patient's medical history, symptoms, test results, lifestyle and health goals. Plans may include medical management, nutrition guidance, lifestyle changes and follow-up assessments where appropriate.",
   },
+  {
+    question: "Can I consult Dr.Fawezya Al ALi for women's hormonal health?",
+    answer: "Yes. Women's health consultations can address irregular periods, PMS, possible PCOS, perimenopause, menopause symptoms and related concerns. The assessment considers other possible medical causes before recommending suitable management options.",
+  },
+  {
+    question: "How can I book an appointment with Dr.Fawezya Al ALi in Dubai?",
+    answer: "You can contact Dr.Fawezya Al ALi through the clinic's official website or available contact channels. Share your primary health concern so the clinic team can guide you towards the appropriate consultation.",
+  }
 ];
 
 export default function AboutDrFouziaPage() {
