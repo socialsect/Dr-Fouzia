@@ -60,14 +60,14 @@ export default async function AuthorPage({ params }: PageProps<"/blog/author/[sl
   const bioText = bioToText(author.bio);
 
   return (
-    <main className="mx-auto w-[min(1100px,92%)] py-20">
+    <main className="mx-auto w-[min(1100px,92%)] pt-36 pb-20 md:pt-40">
       <header className="mb-12 flex flex-col gap-6 sm:flex-row sm:items-center">
         {author.image?.asset?.url && (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={author.image.asset.url} alt={author.name} className="h-28 w-28 rounded-full object-cover" />
         )}
         <div className="max-w-[60ch]">
-          <h1 className="mb-3 font-serif text-[length:var(--step-4)] leading-none text-ink">{author.name}</h1>
+          <h1 className="mb-3 font-serif text-[length:var(--step-4)] leading-[1.05] text-ink">{author.name}</h1>
           {bioText && <p className="text-[17px] leading-[1.7] text-ink-soft">{bioText}</p>}
           {!!author.socialLinks?.length && (
             <div className="mt-4 flex flex-wrap gap-4 text-[14px]">

@@ -21,8 +21,8 @@ export default async function BlogPage() {
   }
 
   return (
-    <main className="mx-auto w-[min(1100px,92%)] py-20">
-      <h1 className="mb-3 font-serif text-[length:var(--step-5)] leading-none text-ink">Blog</h1>
+    <main className="mx-auto w-[min(1100px,92%)] pt-36 pb-20 md:pt-40">
+      <h1 className="mb-3 font-serif text-[length:var(--step-5)] leading-[1.05] text-ink">Blog</h1>
       <p className="mb-12 max-w-[60ch] text-[17px] leading-[1.7] text-ink-soft">
         Practical, root-cause thinking on health, from Dr Fouzia Al Ali.
       </p>

@@ -88,7 +88,7 @@ export default async function ArticlePage({ params }: PageProps<"/blog/[slug]">)
   const bioText = bioToText(article.author?.bio);
 
   return (
-    <main className="mx-auto w-[min(720px,92%)] py-20">
+    <main className="mx-auto w-[min(720px,92%)] pt-36 pb-20 md:pt-40">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <header className="mb-10">
@@ -96,7 +96,7 @@ export default async function ArticlePage({ params }: PageProps<"/blog/[slug]">)
           {article.readingTime || "Article"}
           {date ? ` · ${article.updatedAt ? "Updated " : ""}${formatDate(date)}` : ""}
         </p>
-        <h1 className="mb-4 font-serif text-[length:var(--step-5)] leading-[1.05] text-ink">{article.title}</h1>
+        <h1 className="mb-4 font-serif text-[length:var(--step-5)] leading-[1.08] text-ink">{article.title}</h1>
         {article.excerpt && <p className="text-[length:var(--step-1)] leading-snug text-ink-soft">{article.excerpt}</p>}
       </header>
 
