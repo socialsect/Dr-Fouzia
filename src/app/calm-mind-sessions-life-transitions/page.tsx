@@ -3,13 +3,13 @@ import { ServicePage } from "@/components/layout/ServicePage";
 export const metadata = {
   title: "Calm Mind Sessions for Life Transitions Dubai | Dr. Fouzia",
   description:
-    "Cognitive Behavioural Therapy for navigating life transitions in Dubai. Dr. Fouzia helps you adjust to change with resilience and clarity.",
+    "Calm Mind Sessions for navigating life transitions in Dubai. Dr. Fouzia helps you adjust to change with resilience and clarity.",
 };
 
 export default function CalmMindSessionsLifeTransitionsPage() {
   return (
     <ServicePage
-      eyebrow="Cognitive Behavioural Therapy"
+      eyebrow="Calm Mind Sessions"
       title="Life Transitions"
       highlight="navigate change with resilience and clarity"
       description="Life transitions — whether expected or unexpected — can be among the most stressful experiences we face. Moving to a new city, starting or ending a relationship, changing careers, becoming a parent, bereavement, retirement, or any significant shift in circumstances can trigger anxiety, sadness, uncertainty, and a loss of identity. Calm Mind Sessions helps you process these changes, develop adaptive coping strategies, and build the resilience needed to thrive in your new reality."

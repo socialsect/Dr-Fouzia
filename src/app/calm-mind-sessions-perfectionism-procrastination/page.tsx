@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CalmMindSessionsPerfectionismProcrastinationPage() {
   return (
     <HealthConcernContent
-      eyebrowLabel="Cognitive behavioural therapy"
+      eyebrowLabel="Calm Mind Sessions"
       highlightsEyebrow="Perfectionism therapy in Dubai"
       title="Calm Mind Sessions for Perfectionism and Procrastination"
       highlight="in Dubai"

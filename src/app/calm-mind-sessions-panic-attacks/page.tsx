@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CalmMindSessionsPanicAttacksPage() {
   return (
     <HealthConcernContent
-      eyebrowLabel="Cognitive behavioural therapy"
+      eyebrowLabel="Calm Mind Sessions"
       highlightsEyebrow="Calm Mind Sessions for panic attacks in Dubai"
       title="Calm Mind Sessions for Panic Attacks in Dubai"
       highlight="Make sense of panic, then practise what helps"

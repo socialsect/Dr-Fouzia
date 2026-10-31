@@ -66,14 +66,11 @@ export function Hero() {
                 Consultations in Dubai
               </span>
 
-              <div className="mb-2 text-[11px] font-bold uppercase tracking-[0.15em] text-muted">
-                Where Dr Fouzia can help
-              </div>
               <h3
                 className="mb-6 font-display font-semibold tracking-[-0.02em] text-ink"
                 style={{ fontSize: "var(--step-2)" }}
               >
-                Care built <em className="text-blue">around you</em>
+                Where Dr Fouzia can <em className="text-blue">help</em>
               </h3>
 
               <ul className="flex flex-col">

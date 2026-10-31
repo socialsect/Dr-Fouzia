@@ -8,7 +8,7 @@ export function Why() {
     <section className="bg-surface-deep py-16 md:py-24">
       <div className="wrap">
         <Reveal direction="left">
-          <div className="eyebrow mb-5">Why Dr. Fouzia</div>
+          <div className="eyebrow mb-5">Why patients choose Dr Fouzia</div>
         </Reveal>
         <Reveal direction="left" delay={100}>
           <h2

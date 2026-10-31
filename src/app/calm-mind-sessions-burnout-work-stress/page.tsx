@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CalmMindSessionsBurnoutWorkStressPage() {
   return (
     <HealthConcernContent
-      eyebrowLabel="Cognitive behavioural therapy"
+      eyebrowLabel="Calm Mind Sessions"
       highlightsEyebrow="Burnout treatment in Dubai"
       title="Burnout Therapy"
       highlight="in Dubai"

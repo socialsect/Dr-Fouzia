@@ -228,7 +228,7 @@ const en = {
   doctor: {
     heading: "Meet Dr. Fouzia",
     title: "Dr. Fouzia Al Ali, Consultant Family Physician",
-    bio: "Dr. Fouzia is a DHA-licensed Consultant Family Physician with a diploma and additional training in Cognitive Behavioral Therapy. She combines evidence-based medical care with a personalized, functional medicine approach, looking at nutrition, sleep, stress, lifestyle and medical history together. She sees patients at Al Borj Medical Center in Dubai and online, and delivers one-to-one Calm Mind Sessions for women in Arabic.",
+    bio: "Dr. Fouzia is a DHA-licensed Consultant Family Physician. She combines evidence-based medical care with a personalized, functional medicine approach, looking at nutrition, sleep, stress, lifestyle and medical history together. She sees patients at Al Borj Medical Center in Dubai and online, and delivers one-to-one Calm Mind Sessions for women in Arabic.",
     // TODO(clinic): brief §J — "Dr. Fouzia to add: qualifications, years of
     // experience, languages, and a personal line on why she practises this way."
   },

@@ -166,8 +166,9 @@ export function Footer() {
                 className="mb-4 h-auto w-[180px]"
               />
               <p className="max-w-[300px] text-[14px] leading-[1.7] text-ink-soft">
-                Holistic, root-cause care for health and wellbeing. Consultant
-                Family Physician. Dubai, UAE.
+                Dr Fouzia Al Ali, consultant family physician in Dubai, offering
+                functional medicine, women&apos;s health, Calm Mind Sessions and
+                aesthetic care.
               </p>
               <div className="mt-5 flex items-center gap-2.5 text-[12px] text-muted">
                 <span className="relative flex h-1.5 w-1.5">
@@ -233,8 +234,7 @@ export function Footer() {
               className="font-display font-normal italic tracking-[-0.01em] text-ink-soft"
               style={{ fontSize: "clamp(18px, 2vw, 22px)" }}
             >
-              “Every person has a story that explains their health. I listen to
-              that story before I treat anything.”
+              “Your symptoms have a story. Let&apos;s read it together.”
             </p>
             <div className="mt-4 flex items-center gap-3">
               <div className="grid h-9 w-9 place-items-center rounded-full bg-blue text-[12px] font-semibold text-white">

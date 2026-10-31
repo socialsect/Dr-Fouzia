@@ -25,9 +25,8 @@ export function Doctor() {
                 className="mb-6 font-display font-normal leading-[1.25] tracking-[-0.02em] text-ink"
                 style={{ fontSize: "clamp(var(--step-1), 2.6vw, var(--step-2))" }}
               >
-                Every person has a story that explains their health.{" "}
-                <em className="text-blue">I listen</em> to that story
-                before I treat anything.
+                I would rather ask one more question than order one more test.{" "}
+                <em className="text-blue">Most answers are already in the story you tell me.</em>
               </blockquote>
             </Reveal>
 
@@ -36,7 +35,7 @@ export function Doctor() {
                 <div className="h-11 w-11 flex-shrink-0 overflow-hidden rounded-full bg-blue">
                   <img
                     src="/images/dr-fouzia/dr-fouzia-portrait.jpg"
-                    alt=""
+                    alt="Dr Fouzia Al Ali, consultant family physician in Dubai"
                     width={939}
                     height={1675}
                     className="h-full w-full object-cover object-[center_20%]"
@@ -77,10 +76,9 @@ export function Doctor() {
 
             <Reveal direction="left" delay={500}>
               <p className="mb-6 text-[14px] leading-[1.7] text-ink-soft">
-                With more than 26 years in primary healthcare, she works with
-                patients dealing with hormonal imbalances, digestive concerns,
-                metabolic challenges, stress-related conditions and the
-                complexities of healthy aging.
+                She works with patients dealing with hormonal imbalances,
+                digestive concerns, metabolic challenges, stress-related
+                conditions and the complexities of healthy aging.
               </p>
             </Reveal>
 
@@ -104,12 +102,15 @@ export function Doctor() {
               <div className="absolute inset-0 overflow-hidden transition-transform duration-700 ease-out hover:scale-105">
                 <img
                   src="/images/dr-fouzia/dr-fouzia-portrait.jpg"
-                  alt="Dr. Fouzia Al Ali"
+                  alt="Dr Fouzia Al Ali, consultant family physician in Dubai"
                   width={939}
                   height={1675}
                   className="h-full w-full object-cover object-[center_20%]"
                 />
               </div>
+              <p className="absolute bottom-4 left-5 rounded-full bg-white/90 px-3 py-1 text-[11px] text-muted shadow-sm">
+                Seeing patients in Dubai
+              </p>
               {/* Decorative corner accent */}
               <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-blue/5" />
             </div>

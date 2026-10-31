@@ -143,31 +143,15 @@ export const whyCards = [
 
 export const homepageFaqItems = [
   {
-    question: "What does a functional medicine doctor in Dubai do?",
-    answer: "A functional medicine doctor investigates how different aspects of health, including digestion, hormones, nutrition, sleep and metabolism, may contribute to ongoing symptoms. Dr.Fawezya Al ALi uses a personalised medical approach to understand these factors and recommend appropriate investigations and lifestyle changes.",
+    question: "What does a functional medicine doctor do?",
+    answer: "A functional medicine doctor looks for the factors behind symptoms, such as nutrition, sleep, stress, gut health and hormones, using a detailed history and selected tests alongside normal medical assessment.",
   },
   {
-    question: "When should I consult a functional medicine doctor in Dubai?",
-    answer: "Consider consulting a functional medicine doctor if you experience persistent fatigue, digestive problems, hormonal changes, poor sleep, brain fog or recurring health concerns that need a broader medical assessment. Dr.Fawezya Al ALi can review your symptoms, medical history and lifestyle to identify appropriate next steps.",
+    question: "Is Dr Fouzia a licensed doctor in Dubai?",
+    answer: "Yes. She is a consultant family physician.",
   },
   {
-    question: "What health conditions can Dr.Fawezya Al ALi help with?",
-    answer: "Dr.Fawezya Al ALi provides medical support for digestive health concerns, women's hormonal health, fatigue, low energy, brain fog, metabolic health, preventive healthcare and healthy ageing. The recommended approach depends on your symptoms, medical history and individual health requirements.",
+    question: "Does Dr Fouzia treat women's health concerns?",
+    answer: "Yes, including irregular periods, PMS, perimenopause and menopause.",
   },
-  {
-    question: "How is functional medicine different from conventional medical care?",
-    answer: "Conventional medicine focuses on diagnosing and treating medical conditions, while functional medicine also considers how nutrition, lifestyle, sleep, stress and other factors may influence health. Dr.Fawezya Al ALi integrates both approaches, maintaining appropriate medical assessment and evidence-based care.",
-  },
-  {
-    question: "Can I book a personalised health consultation in Dubai?",
-    answer: "Yes. You can arrange a consultation with Dr.Fawezya Al ALi in Dubai to discuss your symptoms, health concerns and wellness goals. Your appointment helps determine whether further investigations, lifestyle changes or specialised services are appropriate.",
-  },
-  {
-    question: "Does functional medicine include nutrition and lifestyle guidance?",
-    answer: "Yes. Functional medicine may include personalised nutrition recommendations, sleep improvement strategies, physical activity guidance, stress management and selected supplements when medically justified. Recommendations are based on your health assessment rather than a standardised wellness plan.",
-  },
-  {
-    question: "How do I choose the right health service at Dr.Fawezya Al ALi's clinic?",
-    answer: "The right service depends on your primary health concern. You may require a functional medicine consultation for ongoing symptoms, digestive health support for gut concerns, women's hormonal care for menstrual or menopause-related changes, or preventive health assessment for long-term wellness. A consultation can help identify the most appropriate starting point.",
-  }
 ] as const;

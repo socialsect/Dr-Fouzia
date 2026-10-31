@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { HealthConcernContent } from "@/components/layout/HealthConcernContent";
 
 export const metadata: Metadata = {
-  title: "Calm Mind Sessions Dubai | Cognitive Behavioural Therapy | Dr Fouzia",
+  title: "Calm Mind Sessions Dubai | Dr Fouzia",
   description:
     "Looking for Calm Mind Sessions in Dubai? Dr Fouzia, a consultant family physician, offers structured sessions to explore worry, stress, sleep and mood.",
 };
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 export default function CalmMindSessionsPage() {
   return (
     <HealthConcernContent
-      eyebrowLabel="Cognitive behavioural therapy"
+      eyebrowLabel="Calm Mind Sessions"
       highlightsEyebrow="A practical, collaborative approach"
       title="Calm Mind Sessions in Dubai"
       highlight="Practical skills for how you think and cope"
-      description="Cognitive behavioural therapy, or Calm Mind Sessions, is a structured talking therapy. Sessions look at how your thoughts, feelings, body sensations and actions affect each other, and at habits that may keep a problem going. Dr Fouzia is a consultant family physician who offers Calm Mind Sessions in Dubai. She can also review physical factors such as sleep, medicines or other health concerns while you practise skills between sessions."
+      description="Calm Mind Sessions are structured talking sessions. They look at how your thoughts, feelings, body sensations and actions affect each other, and at habits that may keep a problem going. Dr Fouzia is a consultant family physician who offers Calm Mind Sessions in Dubai. She can also review physical factors such as sleep, medicines or other health concerns while you practise practical skills between sessions."
       highlightsTitle="Work together on"
       highlightsAccent="useful next steps."
       highlights={[
@@ -40,7 +40,7 @@ export default function CalmMindSessionsPage() {
           ],
         },
         {
-          eyebrow: "Cognitive behavioural therapy in Dubai",
+          eyebrow: "Calm Mind Sessions in Dubai",
           heading: "Choose support for what",
           accent: "you are facing.",
           paragraphs: [
