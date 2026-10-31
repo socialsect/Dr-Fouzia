@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
   title: "Biological Age Dubai | Assessment & Practical Plan",
@@ -245,6 +246,7 @@ export default function BiologicalAgeResetPage() {
           </p>
         </div>
       </section>
+      <PageEnquirySection />
     </main>
   );
 }

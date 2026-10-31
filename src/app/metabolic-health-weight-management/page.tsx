@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
   title: "Metabolic Health Dubai | Weight Management Doctor",
@@ -307,6 +308,7 @@ export default function MetabolicHealthWeightManagementPage() {
           </p>
         </div>
       </section>
+      <PageEnquirySection />
     </main>
   );
 }

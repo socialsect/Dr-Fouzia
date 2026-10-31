@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
+import { PageEnquirySection } from "@/components/layout/PageEnquirySection";
 
 export const metadata: Metadata = {
   title: "Stress and Sleep Doctor Dubai",
@@ -280,6 +281,7 @@ export default function StressSleepNervousSystemHealthPage() {
           </p>
         </div>
       </section>
+      <PageEnquirySection />
     </main>
   );
 }

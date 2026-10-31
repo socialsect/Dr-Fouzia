@@ -55,7 +55,7 @@ export function HealthConcernContent({
   ctaTitle,
   ctaAccent,
   ctaDescription,
-  showEnquiryForm = false,
+  showEnquiryForm = true,
 }: HealthConcernContentProps) {
   return (
     <main className="bg-white">

@@ -27,7 +27,7 @@ export function ServicePage({
   secondCta,
   relatedLinks,
   faqs,
-  showEnquiryForm = false,
+  showEnquiryForm = true,
 }: ServicePageProps) {
   return (
     <>
