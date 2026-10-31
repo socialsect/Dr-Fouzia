@@ -26,10 +26,10 @@ export function Contact() {
         </Reveal>
         <Reveal direction="up" delay={300}>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/consultation#enquiry-form-1" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary">
               Book free consult
             </Link>
-            <Link href="/consultation#enquiry-form-2" className="btn btn-ghost">
+            <Link href="/contact" className="btn btn-ghost">
               Get in touch
             </Link>
           </div>

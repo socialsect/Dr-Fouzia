@@ -252,10 +252,10 @@ export function HealthConcernContent({
                 {ctaDescription}
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/consultation#enquiry-form-1" className="btn btn-primary">
+                <Link href="/contact" className="btn btn-primary">
                   Book a consultation
                 </Link>
-                <Link href="/consultation#enquiry-form-2" className="btn btn-ghost">
+                <Link href="/contact" className="btn btn-ghost">
                   Get in touch
                 </Link>
               </div>

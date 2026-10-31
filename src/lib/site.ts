@@ -60,4 +60,4 @@ export function getSiteRoutes(): SiteRoute[] {
 }
 
 /** Paths crawlers should not touch (also noindex / non-content). */
-export const PRIVATE_PATHS = ["/api/", "/consultation"];
+export const PRIVATE_PATHS = ["/api/"];

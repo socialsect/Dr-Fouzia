@@ -290,8 +290,8 @@ export default function FunctionalMedicinePage() {
                 Book a consultation and tell your story to a doctor who has time to hear it.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/consultation#enquiry-form-1" className="btn btn-primary">Book a consultation</Link>
-                <Link href="/consultation#enquiry-form-2" className="btn btn-ghost">Get in touch</Link>
+                <Link href="/contact" className="btn btn-primary">Book a consultation</Link>
+                <Link href="/contact" className="btn btn-ghost">Get in touch</Link>
               </div>
             </div>
           </Reveal>

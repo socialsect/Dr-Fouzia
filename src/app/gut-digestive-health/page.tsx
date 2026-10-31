@@ -306,8 +306,8 @@ export default function GutDigestiveHealthPage() {
                 Book a consultation and talk it through with a doctor who has time to listen.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/consultation#enquiry-form-1" className="btn btn-primary">Book a consultation</Link>
-                <Link href="/consultation#enquiry-form-2" className="btn btn-ghost">Get in touch</Link>
+                <Link href="/contact" className="btn btn-primary">Book a consultation</Link>
+                <Link href="/contact" className="btn btn-ghost">Get in touch</Link>
               </div>
             </div>
           </Reveal>

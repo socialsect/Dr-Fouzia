@@ -314,8 +314,8 @@ export default function ServicesPage() {
                 Tell us what is bothering you and we will point you to the right service.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/consultation#enquiry-form-1" className="btn btn-primary">Book a consultation</Link>
-                <Link href="/consultation#enquiry-form-2" className="btn btn-ghost">Get in touch</Link>
+                <Link href="/contact" className="btn btn-primary">Book a consultation</Link>
+                <Link href="/contact" className="btn btn-ghost">Get in touch</Link>
               </div>
             </div>
           </Reveal>

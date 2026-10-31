@@ -36,7 +36,7 @@ export function Hero() {
 
             {/* Buttons */}
             <div className="mb-10 flex flex-wrap gap-3.5">
-              <Link href="/consultation#enquiry-form-1" className="btn btn-primary">
+              <Link href="/contact" className="btn btn-primary">
                 Book free consult
               </Link>
               <Link href="/#services" className="btn btn-ghost">

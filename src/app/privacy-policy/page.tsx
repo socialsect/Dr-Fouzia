@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 /**
- * Privacy policy stub — target for the consent links on /consultation
+ * Privacy policy stub — target for the consent links on /contact
  * (forms cannot reference a page that doesn't exist).
  * TODO(clinic): replace with the clinic-approved privacy policy text.
  */
@@ -33,8 +33,8 @@ export default function PrivacyPolicyPage() {
         <p>The WhatsApp number and other clinic contact details also need to be added here.</p>
       </div>
 
-      <Link href="/consultation" className="mt-10 inline-block text-blue underline underline-offset-4">
-        ← Back to the consultation page
+      <Link href="/contact" className="mt-10 inline-block text-blue underline underline-offset-4">
+        ← Back to the contact page
       </Link>
     </main>
   );
